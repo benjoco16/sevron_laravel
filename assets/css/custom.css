@@ -538,29 +538,28 @@ span.small_pt {
     -moz-box-shadow: 1px 0px 14px -11px rgba(0,0,0,0.75);
     box-shadow: 1px 0px 14px -11px rgba(0,0,0,0.75);
     
-    border-left: 4px solid #30a4f0;
+    border-left: 8px solid #30a4f0;
 }
 
 
 .accordion.accordion-light .risk_accord .card-header {
     padding: 0 15px;
-    border-bottom: 1px solid #eeeeee;
+    
 }
 .accordion.accordion-toggle-arrow .card .card-header .card-title.collapsed span {
     color: #30a4f0;
     border: 1px solid #30a4f0;
-    padding: 5px 25px;
     background-color: #d6edfc;
-    border-radius: 17px !important;
-    margin-right: 15px;
 }
 .accordion.accordion-toggle-arrow .card .card-header .card-title span {
     color: #fca949;
     border: 1px solid #fca949;
-    padding: 5px 25px;
+    padding: 3px 15px;
     background-color: #fff6ec;
     border-radius: 17px !important;
     margin-right: 15px;
+    font-size: 12px;
+    text-transform: uppercase;
 }
 .accordion.accordion-toggle-arrow .card .card-header .card-title.collapsed,
 .accordion.accordion-toggle-arrow .card .card-header .card-title {
@@ -570,15 +569,217 @@ span.small_pt {
 .accordion.accordion-light .risk_accord .card-body {
     padding: 15px;
 }
-.accordion.accordion-light .risk_accord:has (div.collapsed) {
+.accordion.accordion-light .risk_accord:has(div.collapsed) {
     border-left: 4px solid #fca949;
 }
 .task-details textarea {
     width: 100%;
+    border: 1px solid #cfcfcf;
+    margin-top: -1px;
+    padding: 15px;
+    resize: none;
+}
+
+.task-details textarea:active,
+.task-details textarea:focus {
+    outline: 0;
 }
 @media (min-width: 1025px) {
     .kt-subheader {
-        margin-top: 25px;
-        padding: 5px 20px !important;
+        margin-top: 0;
+        padding: 8px 20px 5px !important;
     }
+}
+
+/**
+**  Risk Assessment
+**/
+
+.rs-image {
+    /* max-height: 50px; */
+    width: auto;
+}
+
+.rs-hazards img {
+    max-width: 75px;
+    margin: 10px 10px 15px 0;
+}
+
+.rs-progress-high-risk {
+    background: #FF0000;
+}
+
+.rs-progress-low-risk {
+    background: #5bbc30;
+}
+
+
+.accordion .card.inner-accordion-card .card-header {
+    padding: 10px 15px;
+    border: 1px solid #cfcfcf;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    text-align: center;
+}
+
+.risk_accord .collapse.show {
+    border-top: 1px solid #cfcfcf;
+}
+
+.rs-actions {
+    position: fixed;
+    height: auto !important;
+}
+
+.rs-actions .tag {
+    font-size: 9px;
+    margin-top: 15px;
+}
+
+.rs-actions .tag .badge {
+    padding: 3px;
+    width: 15px;
+    max-width: 100px;
+    margin-left: 0 !important;
+}
+
+.rs-actions .tag-label {
+    font-size: 12px;
+    color: #2f4368;
+}
+
+.rs-actions-danger {
+    color: #FF0000;
+}
+
+.rs-actions-overdue {
+    color: #faa853;
+}
+.rs-actions-advisory {
+    color: #ecc82d;
+}
+
+.rs-actions .badge.danger {
+    background: #FF0000;
+}
+.rs-actions .badge.overdue {
+    background: #faa853;
+}
+.rs-actions .badge.advisory {
+    background: #ecc82d;
+}
+
+/**
+**  Grid extensions
+**/
+
+.m-grid-padded {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/**
+** Portlet extensions
+**/
+.kt-portlet-spacer {
+    padding: 25px;
+}
+
+/**
+**  Form extensions
+**/
+
+.col-form-label {
+    font-weight: 500;
+    color: #707070;
+}
+
+.form-group .form-control {
+    border-radius: 4px !important;
+}
+
+.input-group-text {
+    border-radius: 5px;
+}
+
+.bootstrap-tagsinput {
+    border-radius: 5px !important;
+    border-color: #e2e5ec;
+    box-shadow: none;
+}
+
+.bootstrap-tagsinput .tag {
+    border-radius: 15px !important;
+    padding: 7px 10px;
+    background: #8DA9BB;
+    font-weight: 400;
+}
+
+.bootstrap-tagsinput .tag [data-role="remove"] {
+    border: 1px solid #fff;
+    border-radius: 100px !important;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+}
+
+.badge {
+    height: auto;
+}
+/**
+**  Font Styles
+**/
+
+.font-weight-normal {
+    font-weight: normal;
+}
+
+.font-weight-500 {
+    font-weight: 500;
+}
+
+/**
+** Header styles
+**/
+@media screen and (min-width: 1025px) {
+    .kt-header {
+        box-shadow: 13px 7px 19px 0px rgba(0, 51, 90, 0.1);
+    }
+}
+
+
+/**
+**  Text color
+*/
+
+.font-red {
+    color: #FF0000
+}
+
+.font-rhino {
+    color: #2f4368;
+}
+
+.font-ash {
+    color: #707070;
+}
+
+.font-nepal {
+    color: #8DA9BB;
+}
+
+.bg-light-gray {
+    background: #f7f7f7;
+}
+
+.bg-red {
+    background: #FF0000;
+}
+
+.bg-white {
+    background: #FFF;
+}
+
+.bg-light-blue {
+    background: #e4f0f8;
 }
