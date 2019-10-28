@@ -105,7 +105,7 @@
 <script src="./assets/js/custom/bootstrap-tagsinput.min.js" type="text/javascript"></script>
                     
 
-<script src="./assets/js/custom/custom.js" type="text/javascript"></script>
+<script src="./assets/js/custom/risk-assessment.js" type="text/javascript"></script>
                     <!--end::Page Scripts -->
             </body>
     <!-- end::Body -->
