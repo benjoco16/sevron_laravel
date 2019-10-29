@@ -28,7 +28,7 @@
                 </li>
                 <li class="kt-menu__item " aria-haspopup="true">
                     <a href="#" class="kt-menu__link "><i class="kt-menu__link-icon la la-exclamation-circle">
-                        </i><span class="kt-menu__link-text">Incedent</span>
+                        </i><span class="kt-menu__link-text">Incident</span>
                     </a>
                 </li>
                 <li class="kt-menu__item " aria-haspopup="true">
