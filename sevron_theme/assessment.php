@@ -26,7 +26,7 @@ License: You must have a valid license purchased only from themeforest(the above
             <!-- end::Table -->
         </div>
 
-        <?php include('template/assessment/modal/risk-assessment.php'); ?>
+        <?php include('template/assessment/modal/a_modal-container.php'); ?>
         <?php include('template/assessment/a_vendors.php'); ?>
     </body>
     <!-- end::Body -->

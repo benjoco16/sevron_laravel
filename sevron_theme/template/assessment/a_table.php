@@ -83,7 +83,7 @@
                             <small>Actions</small>
                         </button>
                     </td>
-                    <td>Sed ut perspiciatis unde omnis iste natus error sit voluptatem</td>
+                    <td class="ellipsed">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</td>
                     <td></td>
                     <td>Task</td>
                     <td>RA1234567</td>
@@ -105,7 +105,7 @@
                             <small>Actions</small>
                         </button>
                     </td>
-                    <td>Sed ut perspiciatis unde omnis iste natus error sit voluptatem</td>
+                    <td class="ellipsed">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</td>
                     <td></td>
                     <td>Task</td>
                     <td>RA1234567</td>
