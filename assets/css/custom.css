@@ -1063,6 +1063,19 @@ span.small_pt {
     display: block;
 }
 
+/** Assessment Wizard **/
+
+.aw-low {
+    background: #90C83A;
+}
+
+.aw-medium {
+    background: #FDBB00;
+}
+
+.aw-high {
+    background: #F02618;
+}
 
 /** Substance Accordion **/
 .si_section {
@@ -1435,6 +1448,14 @@ select.input-group-form-control:after {
     color: #fdb92c !important;
 }
 
+.font-purple {
+    color: #8C26E6 !important;
+}
+
+.font-green {
+    color: #14C498 !important;
+}
+
 .bg-light-gray {
     background: #f7f7f7;
 }
@@ -1465,6 +1486,14 @@ select.input-group-form-control:after {
 
 .border-gray {
     border-color: #CBCBCB;
+}
+
+.border-purple {
+    border-color: #8C26E6;
+}
+
+.border-green {
+    border-color: #3BCCA5 !important;
 }
 
 /** Font size **/
