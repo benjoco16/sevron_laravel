@@ -28,10 +28,10 @@
                         <p>Regulation</p>
                     </li>
                 </ul>
-                <?php include('./template/assessment/modal/risk-assessment-1.php') ?>
-                <?php include('./template/assessment/modal/risk-assessment-2.php') ?>
-                <?php include('./template/assessment/modal/risk-assessment-3.php') ?>
-                <?php include('./template/assessment/modal/risk-assessment-4.php') ?>
+                <?php include('./template/assessment-process/modal/risk-assessment-1.php') ?>
+                <?php include('./template/assessment-process/modal/risk-assessment-2.php') ?>
+                <?php include('./template/assessment-process/modal/risk-assessment-3.php') ?>
+                <?php include('./template/assessment-process/modal/risk-assessment-4.php') ?>
             </div>
         </div>
     </div>
