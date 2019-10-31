@@ -563,6 +563,15 @@ span.small_pt {
     border: 1px solid #CBCBCB !important;
 }
 
+.risk_accord .accordion-draggable {
+    margin-right: 10px;
+}
+
+.risk_accord .accordion-draggable i {
+    color: #989898;
+    margin-right: -3px;
+}
+
 .accordion .accordion-status {
     border-radius: 17px !important;
     margin-right: 15px;
@@ -1454,6 +1463,10 @@ select.input-group-form-control:after {
 
 .font-green {
     color: #14C498 !important;
+}
+
+.font-gray {
+    color: #989898;
 }
 
 .bg-light-gray {
