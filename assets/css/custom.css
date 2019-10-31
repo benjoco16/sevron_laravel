@@ -559,6 +559,10 @@ span.small_pt {
     padding: 0 15px;
 }
 
+.risk_accord-portlet-bordered {
+    border: 1px solid #CBCBCB !important;
+}
+
 .accordion .accordion-status {
     border-radius: 17px !important;
     margin-right: 15px;
@@ -571,6 +575,25 @@ span.small_pt {
 .accordion.ra-accordion.accordion-toggle-arrow .card .card-header .card-title:after {
     content: '\f11f';
     font-size: 1.5rem;
+}
+
+
+/** DRAGGABLE STATUS STYLE **/
+
+.accordion[data-status="category"] .accordion-status {
+    color: #8C26E6;
+    border-color: #8C26E6;
+    background-color: #F4E6FF;
+}
+
+.accordion.accordion-light[data-status="category"] .risk_accord {
+    border-color: #8C26E6;
+}
+
+.accordion .accordion .risk_accord {
+    border-top: 1px solid #cfcfcf !important;
+    border-bottom: 1px solid #cfcfcf !important;
+    border-right: 1px solid #cfcfcf !important;
 }
 
 /** NOT STARTED STATUS STYLE **/
@@ -633,6 +656,15 @@ span.small_pt {
     color: #83d073 !important;  
 } 
 
+
+/* .accordion[data-status="completed"] .accordion-status:before {
+    content: 'Completed';
+} */
+
+.accordion.accordion-light[data-status="category"] .card-title:after {
+    color: #8C26E6 !important;  
+} 
+
 /* .accordion.accordion-toggle-arrow .card .card-header .card-title span {
     color: #fca949;
     border: 1px solid #fca949;
@@ -674,6 +706,36 @@ span.small_pt {
 }
 
 /**
+**  WYSIWYG
+**/
+.wysiwyg .note-editor.note-frame {
+    border: none;
+}
+.wysiwyg .note-editor .panel-heading.note-toolbar {
+    border: none;
+    border-radius: 0;
+}
+
+.wysiwyg .note-editor.note-frame {
+    border: none;
+}
+
+.wysiwyg .note-statusbar {
+    display: none;
+}
+
+.accordion .editor-toolbar {
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #cfcfcf;
+}
+
+.accordion .CodeMirror {
+    border-radius: 0;
+    border: none;
+}
+
+/**
 **  Risk Assessment
 **/
 
@@ -695,6 +757,9 @@ span.small_pt {
     background: #5bbc30;
 }
 
+.card-headless {
+    border-top: none !important;
+}
 
 .accordion .card.inner-accordion-card .card-header {
     padding: 10px 15px;
@@ -1102,6 +1167,10 @@ span.small_pt {
     border-radius: 5px;
 }
 
+.bootstrap-tagsinput input {
+    /* display: none; */
+}
+
 .bootstrap-tagsinput {
     border-radius: 5px !important;
     border-color: #e2e5ec;
@@ -1392,6 +1461,10 @@ select.input-group-form-control:after {
 
 .border-blue {
     border-color: #38a5ed;
+}
+
+.border-gray {
+    border-color: #CBCBCB;
 }
 
 /** Font size **/
