@@ -89,8 +89,8 @@
         <button data-to-step="3" type="button" class="btn btn-custom-blue bordered btn-wider">
             Previous
         </button>
-        <button data-to-step="4" type="button" class="btn btn-custom-blue btn-wider ml-auto">
+        <a href="/sevron/sevron_theme/assessment-wizard.php" data-to-step="4" class="btn btn-custom-blue btn-wider ml-auto">
             Add Substance Only
-        </button>
+        </a>
     </div>
 </div>

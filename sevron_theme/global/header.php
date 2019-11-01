@@ -1,6 +1,6 @@
 <div id="kt_header_mobile" class="kt-header-mobile  kt-header-mobile--fixed " >
         <div class="kt-header-mobile__logo">
-            <a href="demo11/index.html">
+            <a href="/sevron/sevron_theme">
                 <img alt="Logo" src="./assets/media/logos/logo-11-sm.png"/>
             </a>
         </div>

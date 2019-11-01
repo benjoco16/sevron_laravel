@@ -714,6 +714,16 @@ span.small_pt {
     }
 }
 
+/** 
+**  Incident page
+**/
+
+.form-separator {
+    border-bottom: 1px solid #cdcdcd;
+    /* padding: 30px; */
+    width: 100%;
+}
+
 /**
 **  WYSIWYG
 **/
@@ -871,7 +881,7 @@ span.small_pt {
     content: none;
 }
 
-.as-tbl td.ellipsed {
+td.ellipsed {
     max-width: 200px;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -1111,6 +1121,65 @@ span.small_pt {
     padding: 15px !important;
     text-align: center;
 }
+/**
+**  About Page
+**/
+
+.about-video-wrapper {
+    background: #08273D;
+}
+
+.about-video-wrapper {
+    padding: 30px;
+}
+
+.about-video-wrapper .video-js {
+    margin: 0 auto;
+}
+
+.about-video-logo {
+    max-width: 80%;
+}
+
+.video-js .vjs-big-play-button .vjs-icon-placeholder:before {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    
+}
+
+.video-js .vjs-control-bar {
+    background: #0D5786 !important;
+}
+
+.vjs-play-progress.vjs-slider-bar {
+    background: #80E545 !important;
+    border-radius: 30px;
+}
+
+body .video-js .vjs-progress-holder {
+    height: 10px;
+    border-radius: 30px;
+}
+
+body .video-js .vjs-play-progress:before {
+    font-size: 17px;
+    top: -4px;
+}
+
+.about-video-wrapper .video-js .vjs-big-play-button {
+    width: 130px;
+    height: 130px;
+    border: none;
+    border-radius: 100px;
+    background: #25A3F3;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
 
 /** Task Hazards **/
 .th-icon {
@@ -1186,7 +1255,7 @@ span.small_pt {
 }
 
 .input-group-text {
-    border-radius: 5px;
+    border-radius: 5px !important;
 }
 
 .bootstrap-tagsinput input {
@@ -1217,6 +1286,11 @@ span.small_pt {
 
 .badge {
     height: auto;
+}
+
+.badge-circle {
+    width: 20px;
+    height: 20px !important;
 }
 
 .form-group.form-group-sm .form-control {
@@ -1472,6 +1546,14 @@ button.no-style {
 .alert-semi-filled-blue {
     background: rgba(56, 165, 237, 0.05);
 }
+.alert.alert-sm {
+    padding: 5px;
+    font-size: 10px;
+}
+
+.alert.alert-round {
+    border-radius: 200px;
+}
 
 /** 
 **  Table Popover
@@ -1544,9 +1626,14 @@ button.no-style {
     color: #989898;
 }
 
+.text-note {
+    font-weight: 500;
+}
+
 .bg-light-gray {
     background: #f7f7f7;
 }
+
 
 .bg-red {
     background: #FF0000;

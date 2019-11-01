@@ -1,11 +1,11 @@
 <!-- begin:: Subheader -->
-<div class="kt-subheader bg-white kt-grid__item" id="kt_subheader">
+<div class="kt-subheader bg-white kt-grid__item mb-0" id="kt_subheader">
     <div class="kt-container  kt-container--fluid ">
         <div class="kt-subheader__main">
             <!-- Start Create New button -->
             <div class="kt-header__brand-nav d-flex align-items-center">
                     <div class="dropdown">
-                        <button type="button" class="btn dropdown-toggle btn-lg btn-custom-blue pl-5 pr-5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        <button type="button" class="btn dropdown-toggle btn-lg btn-default pl-5 pr-5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                             Create New
                         </button>
                         <div class="dropdown-menu dropdown-dark dropdown-menu-fit dropdown-menu-sm">
@@ -65,7 +65,7 @@
                         <span class="kt-nav__link-icon"><i class="font-md la la-file"></i></span>
                         Template Assessments
                     </a>
-                    <a href="/sevron/sevron_theme/about.php" class="btn btn-default dopti">
+                    <a href="#" class="btn btn-custom-blue dopti">
                         About
                     </a>
                     
