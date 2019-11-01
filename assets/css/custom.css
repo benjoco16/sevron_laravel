@@ -1322,6 +1322,13 @@ select.input-group-form-control:after {
     border-color: #359adc;
 }
 
+button.no-style {
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
 /**
 ** Custom portlets
 **/
@@ -1381,10 +1388,74 @@ select.input-group-form-control:after {
 .dropdown-menu.dropdown-dark-full > .dropdown-item  {
     background: #2f4368;
     color: #FFF;
+    padding: 0.7rem 1.2rem 0.1rem;
+    border-radius: 10px;
+}
+
+.dropleft .dropdown-menu.dropdown-dark-full {
+    margin-right: -15px;
 }
 
 .dropdown-item i {
     min-width: 25px;
+}
+
+.dropdown-popover .dropdown-toggle:before {
+    content: none;
+}
+/* 
+.dropdown-popover.dropleft .dropdown-menu:after {
+    content: '';
+    width: 0; 
+    height: 0; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    display: block !important;
+    border-left: 10px solid blue;
+    position: absolute;
+    right: -9px;
+    top: 7px;
+} */
+
+/**
+** Popovers
+**/
+
+.popover-custom .popover {
+    background: #2f4368;
+    border-radius: 10px;
+}
+
+.popover-custom .popover-trigger:focus i,
+.popover-custom .popover-trigger:active i {
+    color: #2AA4F2;
+}
+
+.popover-custom .popover.bs-popover-left .arrow:after {
+    border-left-color: #2f4368 !important;
+}
+
+.popover-custom .popover.bs-popover-right .arrow:after {
+    border-right-color: #2f4368 !important;
+}
+
+.popover-custom .popover.bs-popover-top .arrow:after {
+    border-top-color: #2f4368 !important;
+}
+
+.popover-custom .popover.bs-popover-bottom .arrow:after {
+    border-bottom-color: #2f4368 !important;
+}
+
+.popover-custom .popover .popover-link {
+    color: #FFF;
+    display: block;
+    padding: 5px;
+}
+
+.popover-custom .popover .popover-link i {
+    width: 25px !important;
+    display: inline-block;
 }
 
 
@@ -1455,6 +1526,10 @@ select.input-group-form-control:after {
 
 .font-yellow-orange {
     color: #fdb92c !important;
+}
+
+.font-yellow {
+    color: #FFE400 !important;
 }
 
 .font-purple {

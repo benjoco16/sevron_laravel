@@ -10,13 +10,13 @@
 			
 			<ul class="kt-menu__nav ">
                 <li class="kt-menu__item " aria-haspopup="true">
-                    <a href="#" class="kt-menu__link ">
+                    <a href="/sevron/sevron_theme" class="kt-menu__link ">
                         <i class="kt-menu__link-icon la la-tachometer"></i> 
                         <span class="kt-menu__link-text">Dashboard</span>
                     </a>
                 </li>
                 <li class="kt-menu__item " aria-haspopup="true">
-                    <a href="#" class="kt-menu__link ">
+                    <a href="/sevron/sevron_theme/assessment-process.php" class="kt-menu__link ">
                         <i class="kt-menu__link-icon la la-file" aria-hidden="true"></i>
                         <span class="kt-menu__link-text">Assesments</span>
                     </a>

@@ -79,31 +79,34 @@
                         </label>
                     </td>
                     <td>
-                        <button class="btn btn-custom-blue btn-xs w-100 bnt-wide ml-auto">
-                            <small>Actions</small>
-                        </button>
-                    </td>
-                    <td class="ellipsed">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</td>
-                    <td></td>
-                    <td>Task</td>
-                    <td>RA1234567</td>
-                    <td>Low</td>
-                    <td>Michael Mouse</td>
-                    <td>W. Disney</td>
-                    <td>8/09/19</td>
-                </tr>
-
-                <tr>
-                    <td>
-                        <label class="kt-checkbox">
-							<input type="checkbox" name="checkboxes">
-							<span></span>
-                        </label>
-                    </td>
-                    <td>
-                        <button class="btn btn-custom-blue btn-xs w-100 bnt-wide ml-auto">
-                            <small>Actions</small>
-                        </button>
+                        <div class="popover-wrapper popover-1 popover-custom">
+                            <button data-container=".popover-1"
+                                class="popover-trigger btn btn-custom-blue btn-xs w-100 bnt-wide ml-auto" 
+                                data-toggle="kt-popover" 
+                                data-trigger="focus" 
+                                data-placement="left" 
+                                data-html="true"
+                                data-content='
+                                        <a class="popover-link" href="#">
+                                            <i class="flaticon2-edit font-yellow font-size-md"></i>
+                                            Edit Assessment
+                                        </a>
+                                        <a class="popover-link" href="#">
+                                            <i class="la la-file font-purple font-size-md" style=""></i>
+                                            Copy Assessment
+                                        </a>
+                                        <a class="popover-link" href="#">
+                                            <i class="fa fa-building font-blue font-size-md" style=""></i>
+                                            Archive Assessment
+                                        </a>
+                                        <a class="popover-link" href="#">
+                                            <i class="fa fa-user-alt font-neon-green font-size-md" style=""></i>
+                                            Change Assessment Owner
+                                        </a>
+                                '>
+                                    Actions
+                            </button>
+                        </div>
                     </td>
                     <td class="ellipsed">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</td>
                     <td></td>
