@@ -41,14 +41,14 @@
                         <thead>
                             <tr>
                                 <th width="">Substance Information</th>
-                                <th width="100">SDS Info</th>
+                                <th width="200">SDS Info</th>
                                 <th width="10"></th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>
-                                    <p class="font-weight-500 mb-1">Solvent Cleaner Aerosol Discontinued</p>
+                                    <p class="font-weight-500 mb-2">Solvent Cleaner Aerosol Discontinued</p>
                                     <p class="font-size-xs mb-1">
                                     <span class="font-weight-500">Manufactured by: RS Computers Ltd</span>
                                     </p>
@@ -93,7 +93,193 @@
                                 </td>
                             </tr>
 
-                            
+                            <tr>
+                                <td>
+                                    <p class="font-weight-500 mb-2">Solvent Cleaner Aerosol Discontinued</p>
+                                    <p class="font-size-xs mb-1">
+                                    <span class="font-weight-500">Manufactured by: RS Computers Ltd</span>
+                                    </p>
+                                    <p class="d-flex font-size-xs mb-0">
+                                        <span>
+                                        <span class="font-weight-500">Revision:</span> 22/2/2017
+                                        </span>
+                                        
+                                        <span class="ml-4">
+                                            <span class="font-weight-500">Language:</span> English
+                                        </span>
+                                    </p>
+                                </td>
+                                <td>See SDS</td>
+                                <td>    
+                                    <div class="d-flex align-items-center">
+                                        <div class="popover-wrapper popover-custom">
+                                            <button data-container=".popover-wrapper"
+                                                class="popover-trigger no-style" 
+                                                data-toggle="kt-popover" 
+                                                data-trigger="focus" 
+                                                data-placement="left" 
+                                                data-html="true"
+                                                data-content='
+                                                        <a class="popover-link" href="#">
+                                                            <i class="fa fa-flask font-neon-green" style="font-size: 14px;"></i>
+                                                            View Substance Details
+                                                        </a>
+                                                        <a class="popover-link" href="#">
+                                                            <i class="la la-file font-yellow-orange font-size-md" style=""></i>
+                                                            View Safety Data Sheet
+                                                        </a>
+                                                '>
+                                                    <i class="fa flaticon-eye font-ash mr-3 font-size-md" ></i>
+                                            </button>
+                                        </div>
+
+                                        <button data-to-step="2" class="btn btn-custom-blue btn-xs">
+                                            <small>Select</small>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <p class="font-weight-500 mb-2">Solvent Cleaner Aerosol Discontinued</p>
+                                    <p class="font-size-xs mb-1">
+                                    <span class="font-weight-500">Manufactured by: RS Computers Ltd</span>
+                                    </p>
+                                    <p class="d-flex font-size-xs mb-0">
+                                        <span>
+                                        <span class="font-weight-500">Revision:</span> 22/2/2017
+                                        </span>
+                                        
+                                        <span class="ml-4">
+                                            <span class="font-weight-500">Language:</span> English
+                                        </span>
+                                    </p>
+                                </td>
+                                <td>See SDS</td>
+                                <td>    
+                                    <div class="d-flex align-items-center">
+                                        <div class="popover-wrapper popover-custom">
+                                            <button data-container=".popover-wrapper"
+                                                class="popover-trigger no-style" 
+                                                data-toggle="kt-popover" 
+                                                data-trigger="focus" 
+                                                data-placement="left" 
+                                                data-html="true"
+                                                data-content='
+                                                        <a class="popover-link" href="#">
+                                                            <i class="fa fa-flask font-neon-green" style="font-size: 14px;"></i>
+                                                            View Substance Details
+                                                        </a>
+                                                        <a class="popover-link" href="#">
+                                                            <i class="la la-file font-yellow-orange font-size-md" style=""></i>
+                                                            View Safety Data Sheet
+                                                        </a>
+                                                '>
+                                                    <i class="fa flaticon-eye font-ash mr-3 font-size-md" ></i>
+                                            </button>
+                                        </div>
+
+                                        <button data-to-step="2" class="btn btn-custom-blue btn-xs">
+                                            <small>Select</small>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <p class="font-weight-500 mb-2">Solvent Cleaner Aerosol Discontinued</p>
+                                    <p class="font-size-xs mb-1">
+                                    <span class="font-weight-500">Manufactured by: RS Computers Ltd</span>
+                                    </p>
+                                    <p class="d-flex font-size-xs mb-0">
+                                        <span>
+                                        <span class="font-weight-500">Revision:</span> 22/2/2017
+                                        </span>
+                                        
+                                        <span class="ml-4">
+                                            <span class="font-weight-500">Language:</span> English
+                                        </span>
+                                    </p>
+                                </td>
+                                <td>See SDS</td>
+                                <td>    
+                                    <div class="d-flex align-items-center">
+                                        <div class="popover-wrapper popover-custom">
+                                            <button data-container=".popover-wrapper"
+                                                class="popover-trigger no-style" 
+                                                data-toggle="kt-popover" 
+                                                data-trigger="focus" 
+                                                data-placement="left" 
+                                                data-html="true"
+                                                data-content='
+                                                        <a class="popover-link" href="#">
+                                                            <i class="fa fa-flask font-neon-green" style="font-size: 14px;"></i>
+                                                            View Substance Details
+                                                        </a>
+                                                        <a class="popover-link" href="#">
+                                                            <i class="la la-file font-yellow-orange font-size-md" style=""></i>
+                                                            View Safety Data Sheet
+                                                        </a>
+                                                '>
+                                                    <i class="fa flaticon-eye font-ash mr-3 font-size-md" ></i>
+                                            </button>
+                                        </div>
+
+                                        <button data-to-step="2" class="btn btn-custom-blue btn-xs">
+                                            <small>Select</small>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <p class="font-weight-500 mb-2">Solvent Cleaner Aerosol Discontinued</p>
+                                    <p class="font-size-xs mb-1">
+                                    <span class="font-weight-500">Manufactured by: RS Computers Ltd</span>
+                                    </p>
+                                    <p class="d-flex font-size-xs mb-0">
+                                        <span>
+                                        <span class="font-weight-500">Revision:</span> 22/2/2017
+                                        </span>
+                                        
+                                        <span class="ml-4">
+                                            <span class="font-weight-500">Language:</span> English
+                                        </span>
+                                    </p>
+                                </td>
+                                <td>See SDS</td>
+                                <td>    
+                                    <div class="d-flex align-items-center">
+                                        <div class="popover-wrapper popover-custom">
+                                            <button data-container=".popover-wrapper"
+                                                class="popover-trigger no-style" 
+                                                data-toggle="kt-popover" 
+                                                data-trigger="focus" 
+                                                data-placement="left" 
+                                                data-html="true"
+                                                data-content='
+                                                        <a class="popover-link" href="#">
+                                                            <i class="fa fa-flask font-neon-green" style="font-size: 14px;"></i>
+                                                            View Substance Details
+                                                        </a>
+                                                        <a class="popover-link" href="#">
+                                                            <i class="la la-file font-yellow-orange font-size-md" style=""></i>
+                                                            View Safety Data Sheet
+                                                        </a>
+                                                '>
+                                                    <i class="fa flaticon-eye font-ash mr-3 font-size-md" ></i>
+                                            </button>
+                                        </div>
+
+                                        <button data-to-step="2" class="btn btn-custom-blue btn-xs">
+                                            <small>Select</small>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>

@@ -26,7 +26,8 @@
                         GHS SDS DATA
                         <div class="d-flex as-regulation-title-img ml-auto">
                             <img class="ml-auto mr-2" src="assets/media/risk/p1.png">
-                            <img class="ml-auto" src="assets/media/risk/hazard4.png">
+                            <img class="ml-auto mr-2" src="assets/media/risk/hazard4.png">
+                            <img class="ml-auto" src="assets/media/risk/danger.png">
                         </div>
                     </div>
                 </div>
@@ -38,23 +39,29 @@
                             <small>H280: Contains gas under pressure; may explode if heated</small>
                         </p>
                         <p class="mb-0">
-                            <small>Fatal if swallowed</small>
+                            <small>H300: Fatal if swallowed</small>
                         </p>
                         <p class="mb-0">
-                            <small>May be fatal if swallowed and entered airways</small>
+                            <small>H304: May be fatal if swallowed and entered airways</small>
+                        </p>
+                        <p class="mb-0">
+                            <small>H336: May be fatal if swallowed and entered airways</small>
                         </p>
                     </div>
 
                     <div>
-                        <p class="mb-2"><span class="font-weight-500">Hazard Statements</span></p>
+                        <p class="mb-2"><span class="font-weight-500">Precautionary Statements</span></p>
                         <p class="mb-0">
-                            <small>H280: Contains gas under pressure; may explode if heated</small>
+                            <small>P211: Do not spray on an open flame or other ignition source</small>
                         </p>
                         <p class="mb-0">
-                            <small>Fatal if swallowed</small>
+                            <small>P271: Use only outdoors or in a well-ventilated area</small>
                         </p>
                         <p class="mb-0">
-                            <small>May be fatal if swallowed and entered airways</small>
+                            <small>P301: IF SWALLOWED: ??please see SDS??</small>
+                        </p>
+                        <p class="mb-0">
+                            <small>P304: IF INHALED: ??please see SDS??</small>
                         </p>
                     </div>
                 </div>

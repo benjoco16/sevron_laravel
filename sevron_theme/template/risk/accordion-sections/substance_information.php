@@ -28,7 +28,14 @@
                                 <tr>
                                     <td>Sodium (483745)</td>
                                     <td>Sigma-Aldrich Company Ltd</td>
-                                    <td><img src="assets/media/risk/symbols.png" alt=""></td>
+                                    <td>
+                                        <img style="height: 40px" src="assets/media/assessment-wizard/hazard-1.png" alt="">
+                                        <img style="height: 40px" src="assets/media/risk/p1.png" alt="">
+                                        <img style="height: 40px" src="assets/media/risk/hazard2.png" alt="">
+                                        <button class="btn btn-outline-info ml-2">
+                                            <i class="flaticon2-edit pr-0"></i>
+                                        </button>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td> <a href="#"> Expand <img src="assets/media/risk/zoom_icon.png" alt=""></a></td>
@@ -50,7 +57,14 @@
                             <tr>
                                 <td>Sodium (483745)</td>
                                 <td>Sigma-Aldrich Company Ltd</td>
-                                <td><img src="assets/media/risk/symbols.png" alt=""></td>
+                                <td>
+                                    <img style="height: 40px" src="assets/media/assessment-wizard/hazard-1.png" alt="">
+                                    <img style="height: 40px" src="assets/media/risk/p1.png" alt="">
+                                    <img style="height: 40px" src="assets/media/risk/hazard2.png" alt="">
+                                    <button class="btn btn-outline-info ml-2">
+                                        <i class="flaticon2-edit pr-0"></i>
+                                    </button>
+                                </td>
                             </tr>
                             <tr>
                                 <td> <a href="#"> Expand <img src="assets/media/risk/zoom_icon.png" alt=""></a></td>

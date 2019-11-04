@@ -772,6 +772,10 @@ span.small_pt {
     background: #FF0000;
 }
 
+.rs-progress-warning-risk {
+    background: #FEAA3C;
+}
+
 .rs-progress-low-risk {
     background: #5bbc30;
 }
@@ -1196,6 +1200,30 @@ body .video-js .vjs-play-progress:before {
     border-radius: 10px;
 }
 
+/** Dashboard 2 **/
+
+.dashboard-min-label {
+    font-weight: 500;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    margin-bottom: 0;
+    color: #989898;
+    max-width: 65px;
+}
+
+.dashboard-min-label span.title {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dashboard-min-label > i {
+    margin-right: 5px;
+}
+
 /**
 ** Pagination 
 **/
@@ -1477,19 +1505,9 @@ button.no-style {
 .dropdown-popover .dropdown-toggle:before {
     content: none;
 }
-/* 
-.dropdown-popover.dropleft .dropdown-menu:after {
-    content: '';
-    width: 0; 
-    height: 0; 
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    display: block !important;
-    border-left: 10px solid blue;
-    position: absolute;
-    right: -9px;
-    top: 7px;
-} */
+.dropleft-reset-arrow [data-toggle="dropdown"]:before {
+    content: none !important;
+}
 
 /**
 ** Popovers
@@ -1575,6 +1593,14 @@ button.no-style {
     position: absolute;
 }
 
+/**
+**  KT NAV ICON
+**/
+
+.dropdown-dark .kt-nav__item:hover > .kt-nav__link > .kt-nav__link-icon-hover-green {
+    color: #7EFF00 !important;
+}
+
 
 /**
 **  Text color
@@ -1634,6 +1660,9 @@ button.no-style {
     background: #f7f7f7;
 }
 
+.bg-white {
+    background: #FFF !important;
+}
 
 .bg-red {
     background: #FF0000;
@@ -1673,6 +1702,9 @@ button.no-style {
 
 /** Font size **/
 
+.font-size-xs-min {
+    font-size: 8px !important; 
+}
 .font-size-xs {
     font-size: 11px !important; 
 }

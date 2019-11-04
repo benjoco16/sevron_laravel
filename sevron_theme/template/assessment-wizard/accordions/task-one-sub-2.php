@@ -22,7 +22,7 @@
                                         <h6 class="font-500">HAZARD DESCRIPTION</h6>
                                         <div class="sv-portlet bg-light-gray mt-1">
                                             <p class="mb-0">
-                                                <small>H318 - Causes serious eye damage</small>
+                                                <small>Slippery surface, risk of fall</small>
                                             </p>
                                         </div>
                                     </div>
@@ -33,7 +33,7 @@
                                         <div class="row row bg-light-blue sv-portlet ml-0 mr-3">
                                             <div class="col-md-6 pl-0">
                                                 <div class="progress mb-2">
-                                                    <div class="progress-bar rs-progress-high-risk" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    <div class="progress-bar rs-progress-warning-risk" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                                                 </div>
 
                                                 <div class="progress-label d-flex align-items-center">
@@ -43,7 +43,7 @@
                                                         Before</small>
                                                     </span>
                                                     <h2 class="font-rhino pl-2 ml-auto">
-                                                        <strong>72</strong>   
+                                                        <strong>8</strong>   
                                                     </h2>
                                                 </div>
                                             </div>
@@ -59,7 +59,7 @@
                                                         Before</small>
                                                     </span>
                                                     <h2 class="font-rhino pl-2 ml-auto">
-                                                        <strong>72</strong>   
+                                                        <strong>4</strong>   
                                                     </h2>
                                                 </div>
                                             </div>
@@ -78,21 +78,31 @@
 
                                     <div class="row">
                                         <div class="col-md-6 mt-4 d-flex align-items-center">
-                                            <img class="th-icon" src="./assets/media/risk/hazard_icon.png">
+                                            <img class="th-icon" src="./assets/media/assessment-wizard/do-not-run.png">
 
-                                            <div class="sv-portlet ml-3 bg-light-gray mt-1">
+                                            <div class="sv-portlet ml-3 bg-light-gray mt-1 w-100">
                                                 <p class="mb-0">
-                                                    <small>Wear eye protection when pouring or keep eyes well away from splashing</small>
+                                                    <small>Do not run</small>
                                                 </p>
                                             </div>
                                         </div>
 
                                         <div class="col-md-6 mt-4 d-flex align-items-center">
-                                            <img class="th-icon" src="./assets/media/risk/hazard_icon.png">
+                                            <img class="th-icon" src="./assets/media/assessment-wizard/wet-floor.png">
 
                                             <div class="sv-portlet ml-3 bg-light-gray mt-1">
                                                 <p class="mb-0">
-                                                    <small>Wear eye protection when pouring or keep eyes well away from splashing</small>
+                                                    <small>Signage in place for wet floor</small>
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 mt-4 d-flex align-items-center">
+                                            <img class="th-icon" src="./assets/media/assessment-wizard/ventilation.png">
+
+                                            <div class="sv-portlet ml-3 bg-light-gray mt-1">
+                                                <p class="mb-0">
+                                                    <small>Considering opening windows for ventilation in confined spaces</small>
                                                 </p>
                                             </div>
                                         </div>
@@ -109,11 +119,11 @@
 
                                     <div class="row">
                                         <div class="col-md-6 mt-4 d-flex align-items-center">
-                                            <img class="th-icon" src="./assets/media/risk/emergency_icon.png">
+                                            <img class="th-icon" src="./assets/media/assessment-wizard/first-aid-green.png">
 
                                             <div class="sv-portlet ml-3 bg-light-gray mt-1">
                                                 <p class="mb-0">
-                                                    <small>Wear eye protection when pouring or keep eyes well away from splashing</small>
+                                                    <small>Seek first aid, contact 2222</small>
                                                 </p>
                                             </div>
                                         </div>

@@ -16,11 +16,11 @@
                                         <span class="kt-nav__link-text">Assessment</span>
                                     </a>
 
-                                    <div class="dropdown-menu sub-dropdown dropdown-menu-fit dropdown-menu-sm">
+                                    <div class="dropdown-menu sub-dropdown dropdown-menu-fit dropdown-menu-lg">
                                         <ul class="kt-nav kt-nav--bold kt-nav--md-space">
                                             <li class="kt-nav__item">
                                                 <a class="kt-nav__link active" data-toggle="modal" data-target="#modalRiskAssessment">
-                                                    <span class="kt-nav__link-icon"><i class="fa fa-flask"></i></span>
+                                                    <span class="kt-nav__link-icon kt-nav__link-icon-hover-green"><i class="fa fa-flask"></i></span>
                                                     <span class="kt-nav__link-text">COSHH Risk Assessment</span>
                                                 </a>
                                             </li>

@@ -4,7 +4,7 @@
             <div class="kt-portlet__body p-0">
                 <div class="sv-portlet mr-3 mt-4">
                     <div class="d-flex align-items-center">
-                        <h6 class="font-500">CONTROLS IN PLACE</h6>
+                        <h6 class="bold">CONTROLS IN PLACE</h6>
                         <button class="btn btn-custom-blue btn-xs ml-auto">
                             <small>Add Controls</small>
 
@@ -13,21 +13,21 @@
 
                     <div class="row">
                         <div class="col-md-5 mt-4 d-flex align-items-center">
-                            <img class="th-icon" src="./assets/media/risk/hazard_icon.png">
+                            <img class="th-icon" src="./assets/media/assessment-wizard/high-visibility-clothing.png">
 
-                            <div class="sv-portlet ml-3 bg-light-gray mt-1">
+                            <div class="sv-portlet w-100 text-left ml-3 bg-light-gray mt-1">
                                 <p class="mb-0">
-                                    <small>Wear eye protection when pouring or keep eyes well away from splashing</small>
+                                    <small>Wear high visiblity clothing</small>
                                 </p>
                             </div>
                         </div>
 
                         <div class="col-md-5 mt-4 d-flex align-items-center">
-                            <img class="th-icon" src="./assets/media/risk/hazard_icon.png">
+                            <img class="th-icon" src="./assets/media/assessment-wizard/no-smoking.png">
 
-                            <div class="sv-portlet ml-3 bg-light-gray mt-1">
+                            <div class="sv-portlet w-100 text-left ml-3 bg-light-gray mt-1">
                                 <p class="mb-0">
-                                    <small>Wear eye protection when pouring or keep eyes well away from splashing</small>
+                                    <small>No smoking</small>
                                 </p>
                             </div>
                         </div>
@@ -48,7 +48,7 @@
             <div class="kt-portlet__body p-0">
                 <div class="sv-portlet mr-3 mt-4">
                     <div class="d-flex align-items-center">
-                        <h6 class="font-500">CONTROLS IN PLACE</h6>
+                        <h6 class="bold">CONTROLS IN PLACE</h6>
                         <button class="btn btn-custom-blue btn-xs ml-auto">
                             <small>Add emergency controls</small>
 
@@ -57,11 +57,11 @@
 
                     <div class="row">
                         <div class="col-md-5 mt-4 d-flex align-items-center">
-                            <img class="th-icon" src="./assets/media/risk/hazard_icon.png">
+                            <img class="th-icon" src="./assets/media/assessment-wizard/telephone.png">
 
                             <div class="sv-portlet ml-3 bg-light-gray mt-1">
                                 <p class="mb-0">
-                                    <small>Wear eye protection when pouring or keep eyes well away from splashing</small>
+                                    <small>Contact 222 in an event of emergency</small>
                                 </p>
                             </div>
                         </div>

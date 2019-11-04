@@ -34,7 +34,7 @@
                                     <p class="font-weight-500">REGULATORY STATEMENTS</p>
                                     <p class="mb-0">H315: Causes skin irritation</p>
                                     <p class="mb-0">H318: Causes serious eye irritation</p>
-                                    <p class="mb-0">P305: IF IN EYES: Immediately call a POISON CENTRE or physician</p>
+                                    <p class="mb-0">P351: Rinse continuously in water for several minutes</p>
                                 </div>
 
                                 <table class="table table_si font-ash">
@@ -57,12 +57,21 @@
                                 </table>
                                 
                                 <div class="mt-5 mb-5 font-ash">
-                                    <p class="font-weight-500">SPILLAGE, STORAGE AND WASTE</p>
-                                    <p class="mb-0">
-                                        
-                                            <span class="font-weight-500">Spillage</span>
-                                            <br />
-                                            If undiluted cleaner is spilled, use dry paper towels or a dry cloth to soak up the solution. Then clean the area with warm soapy water.
+                                    <p class="font-weight-500">SPILLAGE, STORAGE & WASTE</p>
+                                    <p>
+                                        <span class="font-weight-500">Spillage</span>
+                                        <br />
+                                        If undiluted cleaner is spilled, use dry paper towels or a dry cloth to soak up the solution. Then clean the area with warm soapy water.
+                                    </p>
+                                    <p>
+                                        <span class="font-weight-500">Storage</span>
+                                        <br />
+                                        Store in a cool, dry storage area and keep away from direct sunlight.
+                                    </p>
+                                    <p>
+                                        <span class="font-weight-500">Waste</span>
+                                        <br />
+                                        Dispose of empty bottles in standard recycling units
                                     </p>
                                 </div>
                                 

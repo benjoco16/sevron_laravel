@@ -23,7 +23,7 @@
                             <div class="col-md-10 p-3 text-left">
                                 <div class="row">
                                     <div class="col-md-4">
-                                        <h6 class="font-500">HAZARD DESCRIPTION</h6>
+                                        <h6 class="bold">HAZARD DESCRIPTION</h6>
                                         <div class="sv-portlet bg-light-gray mt-1">
                                             <p class="mb-0">
                                                 <small>H318 - Causes serious eye damage</small>
@@ -37,7 +37,7 @@
                                         <div class="row row bg-light-blue sv-portlet ml-0 mr-3">
                                             <div class="col-md-6 pl-0">
                                                 <div class="progress mb-2">
-                                                    <div class="progress-bar rs-progress-high-risk" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    <div class="progress-bar rs-progress-warning-risk" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                                                 </div>
 
                                                 <div class="progress-label d-flex align-items-center">
@@ -47,7 +47,7 @@
                                                         Before</small>
                                                     </span>
                                                     <h2 class="font-rhino pl-2 ml-auto">
-                                                        <strong>72</strong>   
+                                                        <strong>12</strong>   
                                                     </h2>
                                                 </div>
                                             </div>
@@ -59,8 +59,8 @@
                                                 <div class="progress-label d-flex align-items-center">
                                                     <span class="font-ash">
                                                         <span class="font-weight-500">
-                                                            <small>Medium Risk</span> <br>
-                                                        Before</small>
+                                                            <small>Low Risk</span> <br>
+                                                        After</small>
                                                     </span>
                                                     <h2 class="font-rhino pl-2 ml-auto">
                                                         <strong>72</strong>   
@@ -73,7 +73,7 @@
 
                                 <div class="sv-portlet sv-portlet-bordered mr-3 mt-4">
                                     <div class="d-flex align-items-center">
-                                        <h6 class="font-500">CONTROLS IN PLACE</h6>
+                                        <h6 class="bold">CONTROLS IN PLACE</h6>
                                         <button class="btn btn-custom-blue btn-xs ml-auto">
                                             <small>Add Controls</small>
 
@@ -81,16 +81,6 @@
                                     </div>
 
                                     <div class="row">
-                                        <div class="col-md-6 mt-4 d-flex align-items-center">
-                                            <img class="th-icon" src="./assets/media/risk/hazard_icon.png">
-
-                                            <div class="sv-portlet ml-3 bg-light-gray mt-1">
-                                                <p class="mb-0">
-                                                    <small>Wear eye protection when pouring or keep eyes well away from splashing</small>
-                                                </p>
-                                            </div>
-                                        </div>
-
                                         <div class="col-md-6 mt-4 d-flex align-items-center">
                                             <img class="th-icon" src="./assets/media/risk/hazard_icon.png">
 
@@ -112,8 +102,21 @@
                                     </div>
 
                                     <div class="row">
+                                        
                                         <div class="col-md-6 mt-4 d-flex align-items-center">
                                             <img class="th-icon" src="./assets/media/risk/emergency_icon.png">
+
+                                            <div class="sv-portlet ml-3 bg-light-gray mt-1">
+                                                <p class="mb-0">
+                                                    <small>Wear eye protection when pouring or keep eyes well away from splashing</small>
+                                                </p>
+                                            </div>
+                                        </div>
+
+
+
+                                        <div class="col-md-6 mt-4 d-flex align-items-center">
+                                            <img class="th-icon" src="./assets/media/assessment-wizard/first-aid-green.png">
 
                                             <div class="sv-portlet ml-3 bg-light-gray mt-1">
                                                 <p class="mb-0">
