@@ -19,7 +19,7 @@
                             <div class="col-md-10 p-3 text-left">
                                 <div class="row">
                                     <div class="col-md-4">
-                                        <h6 class="font-500">HAZARD DESCRIPTION</h6>
+                                        <h6 class="bold">HAZARD DESCRIPTION</h6>
                                         <div class="sv-portlet bg-light-gray mt-1">
                                             <p class="mb-0">
                                                 <small>Slippery surface, risk of fall</small>
@@ -69,7 +69,7 @@
 
                                 <div class="sv-portlet sv-portlet-bordered mr-3 mt-4">
                                     <div class="d-flex align-items-center">
-                                        <h6 class="font-500">CONTROLS IN PLACE</h6>
+                                        <h6 class="bold">CONTROLS IN PLACE</h6>
                                         <button class="btn btn-custom-blue btn-xs ml-auto">
                                             <small>Add Controls</small>
 
@@ -111,7 +111,7 @@
 
                                 <div class="sv-portlet sv-portlet-bordered sv-portlet-bordered-red mr-3 mt-4">
                                     <div class="d-flex align-items-center">
-                                        <h6 class="font-500">EMERGENCY CONTROLS IN PLACE</h6>
+                                        <h6 class="bold">EMERGENCY CONTROLS IN PLACE</h6>
                                         <button class="btn btn-custom-blue btn-xs ml-auto">
                                             <small>Add Emergency Controls</small>
                                         </button>
