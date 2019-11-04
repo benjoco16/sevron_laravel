@@ -1,5 +1,5 @@
-<div class="modal fade" id="modalRiskAssessment" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-modal="true">
-    <div class="modal-dialog" role="document">
+<div class="modal fade" id="modalRiskAssessment" tabindex="-1" role="dialog" aria-modal="true">
+    <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">Find the substance for your COSHH Assessment</h5>

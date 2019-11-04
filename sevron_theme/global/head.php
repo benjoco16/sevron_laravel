@@ -47,7 +47,7 @@
     <link href="./assets/vendors/custom/vendors/flaticon2/flaticon.css" rel="stylesheet" type="text/css" />
     <link href="./assets/vendors/general/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css" />
     <link href="./assets/css/global/components.min.css" rel="stylesheet" type="text/css" />
-    <link href="./assets/css/global/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!--link href="./assets/css/global/bootstrap.min.css" rel="stylesheet" type="text/css" /-->
     <link href="./assets/css/global/plugins.min.css" rel="stylesheet" type="text/css" />
     <link href="./assets/css/global/bootstrap-tagsinput.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/themes/default/style.min.css" />
