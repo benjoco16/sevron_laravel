@@ -221,7 +221,20 @@ box-shadow: 0px 4px 18px -13px rgba(0,0,0,0.75);
 .bt-color-gray {
     background-color: #f5f5f5;
 }
-.kt-switch.kt-switch--sm input:empty ~ span {
+
+.kt-switch-square.kt-switch input:empty ~ span:before, .kt-switch-square.kt-switch input:empty ~ span:after {
+    border-radius: 3px;
+}
+
+.kt-switch-square.kt-switch input:checked ~ span:before {
+    background: #FFF;
+    border: 1px solid #e2e5ec
+}
+
+.kt-switch-square.kt-switch input:checked ~ span:after {
+    background: #30a4f0;
+}
+/* .kt-switch.kt-switch--sm input:empty ~ span {
     width: 50px;
     height: 21px;
 }
@@ -253,7 +266,7 @@ box-shadow: 0px 4px 18px -13px rgba(0,0,0,0.75);
 .kt-switch input:checked ~ span:after {
     background-color: #ffffff;
     color: #ffffff;
-}
+} */
 
 /** Progress bar Section **/
 .kt_col_n0padding div.col {
@@ -271,6 +284,11 @@ box-shadow: 0px 4px 18px -13px rgba(0,0,0,0.75);
     height: 40px;
     border-radius: 0;
 }
+
+.sm_switched {
+    width: 165px;
+}
+
 .sm_switched .kt-switch label {
     margin-bottom:0 !important;
     padding-bottom:0 !important;
@@ -325,14 +343,19 @@ box-shadow: 0px 4px 18px -13px rgba(0,0,0,0.75);
 }
 #hdc-container {
     position: relative;
-    margin-top: -90px;
+    /* margin-top: -90px; */
     z-index: 1;
 }
-.gauge_info {
+
+.half-pie .highcharts-container  {
+    margin: -65px 0;
+}
+
+/* .gauge_info {
     margin-top: -90px;
     position: relative;
     z-index: 3;
-}
+} */
 .gauge_body h2 {
     z-index: 2;
     position: relative;
@@ -382,11 +405,58 @@ tr:first-child > td > .fc-day-grid-event {
     border: none;
 }
 
+.fc-unthemed .fc-day-grid td:not(.fc-axis) {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+tr:first-child > td > .fc-day-grid-event {
+    margin-top: -4px;
+}
+
+.fc-content:before {
+    background: #30a4f0 !important;
+}
+
+.fc-today {
+    position: relative;
+}
+
+.fc-today span {
+    position: relative;
+    z-index: 2;
+}
+
+.fc-today:after {
+    content: '';
+    width: 43px;
+    height: 43px;
+    background: rgba(48, 164, 240, 0.1);
+    display: block;
+    position: absolute;
+    left: 1px;
+    top: -10px;
+    border-radius: 100px;
+}
+
+.fc-unthemed .fc-toolbar h2 {
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 0.75rem;
+    text-transform: none;
+    color: #707070;
+}
+
+.fc-day-header span {
+    font-size: 11px;
+}
+
 
 .rsum h2 {
     font-size: 2.8rem;
     font-weight: 600;
-    margin-top: 2.6em;
+    margin-top: 2em;
+    margin-bottom: 15px;
     color: #676767;
 }
 .raphael-group-312-creditgroup,
@@ -851,35 +921,50 @@ span.small_pt {
     max-width: 150px;
 }
 
-.as-tbl-filters .kt-switch input[type="checkbox"] + span + p:after {
+.kt-switch input[type="checkbox"] + span + p:after {
     content: 'Off';
 }
 
-.as-tbl-filters .kt-switch input[type="checkbox"]:checked + span + p:after {
+.kt-switch input[type="checkbox"]:checked + span + p:after {
     content: 'On';
 }
 
-.as-tbl-filters .kt-switch.kt-switch--sm input:empty ~ span:after {
-    width: 15px;
-    height: 15px;
+.kt-switch.kt-switch--sm input:empty ~ span:after {
+    width: 13px;
+    height: 13px;
 }
 
-.as-tbl-filters .kt-switch.kt-switch--sm input:empty ~ span {
+.kt-switch.kt-switch--sm input:empty ~ span {
     height: 17px;
 }
 
-.as-tbl-filters .kt-switch.kt-switch--sm input:empty ~ span:before, 
-.as-tbl-filters .kt-switch.kt-switch--sm input:empty ~ span:before {
+.kt-switch.kt-switch--sm input:empty ~ span:before, 
+.kt-switch.kt-switch--sm input:empty ~ span:before {
     width: 36px;
 }
 
-.as-tbl-filters .kt-switch.kt-switch--sm input:checked ~ span:after {
+.kt-switch.kt-switch--sm input:checked ~ span:after {
     margin-left: 19px;
 }
 
-.as-tbl-filters .kt-switch.kt-switch--sm input:empty ~ span {
+.kt-switch.kt-switch--sm input:empty ~ span {
     width: 37px;
 }
+
+.kt-switch input:empty ~ span:before {
+    background-color: #c9c9c9;
+}
+.kt-switch input:empty ~ span:after {
+    color: #f5f5f5;
+    background-color: #f5f5f5;
+}
+.kt-switch input:checked ~ span:before {
+    background-color: #30a4f0;
+}
+.kt-switch input:checked ~ span:after {
+    background-color: #ffffff;
+    color: #ffffff;
+} 
 
 .as-modal-tabs i.dropdown-toggle:after {
     content: none;
@@ -1395,6 +1480,10 @@ select.input-group-form-control:after {
     }
 }
 
+.kt-header--fixed .kt-header {
+    z-index: 500;
+}
+
 /**
 **  Button extension
 */
@@ -1429,6 +1518,18 @@ button.no-style {
     border: none;
     padding: 0;
     margin: 0;
+}
+
+.btn-group-toggle .btn.active {
+    background: #30a4f0 !important;
+    border-color: #30a4f0 !important;
+    color: #FFF !important;
+}
+
+.show > .btn.btn-default, .btn.btn-default.active, .btn.btn-default:active, .btn.btn-default:hover {
+    background: #30a4f0 !important;
+    border-color: #30a4f0 !important;
+    color: #FFF !important;
 }
 
 /**

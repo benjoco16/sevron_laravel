@@ -121,9 +121,13 @@
 
                         <div class="col-md-12 form-group">
                             <label class="d-block">Site visit required</label>
-                            <div class="btn-group btn-group">
-                                <button type="button" class="btn btn-secondary bg-white">No</button>
-                                <button type="button" class="btn btn-primary">Yes</button>
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-default active">
+                                    <input type="radio" name="options" id="option1" autocomplete="off" checked> No
+                                </label>
+                                <label class="btn btn-default">
+                                    <input type="radio" name="options" id="option2" autocomplete="off"> Yes
+                                </label>
                             </div>
                         </div>
                     </div>

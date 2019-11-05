@@ -321,8 +321,6 @@ FusionCharts.ready(function() {
           "showValues": "1",
           "showBorder": "0",
           "showPlotBorder": "0",
-          "numberPrefix": "$",
-          "numberSuffix": "M",
           "showLabelsAtCenter": "0",
           "plotTooltext": "$label of world population is worth USD $value tn ",
           "showPercentValues": "0",
@@ -421,7 +419,8 @@ Highcharts.chart('hdc-container', {
   chart: {
     plotBackgroundColor: null,
     plotBorderWidth: 0,
-    plotShadow: false
+    plotShadow: false,
+    height: 300
   },
   title: {
     text: '',
@@ -503,8 +502,28 @@ document.addEventListener('DOMContentLoaded', function() {
         description: 'This is a cool event',
         borderColor: "transparent",
         backgroundColor: "transparent"       
+      },
+      {
+        title: "Inner pages Design",
+        start: '2019-11-04',
+        description: 'This is a cool event',
+        borderColor: "transparent",
+        backgroundColor: "transparent"       
+      },
+      {
+        title: "Inner pages Design",
+        start: '2019-11-10',
+        description: 'This is a cool event',
+        borderColor: "transparent",
+        backgroundColor: "transparent"       
+      },
+      {
+        title: "Inner pages Design",
+        start: '2019-11-05',
+        description: 'This is a cool event',
+        borderColor: "transparent",
+        backgroundColor: "transparent"       
       }
-      // more events ...
     ],
 
     eventClick: function(info) {

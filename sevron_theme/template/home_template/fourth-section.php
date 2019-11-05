@@ -1,31 +1,28 @@
-
-<div class="col-xl-4 col-lg-6 order-lg-1 order-xl-1">
-    <div class="kt-portlet kt-portlet--head--noborder kt-portlet--height-fluid">
+<div class="col-xl-4 col-lg-6 order-lg-1 order-xl-1 "> 
+    <div class="kt-portlet">
         <div class="kt-portlet__head">
             <div class="kt-portlet__head-label">
-                <h3 class="kt-portlet__head-title">
-                <!--<i class="fa fa-chart-bar"></i>-->
-                <img src="./assets/media/dashboard/calendar.svg" width="13" alt=""> Daily Tasks <i class="fa fa-question-circle" data-toggle="kt-tooltip" data-placement="right" title="" data-original-title="Sevron Information Here"></i>
-                </h3>
+                <p class="font-ash d-flex align-items-center w-100 font-weight-500 mb-0 pr-3">
+                    <img src="./assets/media/dashboard/calendar.svg" class="mr-2" width="13" alt="">
+                    Daily Tasks <i class="fa fa-question-circle font-gray ml-2" data-toggle="kt-tooltip" data-placement="right" title="" data-original-title="Sevron Information Here"></i>
+                </p>
             </div>
-            
         </div>
-        <div class="kt-portlet__body">
-            <!--<div id="kt_calendar"></div>-->
-           <div id="new_cald"></div>
+
+        <div class="kt-portlet__body pb-0">
+            <div id="new_cald"></div>
         </div>
     </div>
 </div>
+
 <div class="col-xl-8 order-lg-1 order-xl-1">
     <div class="kt-portlet kt-portlet--head--noborder kt-portlet--height-fluid">
         <div class="kt-portlet__head">
             <div class="kt-portlet__head-label">
-                <h3 class="kt-portlet__head-title">
-                    <!--<i class="fa fa-sitemap" aria-hidden="true"></i> -->
-                
-                    <img src="./assets/media/dashboard/load-balancer.svg" width="14" alt=""> Organisation Structure <i class="fa fa-question-circle"  data-toggle="kt-tooltip" data-placement="right" title="" data-original-title="Sevron Information Here"></i>
-                
-                </h3>
+                <p class="font-ash d-flex align-items-center w-100 font-weight-500 mb-0 pr-3">
+                    <img src="./assets/media/dashboard/load-balancer.svg" class="mr-2" width="14" alt=""> 
+                    Organisation Structure <i class="fa fa-question-circle font-gray ml-2" data-toggle="kt-tooltip" data-placement="right" title="" data-original-title="Sevron Information Here"></i>
+                </p>
             </div>
         </div>
         <div class="kt-portlet__body os_section">
@@ -45,16 +42,6 @@
                                 </li>
                             </ul>
                         </div>
-                    <!--<div class="stree">
-                        <p><i class="fa fa-bookmark red" aria-hidden="true"></i> Sevron LTD <span class="num">46</span> </p>
-                        <ul>
-                            <li> <i class="fa fa-bookmark red" aria-hidden="true"></i> Cheapest &amp; Test <span class="num">2</span></li>
-                            <li><i class="fa fa-folder" aria-hidden="true"></i> Cheapestow Lab <img src="./assets/media/dashboard/checkmark-outline.svg" height="15" alt=""/></li>
-                            <li><i class="fa fa-folder" aria-hidden="true"></i> Facilities <img src="./assets/media/dashboard/checkmark-outline.svg" height="15" alt=""/></li>
-                            <li><i class="fa fa-folder" aria-hidden="true"></i> Kings Langle Lab <span class="num">2</span></li>
-                            <li><i class="fa fa-folder" aria-hidden="true"></i> Test Location <img src="./assets/media/dashboard/checkmark-outline.svg" height="15" alt=""/></li>
-                        </ul>
-                    </div>-->
                 </div>
                 <div class="col-6">
                     <div class="notice">

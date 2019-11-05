@@ -10,20 +10,20 @@
                         <table class="table table-striped font-ash as-tbl">
                             <thead>
                                 <tr>
-                                    <th class="font-weight-500 pt-4 pb-4">Ref</th>
-                                    <th class="font-weight-500 pt-4 pb-4">Action Title</th>
-                                    <th class="font-weight-500 pt-4 pb-4">Action Type</th>
-                                    <th class="font-weight-500 pt-4 pb-4">Priority</th>
-                                    <th class="font-weight-500 pt-4 pb-4">Target Date</th>
-                                    <th class="font-weight-500 pt-4 pb-4">Action Owner</th>
-                                    <th class="font-weight-500 pt-4 pb-4">Status</th>
+                                    <th class="pt-4 pb-4">Ref</th>
+                                    <th class="pt-4 pb-4">Action Title</th>
+                                    <th class="pt-4 pb-4">Action Type</th>
+                                    <th class="pt-4 pb-4">Priority</th>
+                                    <th class="pt-4 pb-4">Target Date</th>
+                                    <th class="pt-4 pb-4">Action Owner</th>
+                                    <th class="pt-4 pb-4">Status</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td></td>
                                     <td class="ellipsed">
-                                        Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas
+                                        This button links to the assessment
                                     </td>
                                     <td>Task</td>
                                     <td>Low</td>
@@ -35,7 +35,73 @@
                                 <tr>
                                     <td></td>
                                     <td class="ellipsed">
-                                        Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas
+                                        Title of it
+                                    </td>
+                                    <td>COSHH</td>
+                                    <td>Low</td>
+                                    <td>8/09/19</td>
+                                    <td>Michael Mouse</td>
+                                    <td>9/09/19</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td class="ellipsed">
+                                        Using (Aerosol) Mechoil - Copy
+                                    </td>
+                                    <td>COSHH</td>
+                                    <td>Low</td>
+                                    <td>8/09/19</td>
+                                    <td>Michael Mouse</td>
+                                    <td>9/09/19</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td class="ellipsed">
+                                        Cleaning the washroom
+                                    </td>
+                                    <td>Task</td>
+                                    <td>Low</td>
+                                    <td>8/09/19</td>
+                                    <td>Michael Mouse</td>
+                                    <td>9/09/19</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td class="ellipsed">
+                                        Using: Kleenmist Air Fresher Aerosol
+                                    </td>
+                                    <td>Task</td>
+                                    <td>Low</td>
+                                    <td>8/09/19</td>
+                                    <td>Michael Mouse</td>
+                                    <td>9/09/19</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td class="ellipsed">
+                                        Lubricating a Door Hinge
+                                    </td>
+                                    <td>Task</td>
+                                    <td>Low</td>
+                                    <td>8/09/19</td>
+                                    <td>Michael Mouse</td>
+                                    <td>9/09/19</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td class="ellipsed">
+                                        Warehouse Doors
+                                    </td>
+                                    <td>Task</td>
+                                    <td>Low</td>
+                                    <td>8/09/19</td>
+                                    <td>Michael Mouse</td>
+                                    <td>9/09/19</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td class="ellipsed">
+                                        Using MOLYKOTE (R) 3402-C LF Anti-eye infection
                                     </td>
                                     <td>Task</td>
                                     <td>Low</td>
@@ -58,16 +124,20 @@
         <div class="col-md-3 bg-white">
             <?php include('template/incidents/quality-incident.php') ?>
 
-            <div class="p-3 font-ash">
+            <div class="p-3 font-ash font-size-xs">
                 <p class="font-weight-500">THINGS TO CONSIDER</p>
+                <p>Actions can be added for you or any number of actionees. All actions can be emailed to actionees and will include a secure link to the risk assessment. Safety Data Sheets and any documentation that have been uploaded to support the action.</p>
+
                 <p>
-                    <small>
-                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi
-                        <br />
-                        <br />
-                        Et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi
-                    </small>
+                    Once the actionee accesses the link in the email, Sevron will record a read reciept for tracking and auditing purposes. Actions can include:
                 </p>
+                <ul class="pl-3">
+                    <li>Managed actions (any generic action)</li>
+                    <li>Training records (with email signature or signature strip)</li>
+                    <li>Further controls that need to be considered where controlled risk is 6 (medium risk) or higher.</li>
+                    <li>Recorded email delivery of your assessment and Safety Data Sheet(s) (with read recipts)</li>
+                    <li>Upload of supporting documentation such as occupational health and airborne monitoring.</li>
+                </ul>
             </div>
         </div>
     </div>    

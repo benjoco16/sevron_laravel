@@ -1,95 +1,108 @@
-<div class="col">
-    <div class="kt-portlet kt-portlet--head--noborder kt-portlet--height-fluid">
+<!--  Box List 1 -->
+
+<div class="col-xl-4 col-lg-6 order-lg-1 order-xl-1 "> 
+    <div class="kt-portlet kt-portlet--height-fluid">
         <div class="kt-portlet__head">
             <div class="kt-portlet__head-label">
-                <h3 class="kt-portlet__head-title">
-                    <!--<i class="fa fa-chart-pie"></i> -->
-                    <img src="./assets/media/dashboard/chart-pie.svg" width="15" alt=""> Performance Summary
-                   
-                </h3>
+                <p class="font-ash d-flex align-items-center w-100 font-weight-500 mb-0 pr-3">
+                    <img src="./assets/media/dashboard/chart-pie.svg" class="mr-3" width="15" alt=""> 
+                    Performance Summary
+                </p>
             </div>
-            
         </div>
+
         <div class="kt-portlet__body">
             <div class="gauge_body">
-                <h2>0%</h2>
-                <div id="hdc-container"></div>
-                <!--<img src="assets/media/dashboard/gauge2.jpg"/>-->
-                
-                <div class="gauge_info">
-                    <div class="row">
-                        <div class="col">
-                            <p>TOTAL</p>
-                            <h2>2</h2>
-                        </div>
-                        <div class="col">
-                            <p>TARGET</p>
-                            <h2>0</h2>
-                        </div>
+                <h2 class="bold font-ash">0%</h2>
+                <div id="hdc-container" class="half-pie"></div>
+                <div class="d-flex align-items-center">
+                    <div class="mr-4 font-ash ml-3">
+                        <p class="dashboard-min-label">
+                            <small>
+                                <span class="" title="Total">Total</span>
+                            </small>
+                        </p>
+                        <h1 class="font-weight-bold mb-0 font-ash text-left">
+                            2
+                        </h1>
+                    </div>
+                    <div class="mr-3 font-ash ml-3">
+                        <p class="dashboard-min-label">
+                            <small>
+                                <span class="" title="Advisory">Target</span>
+                            </small>
+                        </p>
+                        <h1 class="font-weight-bold mb-0 font-ash text-left">
+                            0
+                        </h1>
                     </div>
                 </div>
             </div>
-            
         </div>
     </div>
 </div>
-<div class="col">
-    <div class="kt-portlet kt-portlet--head--noborder kt-portlet--height-fluid">
+
+<div class="col-xl-4 col-lg-6 order-lg-1 order-xl-1 "> 
+    <div class="kt-portlet kt-portlet--height-fluid">
         <div class="kt-portlet__head">
             <div class="kt-portlet__head-label">
-                <h3 class="kt-portlet__head-title">
-                <!--<i class="fa fa-chart-bar"></i> -->
-                    <img src="./assets/media/dashboard/chart-bar.svg" width="13" alt=""> 12 Month Rolling Rates
-                </h3>
-            </div>
-            <div class="kt-portlet__head-toolbar sm_switched">
-                <span>Mine &nbsp;</span> 
-                <span class="kt-switch kt-switch--sm">
-                    <label>
-                        <input type="checkbox" checked="checked" name="">
-                        <span></span>
-                    </label>
-                </span>
-                <span>&nbsp; All</span>
+                <p class="font-ash d-flex align-items-center w-100 font-weight-500 mb-0 pr-3">
+                    <img src="./assets/media/dashboard/chart-bar.svg" class="mr-3" width="13" alt=""> 12 Month Rolling Rates
+                </p>
+
+                <div class="kt-portlet__head-toolbar d-flex align-items-center font-ash sm_switched">
+                    <span>Direct &nbsp;</span> 
+                    <span class="kt-switch kt-switch--sm">
+                        <label>
+                            <input type="checkbox" checked="checked" name="">
+                            <span></span>
+                        </label>
+                    </span>
+                    <span>&nbsp; All</span>
+                </div>
             </div>
         </div>
-        <div class="kt-portlet__body">
-           <!-- <img src="assets/media/dashboard/roling-rates.jpg" style="width: 100%;"/>-->
+
+        <div class="kt-portlet__body pb-0">
             <div id="rlc-container"></div>
         </div>
     </div>
 </div>
-<div class="col">
-    <div class="kt-portlet kt-portlet--head--noborder kt-portlet--height-fluid">
+
+<div class="col-xl-4 col-lg-6 order-lg-1 order-xl-1 "> 
+    <div class="kt-portlet kt-portlet--height-fluid">
         <div class="kt-portlet__head">
             <div class="kt-portlet__head-label">
-                <h3 class="kt-portlet__head-title">
-                <!-- <i class="fa fa-archive"></i>-->
-                <img src="./assets/media/dashboard/clipboard.svg" width="13" alt=""> RIDDOR Summary
-                </h3>
+                <p class="font-ash d-flex align-items-center w-100 font-weight-500 mb-0 pr-3">
+                   <img src="./assets/media/dashboard/clipboard.svg" class="mr-3" width="13" alt=""> RIDDOR Summary
+                </p>
             </div>
-            
         </div>
-        <div class="kt-portlet__body">
-		<div class="kt-widget3 rsum">
-			<div class="kt-widget3__item">
-				<div class="kt-widget3__body">
-					<p class="kt-widget3__text"> 
-                    LONGEST NUMBER OF DAYS WITHOUT A RIDDOR
-                    </p>
-                    <h2><img src="assets/media/dashboard/king.png"/> 2019</h2>
-				</div>
-			</div>
-			<div class="kt-widget3__item">
-				
-				<div class="kt-widget3__body">
-					<p class="kt-widget3__text"> 
-						CURRENT NUMBER OF DAYS WITHOUT RIDDOR
-                    </p>
-                    <h2><img src="assets/media/dashboard/clock.png"/> 823</h2>
-				</div>
-			</div>
-		</div>
-	</div>
+
+        <div class="kt-portlet__head">
+            <div class="kt-portlet__head-label rsum">
+                <div class="kt-widget3__item pt-4">
+                    <div class="kt-widget3__body">
+                        <p class="kt-widget3__text font-weight-500 font-ash"> 
+                            LONGEST NUMBER OF DAYS WITHOUT A RIDDOR
+                        </p>
+                        <h2 class="bold"><img src="assets/media/dashboard/king.png"/> 2019</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="kt-portlet__head">
+            <div class="kt-portlet__head-label rsum">
+                <div class="kt-widget3__item pt-4">
+                    
+                    <div class="kt-widget3__body">
+                        <p class="kt-widget3__text font-weight-500 font-ash"> 
+                            CURRENT NUMBER OF DAYS WITHOUT RIDDOR
+                        </p>
+                        <h2 class="bold"><img src="assets/media/dashboard/clock.png"/> 823</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
