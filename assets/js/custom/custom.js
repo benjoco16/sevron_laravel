@@ -1,3 +1,63 @@
+window.onload = function () {
+
+  var chart = new CanvasJS.Chart("pyramid-container-2", {
+    animationEnabled: true,
+    theme: "light1",
+    data: [{
+      type: "pyramid",
+      yValueFormatString: "#\"%\"",
+      indexLabelFontColor: "black",
+      indexLabelFontSize: 12,
+      indexLabel: "{label}",
+      lineColor:"black",
+      //reversed: true, // Reverses the pyramid
+      dataPoints: [
+        { y: 16, label: "Fatalities", color: '#30a4f0', lineColor: '#FFFFF' },
+        { y: 16, label: "RIDDOR", color: '#30a4f0' },
+        { y: 16, label: "Lost Time", color: '#30a4f0' },
+        { y: 16, label: "Other Accidents", color: '#30a4f0' },
+        { y: 16, label: "PI", color: '#30a4f0' },
+        { y: 15, label: "Corrective Actions", color: '#30a4f0' }
+      ]
+    }]
+  });
+  chart.render();
+
+  var accidentRate= document.getElementById("accident-rate-container-2").getContext("2d");
+  var myBarChart = new Chart(accidentRate, {
+      type: 'horizontalBar',
+      options: {
+        legend: {
+          display: false
+        },
+        maintainAspectRatio: false,
+        scales: {
+            xAxes: [{
+                barPercentage: 0.1,
+                categoryPercentage: 0.1
+            }],
+            yAxes: [{
+              gridLines: {
+                color: "rgba(0, 0, 0, 0)",
+              },
+            }]
+        },
+      },  
+      data: {
+        labels: [
+            "Trapped by collapse",
+            "Struck by object",
+            "Burnt by chemical",
+            "Accidental fall",
+            "Burnt By Fire"
+        ],
+        datasets: [{
+            data: [4, 2.5, 1.5, 7, 0],
+            backgroundColor: ["#30a4f0", "#30a4f0", "#30a4f0", "#30a4f0", "#30a4f0"]
+        }]
+      }
+  });
+}
 //Banner Chart
 Highcharts.chart('banner-chart-container', {
   chart: {
@@ -9,8 +69,15 @@ Highcharts.chart('banner-chart-container', {
     type: 'pie',
   },
   title: {
-    text: '<div class="cs_class">Current Score</div><div class="total_score">855</div><div class="ofone">out of 1000</div> <div class="result_f">FAIR' + 
-    '<i class="fa fa-question-circle" data-toggle="kt-tooltip" data-placement="right" title="" data-original-title="Sevron Information Here"></i></div>',
+    text: '<div class="cs_class">Current Score</div>'+
+              '<div class="total_score">855</div>'+
+              '<div class="ofone">out of 1000</div>'+
+              '<div class="result_f">' + 
+                  'FAIR' + 
+                  '<i class="fa fa-question-circle" data-container=".main_banner" data-toggle="kt-popover" data-html="true" data-content="<p class=\'bold font-white mb-2\'>FAIR</p> <p class=\'font-white\'><span class=\'font-light-purple\'>You might get through inspection/audits, </span>but run the risk of higher penalties and fines in the event of an incident</p>"></i>' + 
+              '</div>'+
+          '</div>',
+
     align: 'center',
     verticalAlign: 'middle',
     useHTML: true,
@@ -112,6 +179,369 @@ function(chart) {
     }).add();
   */
 
+  Highcharts.each(chart.series[0].points, function(point, i) {
+    var dataLabelText = point.name,
+      label = ren.text(dataLabelText).attr({
+        zIndex: 3, // place on top of a pie
+        'text-anchor': 'middle', // center text in a slice (middle angle)
+      }).add(),
+      offset = parseInt(100 * (point.angle + Math.PI / 2) / (Math.PI * 2)) + '%', // at what percent of circle path start
+      textPath = document.createElementNS('http://www.w3.org/2000/svg', 'textPath'),
+      tspan = document.createElementNS('http://www.w3.org/2000/svg', 'tspan'),
+      text = document.createTextNode(label.textStr);
+
+    textPath.setAttributeNS('http://www.w3.org/1999/xlink', 'href', '#MyPath');
+    textPath.setAttribute('startOffset', offset);
+    tspan.appendChild(text);
+    textPath.appendChild(tspan);
+    $(label.element).html(textPath);
+  });
+});
+
+Highcharts.chart('banner-chart-container-2', {
+  chart: {
+    plotBackgroundColor: null,
+    plotBorderWidth: 0,
+    backgroundColor: null,
+    className: "sub-gauge",
+    plotShadow: false,
+    type: 'pie',
+  },
+  title: {
+    text: '<div class="sub-chart-caption">'+
+            '<h3 class="bold">527</h3>' +
+            '<p>POOR</p>' +
+          '</div>',
+    align: 'center',
+    verticalAlign: 'middle',
+    useHTML: true,
+    y: 68,
+    x: 16
+  },
+  
+  navigation: {
+    buttonOptions: 
+    {
+      enabled: false
+    }
+  },
+  credits: {
+      enabled: false
+  },
+  tooltip: {
+    enabled: false,
+    pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+  },
+  plotOptions: {
+    pie: {
+      dataLabels: {
+        enabled: false,
+        distance: -0.5,
+        alignTo: 'toPlotEdges',
+        style: {
+          fontWeight: 'bold',
+          color: 'white'
+        }
+      },
+      startAngle: -120,
+      endAngle: 120,
+      center: ['52.7%', '64%'],
+      size: '100%'
+    }
+  },
+  series: [{
+    type: 'pie',
+    name: 'Current Score',
+    innerSize: '75%',
+    colors: ['#e05653', '#eaad69', '#fae054', '#bed5e5', '#bed5e5'],
+    
+    /*data: [
+      ['Very Poor', 20],
+      ['Poor', 20],
+      ['Fair', 20],
+      ['Good', 20],
+      ['Excellent', 20]
+    ],*/
+
+    data: [{
+      name: "",
+      y: 1.5
+    }, {
+      name: "",
+      y: 1.5
+    }, 
+    {
+      name: "",
+      y: 1.5 
+    }, {
+      name: "",
+      y: 1.5
+    },{
+      name: "",
+      y: 1.6
+    }]
+  }],
+},
+function(chart) {
+  var ren = chart.renderer,
+    shapeArgs = chart.series[0].points[0].shapeArgs,
+    cx = chart.plotLeft + chart.plotWidth / 1.9,
+    cy = chart.plotTop + chart.plotHeight / 1.6,
+    r = (shapeArgs.r + shapeArgs.innerR) / 1.7; // center text in a slice (distance from center)
+
+  // add a path for a text
+  ren.path()
+    .attr({
+      id: "MyPath",
+      d: "M " + cx + " " + cy + //center
+        " m 0 " + (-r) + //start at top
+        " a " + r + " " + r + " 0 1 1 0 " + (r * 2) + //1st half
+        " a " + r + " " + r + " 0 1 1 0 " + (-(r * 2)) //2nd half
+    }).add(ren.defs);
+
+    
+  Highcharts.each(chart.series[0].points, function(point, i) {
+    var dataLabelText = point.name,
+      label = ren.text(dataLabelText).attr({
+        zIndex: 3, // place on top of a pie
+        'text-anchor': 'middle', // center text in a slice (middle angle)
+      }).add(),
+      offset = parseInt(100 * (point.angle + Math.PI / 2) / (Math.PI * 2)) + '%', // at what percent of circle path start
+      textPath = document.createElementNS('http://www.w3.org/2000/svg', 'textPath'),
+      tspan = document.createElementNS('http://www.w3.org/2000/svg', 'tspan'),
+      text = document.createTextNode(label.textStr);
+
+    textPath.setAttributeNS('http://www.w3.org/1999/xlink', 'href', '#MyPath');
+    textPath.setAttribute('startOffset', offset);
+    tspan.appendChild(text);
+    textPath.appendChild(tspan);
+    $(label.element).html(textPath);
+  });
+});
+
+Highcharts.chart('banner-chart-container-3', {
+  chart: {
+    plotBackgroundColor: null,
+    plotBorderWidth: 0,
+    backgroundColor: null,
+    className: "sub-gauge",
+    plotShadow: false,
+    type: 'pie',
+  },
+  title: {
+    text: '<div class="sub-chart-caption">'+
+            '<h3 class="bold">855</h3>' +
+            '<p>GOOD</p>' +
+          '</div>',
+    align: 'center',
+    verticalAlign: 'middle',
+    useHTML: true,
+    y: 68,
+    x: 16
+  },
+  
+  navigation: {
+    buttonOptions: 
+    {
+      enabled: false
+    }
+  },
+  credits: {
+      enabled: false
+  },
+  tooltip: {
+    enabled: false,
+    pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+  },
+  plotOptions: {
+    pie: {
+      dataLabels: {
+        enabled: false,
+        distance: -0.5,
+        alignTo: 'toPlotEdges',
+        style: {
+          fontWeight: 'bold',
+          color: 'white'
+        }
+      },
+      startAngle: -120,
+      endAngle: 120,
+      center: ['52.7%', '64%'],
+      size: '100%'
+    }
+  },
+  series: [{
+    type: 'pie',
+    name: 'Current Score',
+    innerSize: '75%',
+    colors: ['#e05653', '#eaad69', '#fae054', '#bed5e5', '#bed5e5'],
+    
+    /*data: [
+      ['Very Poor', 20],
+      ['Poor', 20],
+      ['Fair', 20],
+      ['Good', 20],
+      ['Excellent', 20]
+    ],*/
+
+    data: [{
+      name: "",
+      y: 1.5
+    }, {
+      name: "",
+      y: 1.5
+    }, 
+    {
+      name: "",
+      y: 1.5 
+    }, {
+      name: "",
+      y: 1.5
+    },{
+      name: "",
+      y: 1.6
+    }]
+  }],
+},
+function(chart) {
+  var ren = chart.renderer,
+    shapeArgs = chart.series[0].points[0].shapeArgs,
+    cx = chart.plotLeft + chart.plotWidth / 1.9,
+    cy = chart.plotTop + chart.plotHeight / 1.6,
+    r = (shapeArgs.r + shapeArgs.innerR) / 1.7; // center text in a slice (distance from center)
+
+  // add a path for a text
+  ren.path()
+    .attr({
+      id: "MyPath",
+      d: "M " + cx + " " + cy + //center
+        " m 0 " + (-r) + //start at top
+        " a " + r + " " + r + " 0 1 1 0 " + (r * 2) + //1st half
+        " a " + r + " " + r + " 0 1 1 0 " + (-(r * 2)) //2nd half
+    }).add(ren.defs);
+
+    
+  Highcharts.each(chart.series[0].points, function(point, i) {
+    var dataLabelText = point.name,
+      label = ren.text(dataLabelText).attr({
+        zIndex: 3, // place on top of a pie
+        'text-anchor': 'middle', // center text in a slice (middle angle)
+      }).add(),
+      offset = parseInt(100 * (point.angle + Math.PI / 2) / (Math.PI * 2)) + '%', // at what percent of circle path start
+      textPath = document.createElementNS('http://www.w3.org/2000/svg', 'textPath'),
+      tspan = document.createElementNS('http://www.w3.org/2000/svg', 'tspan'),
+      text = document.createTextNode(label.textStr);
+
+    textPath.setAttributeNS('http://www.w3.org/1999/xlink', 'href', '#MyPath');
+    textPath.setAttribute('startOffset', offset);
+    tspan.appendChild(text);
+    textPath.appendChild(tspan);
+    $(label.element).html(textPath);
+  });
+});
+
+Highcharts.chart('banner-chart-container-4', {
+  chart: {
+    plotBackgroundColor: null,
+    plotBorderWidth: 0,
+    backgroundColor: null,
+    className: "sub-gauge",
+    plotShadow: false,
+    type: 'pie',
+  },
+  title: {
+    text: '<div class="sub-chart-caption">'+
+            '<h3 class="bold">994</h3>' +
+            '<p>EXCELLENT</p>' +
+          '</div>',
+    align: 'center',
+    verticalAlign: 'middle',
+    useHTML: true,
+    y: 68,
+    x: 16
+  },
+  
+  navigation: {
+    buttonOptions: 
+    {
+      enabled: false
+    }
+  },
+  credits: {
+      enabled: false
+  },
+  tooltip: {
+    enabled: false,
+    pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+  },
+  plotOptions: {
+    pie: {
+      dataLabels: {
+        enabled: false,
+        distance: -0.5,
+        alignTo: 'toPlotEdges',
+        style: {
+          fontWeight: 'bold',
+          color: 'white'
+        }
+      },
+      startAngle: -120,
+      endAngle: 120,
+      center: ['52.7%', '64%'],
+      size: '100%'
+    }
+  },
+  series: [{
+    type: 'pie',
+    name: 'Current Score',
+    innerSize: '75%',
+    colors: ['#e05653', '#eaad69', '#fae054', '#bed5e5', '#bed5e5'],
+    
+    /*data: [
+      ['Very Poor', 20],
+      ['Poor', 20],
+      ['Fair', 20],
+      ['Good', 20],
+      ['Excellent', 20]
+    ],*/
+
+    data: [{
+      name: "",
+      y: 1.5
+    }, {
+      name: "",
+      y: 1.5
+    }, 
+    {
+      name: "",
+      y: 1.5 
+    }, {
+      name: "",
+      y: 1.5
+    },{
+      name: "",
+      y: 1.6
+    }]
+  }],
+},
+function(chart) {
+  var ren = chart.renderer,
+    shapeArgs = chart.series[0].points[0].shapeArgs,
+    cx = chart.plotLeft + chart.plotWidth / 1.9,
+    cy = chart.plotTop + chart.plotHeight / 1.6,
+    r = (shapeArgs.r + shapeArgs.innerR) / 1.7; // center text in a slice (distance from center)
+
+  // add a path for a text
+  ren.path()
+    .attr({
+      id: "MyPath",
+      d: "M " + cx + " " + cy + //center
+        " m 0 " + (-r) + //start at top
+        " a " + r + " " + r + " 0 1 1 0 " + (r * 2) + //1st half
+        " a " + r + " " + r + " 0 1 1 0 " + (-(r * 2)) //2nd half
+    }).add(ren.defs);
+
+    
   Highcharts.each(chart.series[0].points, function(point, i) {
     var dataLabelText = point.name,
       label = ren.text(dataLabelText).attr({
@@ -297,59 +727,54 @@ FusionCharts.ready(function() {
     })
     .render();
 });
-
-//Pyramid fourth section
-FusionCharts.ready(function() {
-    var wenk = new FusionCharts({
-    type: 'pyramid',
-    renderAt: 'pyramid-container',
-    id: 'wealth-pyramid-chart-7',
-    width: '100%',
-    dataFormat: 'json',
-    dataSource: {
-        "chart": {
-          "theme": "fusion",
-          //"caption": "The Global Wealth Pyramid",
-          "captionOnTop": "0",
-          "captionPadding": "0",
-          "alignCaptionWithCanvas": "1",
-         // "subcaption": "Credit Suisse 2013",
-          "subCaptionFontSize": "12",
-          //"borderAlpha": "20",
-          "is2D": "1",
-          "bgColor": "#ffffff",
-          "showValues": "1",
-          "showBorder": "0",
-          "showPlotBorder": "0",
-          "showLabelsAtCenter": "0",
-          "plotTooltext": "$label of world population is worth USD $value tn ",
-          "showPercentValues": "0",
-          "usePlotGradientColor": "0",  
-          "palettecolors":"ffffff",
-          "chartLeftMargin": "40"
-        },
-        "data": [{
-            "label": "Fatalities (0%)",
-            "value": "98.7",
-            "color": "#30a4f0" 
-        }, {
-            "label": "RIDDOR (7.7%)",
-            "value": "50.8",
-            "color": "#30a4f0"
-        }, {
-            "label": "Next 1.1 bn (22.9%)",
-            "value": "33",
-            "color": "#30a4f0"
-        }, {
-            "label": "Last 3.2 bn (68.7%)",
-            "value": "7.3",
-            "color": "#30a4f0"
-        }]
-    }
-}
-);
-    wenk.render();
-});
+// FusionCharts.ready(function() {
+//     var wenk = new FusionCharts({
+//     type: 'pyramid',
+//     renderAt: 'pyramid-container',
+//     id: 'wealth-pyramid-chart-7',
+//     width: '100%',
+//     dataFormat: 'json',
+//     dataSource: {
+//         "chart": {
+//           "theme": "fusion",
+//           "captionOnTop": "0",
+//           "captionPadding": "0",
+//           "alignCaptionWithCanvas": "1",
+//           "subCaptionFontSize": "12",
+//           "is2D": "1",
+//           "bgColor": "#ffffff",
+//           "showValues": "1",
+//           "showBorder": "0",
+//           "showPlotBorder": "0",
+//           "showLabelsAtCenter": "0",
+//           "plotTooltext": "$label of world population is worth USD $value tn ",
+//           "showPercentValues": "0",
+//           "usePlotGradientColor": "0",  
+//           "palettecolors":"30a4f0,30a4f0,30a4f0",
+//           "chartLeftMargin": "40"
+//         },
+//         "data": [{
+//             "label": "Fatalities",
+//             "value": "98.7",
+//             "color": "#30a4f0" 
+//         }, {
+//             "label": "RIDDOR",
+//             "value": "50.8",
+//             "color": "#30a4f0"
+//         }, {
+//             "label": "Next 1.1 bn",
+//             "value": "33",
+//             "color": "#30a4f0"
+//         }, {
+//             "label": "Last 3.2 bn",
+//             "value": "7.3",
+//             "color": "#30a4f0"
+//         }]
+//     }
+// }
+// );
+//     wenk.render();
+// });
 
 //Accident Rates Chart
 const dataSource = {
@@ -358,7 +783,7 @@ const dataSource = {
       //yaxisname: "Number of Leads",
       aligncaptionwithcanvas: "0",
       "showBorder": "0",
-      "bgColor": "transparent",
+      "bgColor": "#FFFFFF",
       "palettecolors":"30a4f0",
       "canvasBorderThickness": "0",
       "showCanvasBorder": "0",
@@ -543,4 +968,7 @@ $('#stree').jstree({
       }
   }
 });
+
+
+
 

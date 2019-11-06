@@ -91,16 +91,3 @@
 <!--begin::Page Scripts(used by this page) -->
 <script src="./assets/js/demo12/pages/components/calendar/basic.js" type="text/javascript"></script>
 <!--end::Page Scripts -->
-
-<!--begin::Page Scripts(used by this page) -->
-
-<script type="text/javascript" src="./assets/js/custom/fusioncharts.js"></script>
-<script type="text/javascript" src="./assets/js/custom/fusioncharts.theme.fint.js?cacheBust=56"></script>
-<script src="https://code.highcharts.com/highcharts.js"></script>
-<script src="https://code.highcharts.com/modules/exporting.js"></script>
-<script src="https://code.highcharts.com/modules/export-data.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/jstree.min.js"></script>
-
-
-
-<script src="./assets/js/custom/custom.js" type="text/javascript"></script>

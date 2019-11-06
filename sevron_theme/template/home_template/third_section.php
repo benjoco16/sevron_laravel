@@ -1,5 +1,4 @@
 <!--  Box List 1 -->
-
 <div class="col-xl-4 col-lg-6 order-lg-1 order-xl-1 "> 
     <div class="kt-portlet kt-portlet--height-fluid">
         <div class="kt-portlet__head">

@@ -1,4 +1,4 @@
-<div class="main_banner">
+<div class="main_banner popover-custom">
     <div class="row">
         <div class="col-xl-6">
             <div class="ban_text">

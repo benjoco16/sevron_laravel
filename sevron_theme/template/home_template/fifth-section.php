@@ -10,7 +10,8 @@
         </div>
 
         <div class="kt-portlet__body pb-0">
-            <div id="pyramid-container"></div>  
+            <!-- <div id="pyramid-container" style="height: 90%"></div>   -->
+            <div id="pyramid-container-2" style="height: 90%"></div>  
         </div>
     </div>
 </div>
@@ -27,7 +28,8 @@
         </div>
 
         <div class="kt-portlet__body">
-             <div id="accident-rate-container"></div>            
+             <!-- <div id="accident-rate-container"></div>             -->
+             <canvas id="accident-rate-container-2"></canvas>            
         </div>
     </div>
 </div>

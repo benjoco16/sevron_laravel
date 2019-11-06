@@ -4,7 +4,7 @@
     </head>
 
 
-    <body  class="kt-page-content-white kt-quick-panel--right kt-demo-panel--right kt-offcanvas-panel--right kt-header--fixed kt-header-mobile--fixed kt-subheader--enabled kt-subheader--transparent kt-aside--enabled kt-aside--fixed kt-page--loading"  >
+    <body  class="kt-page-content-white kt-quick-panel--right kt-demo-panel--right kt-offcanvas-panel--right kt-header--fixed kt-header-mobile--fixed kt-subheader--enabled kt-subheader--transparent kt-aside--enabled kt-aside--fixed"  >
         
         <!--begin::Header -->
         <?php include('./global/header.php') ?>
@@ -29,9 +29,6 @@
                             <!-- Start Banner Section -->
                             <?php include('template/home_template/banner.php') ?>
                             <!-- End Banner Section -->
-                            
-                        
-                            
                         </div>
                         
                         <!--End::Row-->	
@@ -77,6 +74,18 @@
             </div>						
         </div>
         <?php include('./global/vendors.php') ?>
+
+        <!--begin::Page Scripts(used by this page) -->
+        <script src="assets/js/custom/canvasjs.min.js"></script>
+        <script type="text/javascript" src="./assets/js/custom/fusioncharts.js"></script>
+        <script type="text/javascript" src="./assets/js/custom/fusioncharts.theme.fint.js?cacheBust=56"></script>
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+        <script src="https://code.highcharts.com/modules/export-data.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/jstree.min.js"></script>
+        <script src="https://cdnjs.com/libraries/Chart.js"></script>
+
+        <script src="./assets/js/custom/custom.js" type="text/javascript"></script>
     </body>
     <!-- end::Body -->
 </html>
