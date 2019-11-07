@@ -16,11 +16,11 @@
                 <div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor kt-wrapper" id="kt_wrapper">
                     <!-- begin:: Header -->
                     <div id="kt_header" class="kt-header kt-grid__item  kt-header--fixed "  data-ktheader-minimize="on" >
-                        <div class="kt-container  kt-container--fluid ">
+                        <div class="kt-container  kt-container--fluid pr-0">
                             <!-- begin:: Brand -->
                             <div class="kt-header__brand " id="kt_header_brand">
                                 <div class="kt-header__brand-logo">
-                                    <a href="/sevron/sevron_theme/assessment-process.php">
+                                    <a href="/sevron/sevron_theme">
                                         <img alt="Logo" src="./assets/media/logos/logo-dark.png" height="50"/>
                                     </a>		
                                 </div> 

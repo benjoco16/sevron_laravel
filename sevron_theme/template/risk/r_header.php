@@ -18,7 +18,7 @@
                 <div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor kt-wrapper" id="kt_wrapper">
                     <!-- begin:: Header -->
     <div id="kt_header" class="kt-header kt-grid__item  kt-header--fixed "  data-ktheader-minimize="on" >
-        <div class="kt-container  kt-container--fluid ">
+        <div class="kt-container  kt-container--fluid pr-0">
             <!-- begin:: Brand -->
             <div class="kt-header__brand " id="kt_header_brand">
                 <div class="kt-header__brand-logo">
@@ -814,7 +814,7 @@
 </div>
 <!-- end:: Header -->
 				<div class="kt-body kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor kt-grid--stretch" id="kt_body">
-											<div class="kt-container  kt-container--fluid  kt-grid kt-grid--ver">
+											<div class="kt-container  kt-container--fluid pr-0 kt-grid kt-grid--ver">
 							<!-- begin:: Aside -->
 <button class="kt-aside-close " id="kt_aside_close_btn"><i class="la la-close"></i></button>
 
@@ -823,7 +823,7 @@
 									
 <!-- begin:: Subheader -->
 <div class="kt-subheader bg-white kt-grid__item" id="kt_subheader">
-    <div class="kt-container  kt-container--fluid ">
+    <div class="kt-container  kt-container--fluid pr-0">
         <div class="kt-subheader__main">
             <!-- Start Create New button -->
             <div class="kt-header__brand-nav dashboard_bt">

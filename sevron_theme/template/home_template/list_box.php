@@ -4,10 +4,10 @@
         <div class="kt-portlet">
             <div class="kt-portlet__head">
                 <div class="kt-portlet__head-label">
-                    <p class="font-ash d-flex align-items-center w-100 font-weight-500 mb-0 pr-3">
-                        <img src="./assets/media/dashboard/icon1.svg" class="mr-3" width="13" alt="">
+                    <p class="font-ash d-flex align-items-center w-100 bold font-weight-500 mb-0 pr-3">
+                        <img src="./assets/media/dashboard/icon1.svg" class="mr-2" width="13" alt="">
                         Actions to Improve Score
-                        <i class="fa fa-question-circle font-gray" data-toggle="kt-tooltip" data-placement="right" title="" data-original-title="Sevron Information Here"></i>
+                        <i class="fa fa-question-circle font-gray ml-2" data-toggle="kt-tooltip" data-placement="right" title="" data-original-title="Sevron Information Here"></i>
                     </p>
 
                     <div class="kt-portlet__head-toolbar d-flex align-items-center font-ash ml-auto sm_switched">
@@ -83,8 +83,8 @@
         <div class="kt-portlet">
             <div class="kt-portlet__head">
                 <div class="kt-portlet__head-label">
-                    <p class="font-ash d-flex align-items-center w-100 font-weight-500 mb-0 pr-3">
-                        <img src="./assets/media/dashboard/icon1.svg" class="mr-3" width="13" alt="">
+                    <p class="font-ash d-flex align-items-center w-100 font-weight-500 bold mb-0 pr-3">
+                        <img src="./assets/media/dashboard/icon1.svg" class="mr-2" width="13" alt="">
                         Assessments Summary
                     </p>
 
@@ -160,8 +160,8 @@
         <div class="kt-portlet">
             <div class="kt-portlet__head">
                 <div class="kt-portlet__head-label">
-                    <p class="font-ash d-flex align-items-center w-100 font-weight-500 mb-0 pr-3">
-                        <img src="./assets/media/dashboard/icon2.svg" class="mr-3" width="13" alt="">
+                    <p class="font-ash d-flex align-items-center w-100 bold font-weight-500 mb-0 pr-3">
+                        <img src="./assets/media/dashboard/icon2.svg" class="mr-2" width="13" alt="">
                         Substances Summary
                     </p>
                 </div>

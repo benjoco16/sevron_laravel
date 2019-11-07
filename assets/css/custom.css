@@ -1,6 +1,7 @@
 
 body {
     background: #fafafa;
+    font-family: 'Roboto', sans-serif;
 }
 
 .kt-aside {
@@ -9,6 +10,12 @@ body {
 
 .kt-aside--enabled.kt-aside--fixed .kt-content {
     padding-left: 180px;
+}
+
+@media screen and (max-width: 1023px) {
+    .kt-aside--enabled.kt-aside--fixed .kt-content {
+        padding-left: 0;
+    }
 }
 
 /*** Header Section ***/
@@ -33,6 +40,9 @@ a.grad_bt {
 a.grad_bt:hover {
     background-color: #83c3f5;
     color: #fff;
+}
+.kt-subheader {
+    z-index: 499;
 }
 .kt-subheader .kt-subheader__main .btn:not(.dropdown-toggle-split) {
     margin-right: 1em;
@@ -123,7 +133,7 @@ text {
 }
 .ban_bt button {
     padding-left: 4rem;
-    padding-right: 4rem;v
+    padding-right: 4rem;
 }
 .btn-custom-blue {
     background-color: #30a4f0;
@@ -197,10 +207,19 @@ text {
     line-height: 39px;
 }
 .ban_text .top_list {
-    margin-top: 20px;
+    margin-top: 30px;
     font-size: 14px;
     line-height: 20px;
     color: #2e4269;
+}
+.ban_text .top_list ul {
+    line-height: 1.5;
+    margin: 20px 0;
+    font-size: 12px;
+}
+
+.ban_text .top_list ul .kt-badge {
+    margin-right: 10px;
 }
 .ban_text .top_list h4 {
     font-weight: 600;
@@ -1461,6 +1480,10 @@ body .video-js .vjs-play-progress:before {
     justify-content: center;
 }
 
+.tbl-pagination-stats {
+    margin-left: auto;
+}
+
 @media screen and (max-width: 1379px) {
     .tbl-pagination {
         flex-direction: column;
@@ -1522,7 +1545,7 @@ body .video-js .vjs-play-progress:before {
 
 .col-form-label,
 .form-group .form-control-label {
-    font-weight: 500;
+    font-weight: 500 !important;
     color: #707070;
 }
 
@@ -1660,6 +1683,12 @@ select.input-group-form-control:after {
 /**
 **  Button extension
 */
+
+.btn {
+    -webkit-box-shadow: 0 7px 9px -10px rgba(0,0,0,0.29) !important;
+    -moz-box-shadow: 0 7px 9px -10px rgba(0,0,0,0.29);
+    box-shadow: 0 7px 9px -10px rgba(0,0,0,0.29);
+}
 
 .btn-xs {
     padding: 2px 5px;

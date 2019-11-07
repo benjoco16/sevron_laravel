@@ -20,7 +20,6 @@
             </div>
         </div>
         <div class="col-xl-6 image_dashboard">
-            <!--<img src="./assets/media/dashboard/banner_score.jpg" alt=""/>-->
             <div id="banner-chart-container"></div>
         </div>
     </div>

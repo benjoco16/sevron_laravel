@@ -7,7 +7,7 @@
 
     <!--begin::Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Asap+Condensed:500">        <!--end::Fonts -->
-
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">
     <!--begin::Page Vendors Styles(used by this page) -->
         <link href="./assets/vendors/custom/fullcalendar/fullcalendar.bundle.css" rel="stylesheet" type="text/css" />
     <!--end::Page Vendors Styles -->
@@ -46,7 +46,7 @@
     <link href="./assets/vendors/custom/vendors/flaticon/flaticon.css" rel="stylesheet" type="text/css" />
     <link href="./assets/vendors/custom/vendors/flaticon2/flaticon.css" rel="stylesheet" type="text/css" />
     <link href="./assets/vendors/general/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css" />
-    <link href="./assets/css/global/components.min.css" rel="stylesheet" type="text/css" />
+    <!-- <link href="./assets/css/global/components.min.css" rel="stylesheet" type="text/css" /> -->
     <!--link href="./assets/css/global/bootstrap.min.css" rel="stylesheet" type="text/css" /-->
     <link href="./assets/css/global/plugins.min.css" rel="stylesheet" type="text/css" />
     <link href="./assets/css/global/bootstrap-tagsinput.css" rel="stylesheet" type="text/css" />
