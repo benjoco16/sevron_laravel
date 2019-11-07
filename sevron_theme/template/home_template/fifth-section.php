@@ -1,4 +1,4 @@
-<div class="col-xl-4 col-lg-6 order-lg-1 order-xl-1 "> 
+<div class="col-xl-4 col-lg-6 col-md-6 order-lg-1 order-xl-1"> 
     <div class="kt-portlet kt-portlet--height-fluid">
         <div class="kt-portlet__head">
             <div class="kt-portlet__head-label">
@@ -11,12 +11,12 @@
 
         <div class="kt-portlet__body pb-0">
             <!-- <div id="pyramid-container" style="height: 90%"></div>   -->
-            <div id="pyramid-container-2" style="height: 90%"></div>  
+            <div id="pyramid-container-2" class="pyramid-container"></div>  
         </div>
     </div>
 </div>
 
-<div class="col-xl-4 col-lg-6 order-lg-1 order-xl-1 "> 
+<div class="col-xl-4 col-lg-6 col-md-6 order-lg-1 order-xl-1"> 
     <div class="kt-portlet kt-portlet--height-fluid">
         <div class="kt-portlet__head">
             <div class="kt-portlet__head-label">

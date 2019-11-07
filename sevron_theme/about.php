@@ -12,7 +12,7 @@
         <!--end::Header -->
         
         <div class="kt-body kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor kt-grid--stretch" id="kt_body">
-			<div class="kt-container  kt-container--fluid  kt-grid kt-grid--ver">
+			<div class="kt-container pl-0 kt-container--fluid  kt-grid kt-grid--ver">
                 <!--begin::Aside -->
                 <?php include('./global/sidebar.php') ?>
                 <!--end::Aside -->
@@ -25,15 +25,17 @@
                     <!-- begin::Page Content -->
                     <div class="kt-container kt-container--fluid kt-grid__item kt-grid__item--fluid p-0 m-0">
                         <div class="about-video-wrapper">
-                            <video class='video-js' controls preload='auto' width='852' height='480'
-                            poster='MY_VIDEO_POSTER.jpg' data-setup='{}'>
-                                <source src='https://www.w3schools.com/tags/movie.mp4' type='video/mp4'>
-                                <source src='https://www.w3schools.com/tags/movie.webm' type='video/webm'>
-                                <p class='vjs-no-js'>
-                                To view this video please enable JavaScript, and consider upgrading to a web browser that
-                                <a href='https://videojs.com/html5-video-support/' target='_blank'>supports HTML5 video</a>
-                                </p>
-                            </video>
+                            <div class="about-video-handler">
+                                <video class='video-js' controls preload='auto' width='852' height='480'
+                                poster='MY_VIDEO_POSTER.jpg' data-setup='{"fluid": true}'>
+                                    <source src='https://www.w3schools.com/tags/movie.mp4' type='video/mp4'>
+                                    <source src='https://www.w3schools.com/tags/movie.webm' type='video/webm'>
+                                    <p class='vjs-no-js'>
+                                    To view this video please enable JavaScript, and consider upgrading to a web browser that
+                                    <a href='https://videojs.com/html5-video-support/' target='_blank'>supports HTML5 video</a>
+                                    </p>
+                                </video>
+                            </div>
                         </div>
 
                         <div class="row pl-3 pr-3 pt-5 pb-5 bg-white">

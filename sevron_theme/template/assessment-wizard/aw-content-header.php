@@ -1,5 +1,5 @@
 <div class="row">
-    <div class="col-md-8">
+    <div class="col-md-8 r__title">
         <div class="d-flex align-items-center">
             <img class="rs-image" src="./assets/media/risk/cocacola.png">
             <div class="pl-4">
@@ -8,10 +8,11 @@
             </div>
         </div>
     </div>
-    <div class="col-md-4">
+
+    <div class="col-md-4 r__controls">
         <h6 class="mb-3 font-rhino">Controls</h6>
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 col-sm-6">
                 <div class="progress mb-2">
                     <div class="progress-bar rs-progress-high-risk" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
@@ -27,7 +28,7 @@
                 </div>
             </div>
 
-            <div class="col-md-6">
+            <div class="col-md-6 col-sm-6">
                 <div class="progress mb-2">
                     <div class="progress-bar rs-progress-low-risk" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>

@@ -31,7 +31,7 @@
 
                                     <div class="col-md-5 ml-auto">
                                         <div class="row row bg-light-blue sv-portlet ml-0 mr-3">
-                                            <div class="col-md-6 pl-0">
+                                            <div class="col-md-6 col-sm-6 pl-0">
                                                 <div class="progress mb-2">
                                                     <div class="progress-bar rs-progress-warning-risk" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                                                 </div>
@@ -48,7 +48,7 @@
                                                 </div>
                                             </div>
 
-                                            <div class="col-md-6 pr-0">
+                                            <div class="col-md-6 col-sm-6 pr-0">
                                                 <div class="progress mb-2">
                                                     <div class="progress-bar rs-progress-low-risk" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                                                 </div>

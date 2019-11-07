@@ -32,7 +32,7 @@
         </select>
     </div>
 
-    <div class="switches pl-4 pr-4 d-flex">
+    <div class="switches">
         <div class="form-group form-group-sm pr-4">
             <label class="form-control-label d-block">Show Archived</label>
             <span class="kt-switch kt-switch--sm w-100">

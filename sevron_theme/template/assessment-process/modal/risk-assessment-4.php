@@ -92,7 +92,7 @@
             </div>
         </div>
     </div>
-    <div class="actions d-flex mt-3">
+    <div class="actions as-tabs-actions d-flex mt-3">
         <button data-to-step="3" type="button" class="btn btn-custom-blue bordered btn-wider">
             Previous
         </button>

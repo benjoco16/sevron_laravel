@@ -19,7 +19,7 @@
             </a>
         </div>
 
-        <div class="actions d-flex mt-auto">
+        <div class="actions as-tabs-actions">
             <button data-to-step="1" type="button" class="btn btn-custom-blue bordered btn-wider">
                 Previous
             </button>

@@ -1,7 +1,7 @@
 <div id="kt_header_mobile" class="kt-header-mobile  kt-header-mobile--fixed " >
         <div class="kt-header-mobile__logo">
             <a href="/sevron/sevron_theme">
-                <img alt="Logo" src="./assets/media/logos/logo-11-sm.png"/>
+                <img alt="Logo" src="./assets/media/logos/logo-mobile.png" style="max-width: 40px"/>
             </a>
         </div>
         <div class="kt-header-mobile__toolbar">
@@ -20,7 +20,7 @@
                             <!-- begin:: Brand -->
                             <div class="kt-header__brand " id="kt_header_brand">
                                 <div class="kt-header__brand-logo">
-                                    <a href="demo11/index.html">
+                                    <a href="/sevron/sevron_theme/assessment-process.php">
                                         <img alt="Logo" src="./assets/media/logos/logo-dark.png" height="50"/>
                                     </a>		
                                 </div> 

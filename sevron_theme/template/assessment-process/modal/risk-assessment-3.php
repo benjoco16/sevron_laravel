@@ -26,7 +26,7 @@
         </div>
     </div>
 
-    <div class="actions d-flex mt-4">
+    <div class="actions as-tabs-actions d-flex mt-4">
         <button data-to-step="2" type="button" class="btn btn-custom-blue bordered btn-wider">
             Previous
         </button>

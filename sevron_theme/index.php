@@ -1,9 +1,9 @@
 <html lang="en" >
+    <!-- begin::Head -->
     <head><!--begin::Base Path (base relative path for assets of this page) -->
         <?php include('./global/head.php') ?>
     </head>
-
-
+    
     <body  class="kt-page-content-white kt-quick-panel--right kt-demo-panel--right kt-offcanvas-panel--right kt-header--fixed kt-header-mobile--fixed kt-subheader--enabled kt-subheader--transparent kt-aside--enabled kt-aside--fixed"  >
         
         <!--begin::Header -->
@@ -11,7 +11,7 @@
         <!--end::Header -->
 
         <div class="kt-body kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor kt-grid--stretch" id="kt_body">
-			<div class="kt-container  kt-container--fluid  kt-grid kt-grid--ver">
+			<div class="kt-container pl-0 kt-container--fluid  kt-grid kt-grid--ver">
                 <!--begin::Aside -->
                 <?php include('./global/sidebar.php') ?>
                 <!--end::Aside -->
@@ -21,58 +21,25 @@
                     <?php include('./template/dashboard2/d2-subheader.php') ?>
                     <!--end:: Sub Header -->
 
-                    <!-- begin:: Content -->
-                    <div class="kt-container  kt-container--fluid  kt-grid__item kt-grid__item--fluid pr-0 overflow-hidden">
-                        <!--Begin::Dashboard 4-->
-                        <!--Begin::Row-->
-                        <div class="row">
-                            <!-- Start Banner Section -->
-                            <?php include('template/home_template/banner.php') ?>
-                            <!-- End Banner Section -->
-                        </div>
-                        
-                        <!--End::Row-->	
+                    <div class="kt-container--fluid  kt-grid__item kt-grid__item--fluid overflow-hidden">
+                        <?php include('template/dashboard2/d2-banner.php'); ?>
+
                         <div class="second_section"> 
                             <div class="row">
-                            <?php include ('template/home_template/list_box.php'); ?>
+                                <?php include ('template/home_template/list_box.php'); ?>
+                                <?php include ('template/home_template/third_section.php'); ?>
+                                <?php include ('template/home_template/fourth-section.php'); ?>
+                                <?php include ('template/home_template/fifth-section.php'); ?>
                             </div>
                         </div>
-                        
-                        <div class="third_section">
-                            <!--Begin::Row-->
-                            <div class="row">
-                            <?php include ('template/home_template/third_section.php'); ?>
-                            </div>
-                            <!--End::Row-->
-                        </div>
-                        
-                        <div class="fourth_section">
-                            <!--Begin::Row-->
-                            <div class="row">
-                            <?php include ('template/home_template/fourth-section.php'); ?>
-                            </div>
-                            <!--End::Row-->
-                        </div>
-
-                        <div class="fifth_section">
-                            <!--Begin::Row-->
-                            <div class="row">
-                            <?php include ('template/home_template/fifth-section.php'); ?>
-                            </div>
-                            <!--End::Row-->
-                        </div>
-                        
                         <!-- modal -->
                         <?php include('template/home_modal.php')?>
                         <!-- end modal -->
-                        
-                        <!--Begin::Row-->
-                    
-                    </div>	
-                    <!-- end:: Content -->
+                    </div>
                 </div>
-            </div>						
+            </div>
         </div>
+
         <?php include('./global/vendors.php') ?>
 
         <!--begin::Page Scripts(used by this page) -->
@@ -87,5 +54,4 @@
 
         <script src="./assets/js/custom/custom.js" type="text/javascript"></script>
     </body>
-    <!-- end::Body -->
 </html>

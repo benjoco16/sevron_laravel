@@ -1,4 +1,4 @@
-<div class="col-xl-4 col-lg-6 order-lg-1 order-xl-1 "> 
+<div class="col-xl-4 col-md-6 order-lg-1 order-xl-1 "> 
     <div class="kt-portlet">
         <div class="kt-portlet__head">
             <div class="kt-portlet__head-label">
@@ -27,7 +27,7 @@
         </div>
         <div class="kt-portlet__body os_section">
             <div class="row">
-                <div class="col-6">
+                <div class="col-md-6 col-sm-12">
                         <div id="stree">
                             <ul>
                                 <li class="jstree-open" data-jstree='{ "icon":"fa fa-bookmark red" }'>
@@ -43,7 +43,7 @@
                             </ul>
                         </div>
                 </div>
-                <div class="col-6">
+                <div class="col-md-6 col-sm-12">
                     <div class="notice">
                         <ul>
                             <li><img src="./assets/media/dashboard/checkmark-outline.svg" height="15" alt=""/> Fully Compliant</li>

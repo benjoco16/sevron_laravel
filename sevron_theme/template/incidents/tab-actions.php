@@ -7,7 +7,7 @@
                 </button>
                 <div class="kt-portlet kt-portlet--head--noborder mb-0 mt-4">
                     <div class="kt-portlet__body p-0 overflow-auto">
-                        <table class="table table-striped font-ash as-tbl">
+                        <table class="table table-striped font-ash">
                             <thead>
                                 <tr>
                                     <th class="pt-4 pb-4">Ref</th>

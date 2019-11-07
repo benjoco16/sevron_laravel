@@ -2,11 +2,11 @@
     <div class="row pl-3 pr-3">
         <div class="col-md-9 p-0 font-ash">
             <div class="row p-4">
-                <div class="col-md-5">
+                <div class="col-md-5 col-xs-12">
                     <p class="text-note font-gray">ADDRESS DETAILS</p>
                 </div>
 
-                <div class="col-md-7">
+                <div class="col-md-7 col-xs-12">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">

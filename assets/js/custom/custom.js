@@ -23,7 +23,7 @@ window.onload = function () {
   });
   chart.render();
 
-  var accidentRate= document.getElementById("accident-rate-container-2").getContext("2d");
+  var accidentRate= document.getElementById("accident-rate-container-2").getContext('2d');
   var myBarChart = new Chart(accidentRate, {
       type: 'horizontalBar',
       options: {
@@ -59,7 +59,8 @@ window.onload = function () {
   });
 }
 //Banner Chart
-Highcharts.chart('banner-chart-container', {
+
+var bannerChart = Highcharts.chart('banner-chart-container', {
   chart: {
     plotBackgroundColor: null,
     plotBorderWidth: 0,
@@ -84,7 +85,6 @@ Highcharts.chart('banner-chart-container', {
     y: 68,
     x: 16
   },
-  
   navigation: {
     buttonOptions: 
     {
@@ -120,15 +120,6 @@ Highcharts.chart('banner-chart-container', {
     name: 'Current Score',
     innerSize: '75%',
     colors: ['#e05653', '#eaad69', '#fae054', '#bed5e5', '#bed5e5'],
-    
-    /*data: [
-      ['Very Poor', 20],
-      ['Poor', 20],
-      ['Fair', 20],
-      ['Good', 20],
-      ['Excellent', 20]
-    ],*/
-
     data: [{
       name: "VERY POOR",
       y: 1.5
@@ -147,419 +138,179 @@ Highcharts.chart('banner-chart-container', {
       y: 1.6
     }]
   }],
-},
-function(chart) {
-  var ren = chart.renderer,
-    shapeArgs = chart.series[0].points[0].shapeArgs,
-    cx = chart.plotLeft + chart.plotWidth / 1.9,
-    cy = chart.plotTop + chart.plotHeight / 1.6,
-    r = (shapeArgs.r + shapeArgs.innerR) / 1.7; // center text in a slice (distance from center)
+}, function(chart) {
+    function renderPaths() {
+      var ren = chart.renderer,
+          shapeArgs = chart.series[0].points[0].shapeArgs,
+          cx = chart.plotLeft + chart.plotWidth / 1.9,
+          cy = chart.plotTop + chart.plotHeight / 1.6,
+          r = (shapeArgs.r + shapeArgs.innerR) / 1.7; // center text in a slice (distance from center)
 
-  // add a path for a text
-  ren.path()
-    .attr({
-      id: "MyPath",
-      d: "M " + cx + " " + cy + //center
-        " m 0 " + (-r) + //start at top
-        " a " + r + " " + r + " 0 1 1 0 " + (r * 2) + //1st half
-        " a " + r + " " + r + " 0 1 1 0 " + (-(r * 2)) //2nd half
-    }).add(ren.defs);
+      ren.path()
+      .attr({
+        id: "MyPath",
+        d: "M " + cx + " " + cy + //center
+          " m 0 " + (-r) + //start at top
+          " a " + r + " " + r + " 0 1 1 0 " + (r * 2) + //1st half
+          " a " + r + " " + r + " 0 1 1 0 " + (-(r * 2)) //2nd half
+      }).add(ren.defs);
+      Highcharts.each(chart.series[0].points, function(point, i) {
+        var dataLabelText = point.name,
+          label = ren.text(dataLabelText).attr({
+            zIndex: 3, // place on top of a pie
+            'text-anchor': 'middle', // center text in a slice (middle angle)
+          }).add(),
+          offset = parseInt(100 * (point.angle + Math.PI / 2) / (Math.PI * 2)) + '%', // at what percent of circle path start
+          textPath = document.createElementNS('http://www.w3.org/2000/svg', 'textPath'),
+          tspan = document.createElementNS('http://www.w3.org/2000/svg', 'tspan'),
+          text = document.createTextNode(label.textStr);
+    
+        textPath.setAttributeNS('http://www.w3.org/1999/xlink', 'href', '#MyPath');
+        textPath.setAttribute('startOffset', offset);
+        tspan.appendChild(text);
+        textPath.appendChild(tspan);
+        $(label.element).html(textPath);
+      });
+    }
 
-  // uncomment to see the circle path
- /*
-  ren.path()
-    .attr({
-      stroke: 'red',
-      'stroke-width': 2,
-      zIndex: 3,
-      d: "M " + cx + " " + cy + //center
-        " m 0 " + (-r) + //start at top
-        " a " + r + " " + r + " 0 1 1 0 " + (r * 2) + //1st half
-        " a " + r + " " + r + " 1 1 1 0 " + (-(r * 2)) //2nd half
-    }).add();
-  */
+    renderPaths();
 
-  Highcharts.each(chart.series[0].points, function(point, i) {
-    var dataLabelText = point.name,
-      label = ren.text(dataLabelText).attr({
-        zIndex: 3, // place on top of a pie
-        'text-anchor': 'middle', // center text in a slice (middle angle)
-      }).add(),
-      offset = parseInt(100 * (point.angle + Math.PI / 2) / (Math.PI * 2)) + '%', // at what percent of circle path start
-      textPath = document.createElementNS('http://www.w3.org/2000/svg', 'textPath'),
-      tspan = document.createElementNS('http://www.w3.org/2000/svg', 'tspan'),
-      text = document.createTextNode(label.textStr);
+    $(window).on('resize', function () {
+        $('#banner-chart-container svg').find('text').remove();
+        renderPaths();
+    });
 
-    textPath.setAttributeNS('http://www.w3.org/1999/xlink', 'href', '#MyPath');
-    textPath.setAttribute('startOffset', offset);
-    tspan.appendChild(text);
-    textPath.appendChild(tspan);
-    $(label.element).html(textPath);
-  });
+
 });
 
-Highcharts.chart('banner-chart-container-2', {
-  chart: {
-    plotBackgroundColor: null,
-    plotBorderWidth: 0,
-    backgroundColor: null,
-    className: "sub-gauge",
-    plotShadow: false,
-    type: 'pie',
-  },
-  title: {
-    text: '<div class="sub-chart-caption">'+
-            '<h3 class="bold">527</h3>' +
-            '<p>POOR</p>' +
-          '</div>',
-    align: 'center',
-    verticalAlign: 'middle',
-    useHTML: true,
-    y: 68,
-    x: 16
-  },
+// Highcharts.chart('banner-chart-container', {
+//   chart: {
+//     plotBackgroundColor: null,
+//     plotBorderWidth: 0,
+//     backgroundColor: null,
+//     className: "main_gauge",
+//     plotShadow: false,
+//     type: 'pie',
+//   },
+//   title: {
+//     text: '<div class="cs_class">Current Score</div>'+
+//               '<div class="total_score">855</div>'+
+//               '<div class="ofone">out of 1000</div>'+
+//               '<div class="result_f">' + 
+//                   'FAIR' + 
+//                   '<i class="fa fa-question-circle" data-container=".main_banner" data-toggle="kt-popover" data-html="true" data-content="<p class=\'bold font-white mb-2\'>FAIR</p> <p class=\'font-white\'><span class=\'font-light-purple\'>You might get through inspection/audits, </span>but run the risk of higher penalties and fines in the event of an incident</p>"></i>' + 
+//               '</div>'+
+//           '</div>',
+
+//     align: 'center',
+//     verticalAlign: 'middle',
+//     useHTML: true,
+//     y: 68,
+//     x: 16
+//   },
   
-  navigation: {
-    buttonOptions: 
-    {
-      enabled: false
-    }
-  },
-  credits: {
-      enabled: false
-  },
-  tooltip: {
-    enabled: false,
-    pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-  },
-  plotOptions: {
-    pie: {
-      dataLabels: {
-        enabled: false,
-        distance: -0.5,
-        alignTo: 'toPlotEdges',
-        style: {
-          fontWeight: 'bold',
-          color: 'white'
-        }
-      },
-      startAngle: -120,
-      endAngle: 120,
-      center: ['52.7%', '64%'],
-      size: '100%'
-    }
-  },
-  series: [{
-    type: 'pie',
-    name: 'Current Score',
-    innerSize: '75%',
-    colors: ['#e05653', '#eaad69', '#fae054', '#bed5e5', '#bed5e5'],
+//   navigation: {
+//     buttonOptions: 
+//     {
+//       enabled: false
+//     }
+//   },
+//   credits: {
+//       enabled: false
+//   },
+//   tooltip: {
+//     enabled: false,
+//     pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+//   },
+//   plotOptions: {
+//     pie: {
+//       dataLabels: {
+//         enabled: false,
+//         distance: -0.5,
+//         alignTo: 'toPlotEdges',
+//         style: {
+//           fontWeight: 'bold',
+//           color: 'white'
+//         }
+//       },
+//       startAngle: -120,
+//       endAngle: 120,
+//       center: ['52.7%', '64%'],
+//       size: '100%'
+//     }
+//   },
+//   series: [{
+//     type: 'pie',
+//     name: 'Current Score',
+//     innerSize: '75%',
+//     colors: ['#e05653', '#eaad69', '#fae054', '#bed5e5', '#bed5e5'],
     
-    /*data: [
-      ['Very Poor', 20],
-      ['Poor', 20],
-      ['Fair', 20],
-      ['Good', 20],
-      ['Excellent', 20]
-    ],*/
+//     /*data: [
+//       ['Very Poor', 20],
+//       ['Poor', 20],
+//       ['Fair', 20],
+//       ['Good', 20],
+//       ['Excellent', 20]
+//     ],*/
 
-    data: [{
-      name: "",
-      y: 1.5
-    }, {
-      name: "",
-      y: 1.5
-    }, 
-    {
-      name: "",
-      y: 1.5 
-    }, {
-      name: "",
-      y: 1.5
-    },{
-      name: "",
-      y: 1.6
-    }]
-  }],
-},
-function(chart) {
-  var ren = chart.renderer,
-    shapeArgs = chart.series[0].points[0].shapeArgs,
-    cx = chart.plotLeft + chart.plotWidth / 1.9,
-    cy = chart.plotTop + chart.plotHeight / 1.6,
-    r = (shapeArgs.r + shapeArgs.innerR) / 1.7; // center text in a slice (distance from center)
+//     data: [{
+//       name: "VERY POOR",
+//       y: 1.5
+//     }, {
+//       name: "POOR",
+//       y: 1.5
+//     }, 
+//     {
+//       name: "FAIR",
+//       y: 1.5 
+//     }, {
+//       name: "GOOD",
+//       y: 1.5
+//     },{
+//       name: "EXCELLENT",
+//       y: 1.6
+//     }]
+//   }],
+// },
+// function(chart) {
+//   var ren = chart.renderer,
+//     shapeArgs = chart.series[0].points[0].shapeArgs,
+//     cx = chart.plotLeft + chart.plotWidth / 1.9,
+//     cy = chart.plotTop + chart.plotHeight / 1.6,
+//     r = (shapeArgs.r + shapeArgs.innerR) / 1.7; // center text in a slice (distance from center)
 
-  // add a path for a text
-  ren.path()
-    .attr({
-      id: "MyPath",
-      d: "M " + cx + " " + cy + //center
-        " m 0 " + (-r) + //start at top
-        " a " + r + " " + r + " 0 1 1 0 " + (r * 2) + //1st half
-        " a " + r + " " + r + " 0 1 1 0 " + (-(r * 2)) //2nd half
-    }).add(ren.defs);
+//   // add a path for a text
+//   ren.path()
+//     .attr({
+//       id: "MyPath",
+//       d: "M " + cx + " " + cy + //center
+//         " m 0 " + (-r) + //start at top
+//         " a " + r + " " + r + " 0 1 1 0 " + (r * 2) + //1st half
+//         " a " + r + " " + r + " 0 1 1 0 " + (-(r * 2)) //2nd half
+//     }).add(ren.defs);
 
-    
-  Highcharts.each(chart.series[0].points, function(point, i) {
-    var dataLabelText = point.name,
-      label = ren.text(dataLabelText).attr({
-        zIndex: 3, // place on top of a pie
-        'text-anchor': 'middle', // center text in a slice (middle angle)
-      }).add(),
-      offset = parseInt(100 * (point.angle + Math.PI / 2) / (Math.PI * 2)) + '%', // at what percent of circle path start
-      textPath = document.createElementNS('http://www.w3.org/2000/svg', 'textPath'),
-      tspan = document.createElementNS('http://www.w3.org/2000/svg', 'tspan'),
-      text = document.createTextNode(label.textStr);
+//   Highcharts.each(chart.series[0].points, function(point, i) {
+//     var dataLabelText = point.name,
+//       label = ren.text(dataLabelText).attr({
+//         zIndex: 3, // place on top of a pie
+//         'text-anchor': 'middle', // center text in a slice (middle angle)
+//       }).add(),
+//       offset = parseInt(100 * (point.angle + Math.PI / 2) / (Math.PI * 2)) + '%', // at what percent of circle path start
+//       textPath = document.createElementNS('http://www.w3.org/2000/svg', 'textPath'),
+//       tspan = document.createElementNS('http://www.w3.org/2000/svg', 'tspan'),
+//       text = document.createTextNode(label.textStr);
 
-    textPath.setAttributeNS('http://www.w3.org/1999/xlink', 'href', '#MyPath');
-    textPath.setAttribute('startOffset', offset);
-    tspan.appendChild(text);
-    textPath.appendChild(tspan);
-    $(label.element).html(textPath);
-  });
-});
+//     textPath.setAttributeNS('http://www.w3.org/1999/xlink', 'href', '#MyPath');
+//     textPath.setAttribute('startOffset', offset);
+//     tspan.appendChild(text);
+//     textPath.appendChild(tspan);
+//     $(label.element).html(textPath);
+//   });
 
-Highcharts.chart('banner-chart-container-3', {
-  chart: {
-    plotBackgroundColor: null,
-    plotBorderWidth: 0,
-    backgroundColor: null,
-    className: "sub-gauge",
-    plotShadow: false,
-    type: 'pie',
-  },
-  title: {
-    text: '<div class="sub-chart-caption">'+
-            '<h3 class="bold">855</h3>' +
-            '<p>GOOD</p>' +
-          '</div>',
-    align: 'center',
-    verticalAlign: 'middle',
-    useHTML: true,
-    y: 68,
-    x: 16
-  },
-  
-  navigation: {
-    buttonOptions: 
-    {
-      enabled: false
-    }
-  },
-  credits: {
-      enabled: false
-  },
-  tooltip: {
-    enabled: false,
-    pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-  },
-  plotOptions: {
-    pie: {
-      dataLabels: {
-        enabled: false,
-        distance: -0.5,
-        alignTo: 'toPlotEdges',
-        style: {
-          fontWeight: 'bold',
-          color: 'white'
-        }
-      },
-      startAngle: -120,
-      endAngle: 120,
-      center: ['52.7%', '64%'],
-      size: '100%'
-    }
-  },
-  series: [{
-    type: 'pie',
-    name: 'Current Score',
-    innerSize: '75%',
-    colors: ['#e05653', '#eaad69', '#fae054', '#bed5e5', '#bed5e5'],
-    
-    /*data: [
-      ['Very Poor', 20],
-      ['Poor', 20],
-      ['Fair', 20],
-      ['Good', 20],
-      ['Excellent', 20]
-    ],*/
-
-    data: [{
-      name: "",
-      y: 1.5
-    }, {
-      name: "",
-      y: 1.5
-    }, 
-    {
-      name: "",
-      y: 1.5 
-    }, {
-      name: "",
-      y: 1.5
-    },{
-      name: "",
-      y: 1.6
-    }]
-  }],
-},
-function(chart) {
-  var ren = chart.renderer,
-    shapeArgs = chart.series[0].points[0].shapeArgs,
-    cx = chart.plotLeft + chart.plotWidth / 1.9,
-    cy = chart.plotTop + chart.plotHeight / 1.6,
-    r = (shapeArgs.r + shapeArgs.innerR) / 1.7; // center text in a slice (distance from center)
-
-  // add a path for a text
-  ren.path()
-    .attr({
-      id: "MyPath",
-      d: "M " + cx + " " + cy + //center
-        " m 0 " + (-r) + //start at top
-        " a " + r + " " + r + " 0 1 1 0 " + (r * 2) + //1st half
-        " a " + r + " " + r + " 0 1 1 0 " + (-(r * 2)) //2nd half
-    }).add(ren.defs);
-
-    
-  Highcharts.each(chart.series[0].points, function(point, i) {
-    var dataLabelText = point.name,
-      label = ren.text(dataLabelText).attr({
-        zIndex: 3, // place on top of a pie
-        'text-anchor': 'middle', // center text in a slice (middle angle)
-      }).add(),
-      offset = parseInt(100 * (point.angle + Math.PI / 2) / (Math.PI * 2)) + '%', // at what percent of circle path start
-      textPath = document.createElementNS('http://www.w3.org/2000/svg', 'textPath'),
-      tspan = document.createElementNS('http://www.w3.org/2000/svg', 'tspan'),
-      text = document.createTextNode(label.textStr);
-
-    textPath.setAttributeNS('http://www.w3.org/1999/xlink', 'href', '#MyPath');
-    textPath.setAttribute('startOffset', offset);
-    tspan.appendChild(text);
-    textPath.appendChild(tspan);
-    $(label.element).html(textPath);
-  });
-});
-
-Highcharts.chart('banner-chart-container-4', {
-  chart: {
-    plotBackgroundColor: null,
-    plotBorderWidth: 0,
-    backgroundColor: null,
-    className: "sub-gauge",
-    plotShadow: false,
-    type: 'pie',
-  },
-  title: {
-    text: '<div class="sub-chart-caption">'+
-            '<h3 class="bold">994</h3>' +
-            '<p>EXCELLENT</p>' +
-          '</div>',
-    align: 'center',
-    verticalAlign: 'middle',
-    useHTML: true,
-    y: 68,
-    x: 16
-  },
-  
-  navigation: {
-    buttonOptions: 
-    {
-      enabled: false
-    }
-  },
-  credits: {
-      enabled: false
-  },
-  tooltip: {
-    enabled: false,
-    pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-  },
-  plotOptions: {
-    pie: {
-      dataLabels: {
-        enabled: false,
-        distance: -0.5,
-        alignTo: 'toPlotEdges',
-        style: {
-          fontWeight: 'bold',
-          color: 'white'
-        }
-      },
-      startAngle: -120,
-      endAngle: 120,
-      center: ['52.7%', '64%'],
-      size: '100%'
-    }
-  },
-  series: [{
-    type: 'pie',
-    name: 'Current Score',
-    innerSize: '75%',
-    colors: ['#e05653', '#eaad69', '#fae054', '#bed5e5', '#bed5e5'],
-    
-    /*data: [
-      ['Very Poor', 20],
-      ['Poor', 20],
-      ['Fair', 20],
-      ['Good', 20],
-      ['Excellent', 20]
-    ],*/
-
-    data: [{
-      name: "",
-      y: 1.5
-    }, {
-      name: "",
-      y: 1.5
-    }, 
-    {
-      name: "",
-      y: 1.5 
-    }, {
-      name: "",
-      y: 1.5
-    },{
-      name: "",
-      y: 1.6
-    }]
-  }],
-},
-function(chart) {
-  var ren = chart.renderer,
-    shapeArgs = chart.series[0].points[0].shapeArgs,
-    cx = chart.plotLeft + chart.plotWidth / 1.9,
-    cy = chart.plotTop + chart.plotHeight / 1.6,
-    r = (shapeArgs.r + shapeArgs.innerR) / 1.7; // center text in a slice (distance from center)
-
-  // add a path for a text
-  ren.path()
-    .attr({
-      id: "MyPath",
-      d: "M " + cx + " " + cy + //center
-        " m 0 " + (-r) + //start at top
-        " a " + r + " " + r + " 0 1 1 0 " + (r * 2) + //1st half
-        " a " + r + " " + r + " 0 1 1 0 " + (-(r * 2)) //2nd half
-    }).add(ren.defs);
-
-    
-  Highcharts.each(chart.series[0].points, function(point, i) {
-    var dataLabelText = point.name,
-      label = ren.text(dataLabelText).attr({
-        zIndex: 3, // place on top of a pie
-        'text-anchor': 'middle', // center text in a slice (middle angle)
-      }).add(),
-      offset = parseInt(100 * (point.angle + Math.PI / 2) / (Math.PI * 2)) + '%', // at what percent of circle path start
-      textPath = document.createElementNS('http://www.w3.org/2000/svg', 'textPath'),
-      tspan = document.createElementNS('http://www.w3.org/2000/svg', 'tspan'),
-      text = document.createTextNode(label.textStr);
-
-    textPath.setAttributeNS('http://www.w3.org/1999/xlink', 'href', '#MyPath');
-    textPath.setAttribute('startOffset', offset);
-    tspan.appendChild(text);
-    textPath.appendChild(tspan);
-    $(label.element).html(textPath);
-  });
-});
+//   $(window).on('resize', function () {
+//     chart.redraw();
+//   })
+// });
 
 //Monthly Rolling Rates
 FusionCharts.ready(function() {
@@ -727,117 +478,69 @@ FusionCharts.ready(function() {
     })
     .render();
 });
-// FusionCharts.ready(function() {
-//     var wenk = new FusionCharts({
-//     type: 'pyramid',
-//     renderAt: 'pyramid-container',
-//     id: 'wealth-pyramid-chart-7',
-//     width: '100%',
-//     dataFormat: 'json',
-//     dataSource: {
-//         "chart": {
-//           "theme": "fusion",
-//           "captionOnTop": "0",
-//           "captionPadding": "0",
-//           "alignCaptionWithCanvas": "1",
-//           "subCaptionFontSize": "12",
-//           "is2D": "1",
-//           "bgColor": "#ffffff",
-//           "showValues": "1",
-//           "showBorder": "0",
-//           "showPlotBorder": "0",
-//           "showLabelsAtCenter": "0",
-//           "plotTooltext": "$label of world population is worth USD $value tn ",
-//           "showPercentValues": "0",
-//           "usePlotGradientColor": "0",  
-//           "palettecolors":"30a4f0,30a4f0,30a4f0",
-//           "chartLeftMargin": "40"
-//         },
-//         "data": [{
-//             "label": "Fatalities",
-//             "value": "98.7",
-//             "color": "#30a4f0" 
-//         }, {
-//             "label": "RIDDOR",
-//             "value": "50.8",
-//             "color": "#30a4f0"
-//         }, {
-//             "label": "Next 1.1 bn",
-//             "value": "33",
-//             "color": "#30a4f0"
-//         }, {
-//             "label": "Last 3.2 bn",
-//             "value": "7.3",
-//             "color": "#30a4f0"
-//         }]
-//     }
-// }
-// );
-//     wenk.render();
-// });
 
 //Accident Rates Chart
-const dataSource = {
-    chart: {
-     // caption: "Lead sources by industry",
-      //yaxisname: "Number of Leads",
-      aligncaptionwithcanvas: "0",
-      "showBorder": "0",
-      "bgColor": "#FFFFFF",
-      "palettecolors":"30a4f0",
-      "canvasBorderThickness": "0",
-      "showCanvasBorder": "0",
-      "usePlotGradientColor":"0",
-      "showPlotBorder": "0",
-      "BarHeight": "50",
-      "placeValuesInside": "1",
-      "valueFontColor": "#fff",
-      //plottooltext: "<b>$dataValue</b> leads received",
-      theme: "fusion"
-    },
-    data: [
-      {
-        label: "Trapped by Collapse",
-        value: "4"
-      },
-      {
-        label: "Struck by object",
-        value: "2.5"
-      },
-      {
-        label: "Burnt by chemical",
-        value: "9"
-      },
-      {
-        label: "Accidental fall",
-        value: "2"
-      },
-      {
-        label: "Accidental fall",
-        value: "1"
-      },
-      {
-        label: "More Data 1",
-        value: "6"
-      }
-      ,
-      {
-        label: "More Data 2",
-        value: "10"
-      }
-    ]
-};
-FusionCharts.ready(function() {
-  var myChart = new FusionCharts({
-    type: "bar2d",
-    renderAt: "accident-rate-container",
-    width: '100%',
-    height: '320',
-    dataFormat: "json",    
-    dataSource
-  }).render();
-});
-  
+// const dataSource = {
+//     chart: {
+//      // caption: "Lead sources by industry",
+//       //yaxisname: "Number of Leads",
+//       aligncaptionwithcanvas: "0",
+//       "showBorder": "0",
+//       "bgColor": "#FFFFFF",
+//       "palettecolors":"30a4f0",
+//       "canvasBorderThickness": "0",
+//       "showCanvasBorder": "0",
+//       "usePlotGradientColor":"0",
+//       "showPlotBorder": "0",
+//       "BarHeight": "50",
+//       "placeValuesInside": "1",
+//       "valueFontColor": "#fff",
+//       //plottooltext: "<b>$dataValue</b> leads received",
+//       theme: "fusion"
+//     },
+//     data: [
+//       {
+//         label: "Trapped by Collapse",
+//         value: "4"
+//       },
+//       {
+//         label: "Struck by object",
+//         value: "2.5"
+//       },
+//       {
+//         label: "Burnt by chemical",
+//         value: "9"
+//       },
+//       {
+//         label: "Accidental fall",
+//         value: "2"
+//       },
+//       {
+//         label: "Accidental fall",
+//         value: "1"
+//       },
+//       {
+//         label: "More Data 1",
+//         value: "6"
+//       }
+//       ,
+//       {
+//         label: "More Data 2",
+//         value: "10"
+//       }
+//     ]
+// };
+
+// FusionCharts.ready(function() {
+//   var myChart = new FusionCharts({
+//     type: "bar2d",
+//     renderAt: "accident-rate-container",
+//     width: '100%',
+//     height: '320',
+//     dataFormat: "json",    
+//     dataSource
+//   }).render();
+// });
 
 // Semi Circle Donut Chart
 Highcharts.chart('hdc-container', {
@@ -959,6 +662,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   calendar.render();
 });
+  
 
 //JSTREE
 $('#stree').jstree({

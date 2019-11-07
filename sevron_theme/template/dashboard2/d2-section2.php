@@ -1,5 +1,4 @@
-<div class="row pt-4 pb-0 pl-4 pr-4">
-    <div class="col-md-4">
+<div class="col-lg-4 col-md-6">
         <div class="kt-portlet">
             <div class="kt-portlet__head">
                 <div class="kt-portlet__head-label">
@@ -98,7 +97,7 @@
         </div>
     </div>
 
-    <div class="col-md-4">
+    <div class="col-lg-4 col-md-6">
         <div class="kt-portlet">
             <div class="kt-portlet__head">
                 <div class="kt-portlet__head-label">
@@ -196,7 +195,7 @@
         </div>
     </div>
 
-    <div class="col-md-4">
+    <div class="col-lg-4 col-md-6">
         <div class="kt-portlet">
             <div class="kt-portlet__head">
                 <div class="kt-portlet__head-label">
@@ -292,4 +291,3 @@
             </div>
         </div>
     </div>
-</div>

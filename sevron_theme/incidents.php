@@ -11,7 +11,7 @@
         <!--end::Header -->
         
         <div class="kt-body kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor kt-grid--stretch" id="kt_body">
-			<div class="kt-container  kt-container--fluid  kt-grid kt-grid--ver">
+			<div class="kt-container pl-0 kt-container--fluid  kt-grid kt-grid--ver">
                 <!--begin::Aside -->
                 <?php include('./global/sidebar.php') ?>
                 <!--end::Aside -->
