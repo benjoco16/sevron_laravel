@@ -10,9 +10,15 @@
             <div class="alert alert-outline-blue alert-semi-filled-blue pl-3 pr-3 d-flex align-items-center mb-0">
                 <span class="font-weight-500">Autopopulate Task Hazards and Controls</span>
 
-                <div class="btn-group btn-group btn-group-lg">
-                    <button type="button" class="btn btn-secondary bg-white">No</button>
-                    <button type="button" class="btn btn-primary">Yes</button>
+                <div class="form-group mb-0">
+                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                        <label class="btn btn-lg btn-default active">
+                            <input type="radio" name="options" id="option1" autocomplete="off" checked> No
+                        </label>
+                        <label class="btn btn-lg btn-default">
+                            <input type="radio" name="options" id="option2" autocomplete="off"> Yes
+                        </label>
+                    </div>
                 </div>
             </div>
         </div>

@@ -2,6 +2,7 @@
     <head>
         <?php include('global/head.php') ?>
         <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote.css" rel="stylesheet">
+        <link href="./assets/css/global/components.min.css" rel="stylesheet" type="text/css" />
     </head>
 
     <body  class="kt-page-content-white kt-quick-panel--right kt-demo-panel--right kt-offcanvas-panel--right kt-header--fixed kt-header-mobile--fixed kt-subheader--enabled kt-subheader--transparent kt-aside--enabled kt-aside--fixed kt-page--loading"  >

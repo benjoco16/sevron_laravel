@@ -9,7 +9,7 @@
 			>		
 			
 			<ul class="kt-menu__nav ">
-                <li class="kt-menu__item " aria-haspopup="true">
+                <li class="kt-menu__item kt-menu__item--active" aria-haspopup="true">
                     <a href="/sevron/sevron_theme" class="kt-menu__link ">
                         <i class="kt-menu__link-icon la la-tachometer"></i> 
                         <span class="kt-menu__link-text">Dashboard</span>

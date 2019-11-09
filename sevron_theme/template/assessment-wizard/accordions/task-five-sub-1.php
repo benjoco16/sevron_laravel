@@ -26,7 +26,7 @@
                 </div>
 
                 <div class="row mt-5 align-items-center">
-                    <div class="col-md-5">
+                    <div class="col-md-5 col-sm-5">
                         <img class="w-100" src="./assets/media/assessment-wizard/risk-assessment.png">
                     </div>
                     <div class="col-md-7 text-left pl-4">
