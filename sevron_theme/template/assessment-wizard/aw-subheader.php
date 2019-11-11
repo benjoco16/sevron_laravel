@@ -57,7 +57,7 @@
         <div class="kt-subheader__toolbar">
             <div class="kt-subheader__wrapper">
                     <a href="#" class="grad_bt">                       
-                       User Guide  <i class="fa fa-graduation-cap"></i>    
+                       User Guide  <i class="fa fa-graduation-cap ml-2"></i>    
                        <!--<img src="./assets/media/dashboard/userguid.svg">-->
                     </a>
             </div>

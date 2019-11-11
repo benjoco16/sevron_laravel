@@ -2,7 +2,7 @@
     <div class="row pl-3 pr-3">
         <div class="col-md-9 font-ash">
             <div class="d-flex flex-column pl-3 pr-4">
-                <button class="btn btn-custom-blue btn-xs ml-auto mt-5">
+                <button class="btn btn-custom-blue btn-xs ml-auto mt-3">
                     <small>Add Controls</small> 
                 </button>
                 <div class="kt-portlet kt-portlet--head--noborder mb-0 mt-4">

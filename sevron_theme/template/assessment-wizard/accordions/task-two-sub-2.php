@@ -17,12 +17,14 @@
                         <div class="kt-section">
                             <div class="kt-section__content">
                                 <table class="table table_si font-ash">
-                                    <tbody>
+                                    <thead>
                                         <tr>
-                                            <td class="font-weight-500">Product Name (Code)</td>
-                                            <td class="font-weight-500">Manufacturer</td>
-                                            <td class="font-weight-500">Hazard Symbols</td>
+                                            <td><strong> Product Name (Code)</strong></td>
+                                            <td><strong>Manufacturer</strong></td>
+                                            <td><strong>Hazard Symbols</strong></td>
                                         </tr>
+                                    </thead>
+                                    <tbody>
                                         <tr>
                                             <td>Sodium (483745)</td>
                                             <td>Sigma-Aldrich Company Ltd</td>

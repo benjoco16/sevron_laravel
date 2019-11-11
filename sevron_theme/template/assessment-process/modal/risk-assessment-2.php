@@ -1,7 +1,6 @@
 <div data-step="2" class="as-modal-tabs-bg as-internal-code">
-    <div class="pt-5 pb-4 d-flex flex-column">
+    <div class="pt-5 d-flex flex-column">
         <p class="font-weight-500 font-ash">Set Internal Reference Code</p>
-
         <div class="input-group">
             <div class="input-group-prepend text-center">
                 <select class="input-group-text input-group-form-control">
@@ -18,8 +17,7 @@
                 Generate Reference Code <i class="fa fa-magic ml-3"></i>   
             </a>
         </div>
-
-        <div class="actions as-tabs-actions">
+        <div class="actions as-tabs-actions mt-auto">
             <button data-to-step="1" type="button" class="btn btn-custom-blue bordered btn-wider">
                 Previous
             </button>

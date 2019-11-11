@@ -30,16 +30,13 @@
                                             </p>
                                         </div>
                                     </div>
-
                                     <div class="col-md-2"></div>
-
                                     <div class="col-md-5 ml-auto">
                                         <div class="row row bg-light-blue sv-portlet ml-0 mr-3">
                                             <div class="col-md-6 col-sm-6 pl-0">
                                                 <div class="progress mb-2">
                                                     <div class="progress-bar rs-progress-warning-risk" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                                                 </div>
-
                                                 <div class="progress-label d-flex align-items-center">
                                                     <span class="font-ash">
                                                         <span class="font-weight-500">
@@ -51,7 +48,6 @@
                                                     </h2>
                                                 </div>
                                             </div>
-
                                             <div class="col-md-6 col-sm-6 pr-0">
                                                 <div class="progress mb-2">
                                                     <div class="progress-bar rs-progress-low-risk" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
@@ -76,14 +72,12 @@
                                         <h6 class="bold">CONTROLS IN PLACE</h6>
                                         <button class="btn btn-custom-blue btn-xs ml-auto">
                                             <small>Add Controls</small>
-
                                         </button>
                                     </div>
 
                                     <div class="row">
                                         <div class="col-md-6 mt-4 d-flex align-items-center">
                                             <img class="th-icon" src="./assets/media/risk/hazard_icon.png">
-
                                             <div class="sv-portlet ml-3 bg-light-gray mt-1">
                                                 <p class="mb-0">
                                                     <small>Wear eye protection when pouring or keep eyes well away from splashing</small>
@@ -102,22 +96,16 @@
                                     </div>
 
                                     <div class="row">
-                                        
                                         <div class="col-md-6 mt-4 d-flex align-items-center">
                                             <img class="th-icon" src="./assets/media/risk/emergency_icon.png">
-
                                             <div class="sv-portlet ml-3 bg-light-gray mt-1">
                                                 <p class="mb-0">
                                                     <small>Wear eye protection when pouring or keep eyes well away from splashing</small>
                                                 </p>
                                             </div>
                                         </div>
-
-
-
                                         <div class="col-md-6 mt-4 d-flex align-items-center">
                                             <img class="th-icon" src="./assets/media/assessment-wizard/first-aid-green.png">
-
                                             <div class="sv-portlet ml-3 bg-light-gray mt-1">
                                                 <p class="mb-0">
                                                     <small>Wear eye protection when pouring or keep eyes well away from splashing</small>

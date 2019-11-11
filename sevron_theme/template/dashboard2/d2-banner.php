@@ -1,9 +1,9 @@
 <!-- Start Banner Section -->
 <div class="main_banner d-flex ml-0">
-    <div class="w-100 main_banner-description">
+    <div class="main_banner-description">
         <div class="ban_text">
             <p>COSHH COMPLIANCE</p>
-            <h2>How Compliant Are you?</h2>
+            <h2>How compliant are you?</h2>
             <div class="score_hldr">85.5%</div>
             
             <div class="top_list">
@@ -14,7 +14,7 @@
                     <li> <span class="kt-badge kt-badge--yellow kt-badge--dot"></span>  Add Missing Environmental <strong>Controls +16PTS</strong></li>
                 </ul>
                 <div class="ban_bt">
-                    <button type="button" data-toggle="modal" href="#large" class="btn btn-secondary btn-lg bt-color-gray">View All</button> <span>Your compliance score has not <br> change since: <strong>Aug 29, 2019</strong> </span>
+                    <button type="button" data-toggle="modal" href="#large" class="btn btn-secondary btn-lg bt-color-gray">View all</button> <span>Your compliance score has not <br> change since: <strong>Aug 29, 2019</strong> </span>
                 </div>
             </div>
         </div>

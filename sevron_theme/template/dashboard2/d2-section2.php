@@ -57,7 +57,6 @@
                         </button>
                     </div>
                 </div>
-                <!-- <div style="width: 150px" id="banner-chart-container-1"></div> -->
             </div>
 
             <div class="kt-portlet__foot font-ash pt-3 pb-3 d-flex align-items-center">
@@ -155,7 +154,6 @@
                         </button>
                     </div>
                 </div>
-                <!-- <div style="width: 150px" id="banner-chart-container-1"></div> -->
             </div>
 
             <div class="kt-portlet__foot font-ash pt-3 pb-3 d-flex align-items-center">
@@ -252,7 +250,6 @@
                         </button>
                     </div>
                 </div>
-                <!-- <div style="width: 150px" id="banner-chart-container-1"></div> -->
             </div>
 
             <div class="kt-portlet__foot font-ash pt-3 pb-3 d-flex align-items-center">

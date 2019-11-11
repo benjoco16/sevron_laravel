@@ -1,3 +1,133 @@
+var bannerChart = Highcharts.chart('banner-chart-container', {
+	chart: {
+	  plotBackgroundColor: null,
+	  plotBorderWidth: 0,
+	  backgroundColor: null,
+	  className: "main_gauge",
+	  plotShadow: false,
+	  type: 'pie',
+	},
+	title: {
+	  text: '<div class="cs_class">Current Score</div>'+
+				'<div class="total_score">855</div>'+
+				'<div class="ofone">out of 1000</div>'+
+				'<div class="result_f">' + 
+					'FAIR' + 
+					'<i class="fa fa-question-circle" data-container=".main_banner" data-toggle="kt-popover" data-html="true" data-content="<p class=\'bold font-white mb-2\'>FAIR</p> <p class=\'font-white\'><span class=\'font-light-purple\'>You might get through inspection/audits, </span>but run the risk of higher penalties and fines in the event of an incident</p>"></i>' + 
+				'</div>'+
+			'</div>',
+  
+	  align: 'center',
+	  verticalAlign: 'middle',
+	  useHTML: true,
+	  y: 68,
+	  x: 16
+	},
+	
+	navigation: {
+	  buttonOptions: 
+	  {
+		enabled: false
+	  }
+	},
+	credits: {
+		enabled: false
+	},
+	tooltip: {
+	  enabled: false,
+	  pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+	},
+	plotOptions: {
+	  pie: {
+		dataLabels: {
+		  enabled: false,
+		  distance: -0.5,
+		  alignTo: 'toPlotEdges',
+		  style: {
+			fontWeight: 'bold',
+			color: 'white'
+		  }
+		},
+		startAngle: -120,
+		endAngle: 120,
+		center: ['52.7%', '64%'],
+		size: '100%'
+	  }
+	},
+	series: [{
+	  type: 'pie',
+	  name: 'Current Score',
+	  innerSize: '75%',
+	  colors: ['#e05653', '#eaad69', '#fae054', '#bed5e5', '#bed5e5'],
+	  
+	  /*data: [
+		['Very Poor', 20],
+		['Poor', 20],
+		['Fair', 20],
+		['Good', 20],
+		['Excellent', 20]
+	  ],*/
+  
+	  data: [{
+		name: "VERY POOR",
+		y: 1.5
+	  }, {
+		name: "POOR",
+		y: 1.5
+	  }, 
+	  {
+		name: "FAIR",
+		y: 1.5 
+	  }, {
+		name: "GOOD",
+		y: 1.5
+	  },{
+		name: "EXCELLENT",
+		y: 1.6
+	  }]
+	}],
+  },
+  function(chart) {
+	var ren = chart.renderer,
+	  shapeArgs = chart.series[0].points[0].shapeArgs,
+	  cx = chart.plotLeft + chart.plotWidth / 1.9,
+	  cy = chart.plotTop + chart.plotHeight / 1.6,
+	  r = (shapeArgs.r + shapeArgs.innerR) / 1.7; // center text in a slice (distance from center)
+  
+	// add a path for a text
+	ren.path()
+	  .attr({
+		id: "MyPath",
+		d: "M " + cx + " " + cy + //center
+		  " m 0 " + (-r) + //start at top
+		  " a " + r + " " + r + " 0 1 1 0 " + (r * 2) + //1st half
+		  " a " + r + " " + r + " 0 1 1 0 " + (-(r * 2)) //2nd half
+	  }).add(ren.defs);
+  
+  
+	Highcharts.each(chart.series[0].points, function(point, i) {
+	  var dataLabelText = point.name,
+		label = ren.text(dataLabelText).attr({
+		  zIndex: 3, // place on top of a pie
+		  'text-anchor': 'middle', // center text in a slice (middle angle)
+		}).add(),
+		offset = parseInt(100 * (point.angle + Math.PI / 2) / (Math.PI * 2)) + '%', // at what percent of circle path start
+		textPath = document.createElementNS('http://www.w3.org/2000/svg', 'textPath'),
+		tspan = document.createElementNS('http://www.w3.org/2000/svg', 'tspan'),
+		text = document.createTextNode(label.textStr);
+  
+	  textPath.setAttributeNS('http://www.w3.org/1999/xlink', 'href', '#MyPath');
+	  textPath.setAttribute('startOffset', offset);
+	  tspan.appendChild(text);
+	  textPath.appendChild(tspan);
+	  $(label.element).html(textPath);
+	});
+  });
+
+  $(window).on('resize', function () {
+	  console.log(bannerChart);
+  })
+
 var INCIDENT_SUMMARY = {
 	init: function () {
 		new CanvasJS.Chart("pyramid-container-2", {
@@ -71,167 +201,6 @@ var ACCIDENT_TYPES = {
 	build: function () {
 		ACCIDENT_TYPES.init();
 	}
-}
-
-var BANNER_CHART = {
-    init: function () {
-		var self = BANNER_CHART;
-		Highcharts.chart('banner-chart-container', {
-			chart: BANNER_CHART.chartOptions(),
-			title: BANNER_CHART.titleHtml(),
-			navigation: BANNER_CHART.navigationOptions(),
-			credits: BANNER_CHART.creditsOptions(),
-			tooltip: BANNER_CHART.tooltipOptions(),
-			plotOptions: BANNER_CHART.plotOptions(),
-			series: BANNER_CHART.seriesOptions()
-		}, function (chart) {
-			BANNER_CHART.callback(chart)
-		})
-	},
-
-	build: function () {
-		BANNER_CHART.init();
-	},
-
-	chartOptions () {
-		return {
-			plotBackgroundColor: null,
-			plotBorderWidth: 0,
-			backgroundColor: null,
-			className: "main_gauge",
-			plotShadow: false,
-			type: 'pie',
-			events: {
-				redraw: function (event) {
-					event.target.callback(event.target, 3.5);
-				}
-			}
-		}
-	},
-
-	titleHtml () {
-		return {
-			text: '<div class="cs_class">Current Score</div>'+
-					'<div class="total_score">855</div>'+
-					'<div class="ofone">out of 1000</div>'+
-					'<div class="result_f">' + 
-						'FAIR' + 
-						'<i class="fa fa-question-circle" data-container=".main_banner" data-toggle="kt-popover" data-html="true" data-content="<p class=\'bold font-white mb-2\'>FAIR</p> <p class=\'font-white\'><span class=\'font-light-purple\'>You might get through inspection/audits, </span>but run the risk of higher penalties and fines in the event of an incident</p>"></i>' + 
-					'</div>'+
-				'</div>',
-
-			align: 'center',
-			verticalAlign: 'middle',
-			useHTML: true,
-			y: 68,
-			x: 16
-		}
-	},
-
-	navigationOptions: function () {
-		return {
-			buttonOptions: {
-				enabled: false
-			}
-		}
-	},
-
-	creditsOptions: function () {
-		return {
-			enabled: false
-		}
-	},
-
-	tooltipOptions: function () {
-		return {
-			enabled: false,
-			pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-		}
-	},
-
-	plotOptions: function () {
-		return {
-			pie: {
-				dataLabels: {
-					enabled: false,
-					distance: -0.5,
-					alignTo: 'toPlotEdges',
-					style: {
-						fontWeight: 'bold',
-						color: 'white'
-					}
-				},
-				startAngle: -120,
-				endAngle: 120,
-				center: ['52.7%', '64%'],
-				size: '100%'
-			}
-		}
-	},
-
-	seriesOptions: function () {
-		return [{
-			type: 'pie',
-			name: 'Current Score',
-			innerSize: '75%',
-			colors: ['#e05653', '#eaad69', '#fae054', '#bed5e5', '#bed5e5'],
-			data: [{
-			  name: "VERY POOR",
-			  y: 1.5
-			}, {
-			  name: "POOR",
-			  y: 1.5
-			}, 
-			{
-			  name: "FAIR",
-			  y: 1.5 
-			}, {
-			  name: "GOOD",
-			  y: 1.5
-			},{
-			  name: "EXCELLENT",
-			  y: 1.6
-			}]
-		}]
-	},
-
-	callback: function (chart) {
-		  $('.banner-chart-main').find('text').remove();
-	
-		  var ren = chart.renderer,
-			  shapeArgs = chart.series[0].points[0].shapeArgs,
-			  cx = chart.plotLeft + (chart.plotWidth / 1.9), // x axis of of labels (poor, fair, good)
-			  cy = chart.plotTop + chart.plotHeight / 1.6,
-			  r = (shapeArgs.r + shapeArgs.innerR) / 1.7; // center text in a slice (distance from center)
-			  
-		  ren.path()
-		  .attr({
-			id: "MyPath",
-			d: "M " + cx + " " + cy + //center
-			  " m 0 " + (-r) + //start at top
-			  " a " + r + " " + r + " 0 1 1 0 " + (r * 2) + //1st half
-			  " a " + r + " " + r + " 0 1 1 0 " + (-(r * 2)) //2nd half
-		  }).add(ren.defs);
-	
-		  Highcharts.each(chart.series[0].points, function(point, i) {
-			var dataLabelText = point.name,
-			  label = ren.text(dataLabelText).attr({
-				zIndex: 3, // place on top of a pie
-				'text-anchor': 'middle', // center text in a slice (middle angle)
-			  }).add(),
-			  offset = parseInt(100 * (point.angle + Math.PI / 2) / (Math.PI * 2)) + '%', // at what percent of circle path start
-			  
-			  textPath = document.createElementNS('http://www.w3.org/2000/svg', 'textPath'),
-			  tspan = document.createElementNS('http://www.w3.org/2000/svg', 'tspan'),
-			  text = document.createTextNode(label.textStr);
-		
-			textPath.setAttributeNS('http://www.w3.org/1999/xlink', 'href', '#MyPath');
-			textPath.setAttribute('startOffset', offset);
-			tspan.appendChild(text);
-			textPath.appendChild(tspan);
-			$(label.element).html(textPath);
-		  });
-	}					
 }
 
 var MONTHLY_RATES = {
@@ -575,10 +544,10 @@ var JSTREE = {
 }
 
 $(document).ready (function () {
-	BANNER_CHART.build();
 	MONTHLY_RATES.build();
 	PERFORMANCE_SUMMARY.build();
 	JSTREE.build();
+	// BANNER_CHART.build();
 });
 
 CALENDAR.build();

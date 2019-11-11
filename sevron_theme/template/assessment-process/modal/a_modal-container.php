@@ -12,17 +12,14 @@
                         <span>1</span>
                         <p>Find Substance</p>
                     </li>
-
                     <li data-wizard-step="2" class="col-md-3">
                         <span>2</span>
                         <p>Internal Info</p>
                     </li>
-
                     <li data-wizard-step="3" class="col-md-3">
                         <span>3</span>
                         <p>Usage</p>
                     </li>
-
                     <li data-wizard-step="4" class="col-md-3">
                         <span>4</span>
                         <p>Regulation</p>

@@ -57,9 +57,7 @@
                 <button type="button" class="btn btn-custom-blue btn-font-lg font-size-xs font-weight-500 btn-wider mt-4">
                     View Full Report
                 </button>
-            </div>
-           
-
+            </div> 
         </div>
     </div>
 </div>

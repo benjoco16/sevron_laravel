@@ -25,7 +25,7 @@
             </div>
 
             <div class="kt-portlet__body">
-                <div class="kt-widget15 pbar_hldr">
+                <div class="pbar_hldr">
                     <div class="progress progress-lg">
                         <div class="progress-bar custom_green" role="progressbar" style="width: 25%;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
                         <div class="progress-bar custom_yellow" role="progressbar" style="width: 25%;" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
@@ -102,7 +102,7 @@
             </div>
 
             <div class="kt-portlet__body">
-                <div class="kt-widget15 pbar_hldr">
+                <div class="pbar_hldr">
                     <div class="progress progress-lg">
                         <div class="progress-bar custom_green" role="progressbar" style="width: 25%;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
                         <div class="progress-bar custom_yellow" role="progressbar" style="width: 25%;" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
@@ -169,7 +169,7 @@
             </div>
 
             <div class="kt-portlet__body">
-                <div class="kt-widget15 pbar_hldr">
+                <div class="pbar_hldr">
                     <div class="progress progress-lg">
                         <div class="progress-bar custom_green" role="progressbar" style="width: 10%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
                         <div class="progress-bar custom_yellow" role="progressbar" style="width: 176%;" aria-valuenow="176" aria-valuemin="0" aria-valuemax="100"></div>

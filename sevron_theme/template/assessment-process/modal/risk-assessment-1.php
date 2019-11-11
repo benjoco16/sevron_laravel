@@ -16,14 +16,12 @@
             </a>
         </li>
     </ul>
-
     <div class="as-modal-tabs tab-content as-modal-tabs-bg">
         <div class="tab-pane active" id="severonLibrary" role="tabpanel">
             <div class="d-flex w-100 align-items-center pt-3 pb-3">
                 <div class="form-group form-group-sm mb-0 mr-2">
                     <input class="form-control" type="text" placeholder="Solvent Cleaner RS. Comp" value="">
                 </div>
-
                 <button class="btn btn-custom-blue btn-xs">
                     <small>Show Search Filters</small>
                 </button>
@@ -65,25 +63,23 @@
                                 <td>See SDS</td>
                                 <td>    
                                     <div class="d-flex align-items-center">
-                                        <div class="popover-wrapper popover-custom">
-                                            <button data-container=".popover-wrapper"
-                                                class="popover-trigger no-style" 
-                                                data-toggle="kt-popover" 
-                                                data-trigger="focus" 
-                                                data-placement="left" 
-                                                data-html="true"
-                                                data-content='
-                                                        <a class="popover-link" href="#">
-                                                            <i class="fa fa-flask font-neon-green" style="font-size: 14px;"></i>
-                                                            View Substance Details
-                                                        </a>
-                                                        <a class="popover-link" href="#">
-                                                            <i class="la la-file font-yellow-orange font-size-md" style=""></i>
-                                                            View Safety Data Sheet
-                                                        </a>
-                                                '>
+                                        <div class="d-flex align-items-center">
+                                            <div class="dropdown dropleft">
+                                                <button class="btn-unstyled table-icon"
+                                                        data-toggle="dropdown">
                                                     <i class="fa flaticon-eye font-ash mr-3 font-size-md" ></i>
-                                            </button>
+                                                </button>
+                                                <div class="dropdown-menu dropdown-dark-full dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu">
+                                                    <a class="dropdown-item" href="#">
+                                                        <i class="fa fa-flask font-neon-green" style="font-size: 14px;"></i>
+                                                        View Substance Details
+                                                    </a>
+                                                    <a class="dropdown-item" href="#">
+                                                        <i class="la la-file font-yellow-orange font-size-md" style=""></i>
+                                                            View Safety Data Sheet
+                                                    </a>
+                                                </div>
+                                            </div>
                                         </div>
 
                                         <button data-to-step="2" class="btn btn-custom-blue btn-xs">
@@ -112,25 +108,23 @@
                                 <td>See SDS</td>
                                 <td>    
                                     <div class="d-flex align-items-center">
-                                        <div class="popover-wrapper popover-custom">
-                                            <button data-container=".popover-wrapper"
-                                                class="popover-trigger no-style" 
-                                                data-toggle="kt-popover" 
-                                                data-trigger="focus" 
-                                                data-placement="left" 
-                                                data-html="true"
-                                                data-content='
-                                                        <a class="popover-link" href="#">
-                                                            <i class="fa fa-flask font-neon-green" style="font-size: 14px;"></i>
-                                                            View Substance Details
-                                                        </a>
-                                                        <a class="popover-link" href="#">
-                                                            <i class="la la-file font-yellow-orange font-size-md" style=""></i>
-                                                            View Safety Data Sheet
-                                                        </a>
-                                                '>
+                                        <div class="d-flex align-items-center">
+                                            <div class="dropdown dropleft">
+                                                <button class="btn-unstyled table-icon"
+                                                        data-toggle="dropdown">
                                                     <i class="fa flaticon-eye font-ash mr-3 font-size-md" ></i>
-                                            </button>
+                                                </button>
+                                                <div class="dropdown-menu dropdown-dark-full dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu">
+                                                    <a class="dropdown-item" href="#">
+                                                        <i class="fa fa-flask font-neon-green" style="font-size: 14px;"></i>
+                                                        View Substance Details
+                                                    </a>
+                                                    <a class="dropdown-item" href="#">
+                                                        <i class="la la-file font-yellow-orange font-size-md" style=""></i>
+                                                            View Safety Data Sheet
+                                                    </a>
+                                                </div>
+                                            </div>
                                         </div>
 
                                         <button data-to-step="2" class="btn btn-custom-blue btn-xs">
@@ -159,25 +153,23 @@
                                 <td>See SDS</td>
                                 <td>    
                                     <div class="d-flex align-items-center">
-                                        <div class="popover-wrapper popover-custom">
-                                            <button data-container=".popover-wrapper"
-                                                class="popover-trigger no-style" 
-                                                data-toggle="kt-popover" 
-                                                data-trigger="focus" 
-                                                data-placement="left" 
-                                                data-html="true"
-                                                data-content='
-                                                        <a class="popover-link" href="#">
-                                                            <i class="fa fa-flask font-neon-green" style="font-size: 14px;"></i>
-                                                            View Substance Details
-                                                        </a>
-                                                        <a class="popover-link" href="#">
-                                                            <i class="la la-file font-yellow-orange font-size-md" style=""></i>
-                                                            View Safety Data Sheet
-                                                        </a>
-                                                '>
+                                        <div class="d-flex align-items-center">
+                                            <div class="dropdown dropleft">
+                                                <button class="btn-unstyled table-icon"
+                                                        data-toggle="dropdown">
                                                     <i class="fa flaticon-eye font-ash mr-3 font-size-md" ></i>
-                                            </button>
+                                                </button>
+                                                <div class="dropdown-menu dropdown-dark-full dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu">
+                                                    <a class="dropdown-item" href="#">
+                                                        <i class="fa fa-flask font-neon-green" style="font-size: 14px;"></i>
+                                                        View Substance Details
+                                                    </a>
+                                                    <a class="dropdown-item" href="#">
+                                                        <i class="la la-file font-yellow-orange font-size-md" style=""></i>
+                                                            View Safety Data Sheet
+                                                    </a>
+                                                </div>
+                                            </div>
                                         </div>
 
                                         <button data-to-step="2" class="btn btn-custom-blue btn-xs">
@@ -206,25 +198,23 @@
                                 <td>See SDS</td>
                                 <td>    
                                     <div class="d-flex align-items-center">
-                                        <div class="popover-wrapper popover-custom">
-                                            <button data-container=".popover-wrapper"
-                                                class="popover-trigger no-style" 
-                                                data-toggle="kt-popover" 
-                                                data-trigger="focus" 
-                                                data-placement="left" 
-                                                data-html="true"
-                                                data-content='
-                                                        <a class="popover-link" href="#">
-                                                            <i class="fa fa-flask font-neon-green" style="font-size: 14px;"></i>
-                                                            View Substance Details
-                                                        </a>
-                                                        <a class="popover-link" href="#">
-                                                            <i class="la la-file font-yellow-orange font-size-md" style=""></i>
-                                                            View Safety Data Sheet
-                                                        </a>
-                                                '>
+                                        <div class="d-flex align-items-center">
+                                            <div class="dropdown dropleft">
+                                                <button class="btn-unstyled table-icon"
+                                                        data-toggle="dropdown">
                                                     <i class="fa flaticon-eye font-ash mr-3 font-size-md" ></i>
-                                            </button>
+                                                </button>
+                                                <div class="dropdown-menu dropdown-dark-full dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu">
+                                                    <a class="dropdown-item" href="#">
+                                                        <i class="fa fa-flask font-neon-green" style="font-size: 14px;"></i>
+                                                        View Substance Details
+                                                    </a>
+                                                    <a class="dropdown-item" href="#">
+                                                        <i class="la la-file font-yellow-orange font-size-md" style=""></i>
+                                                            View Safety Data Sheet
+                                                    </a>
+                                                </div>
+                                            </div>
                                         </div>
 
                                         <button data-to-step="2" class="btn btn-custom-blue btn-xs">
@@ -253,25 +243,23 @@
                                 <td>See SDS</td>
                                 <td>    
                                     <div class="d-flex align-items-center">
-                                        <div class="popover-wrapper popover-custom">
-                                            <button data-container=".popover-wrapper"
-                                                class="popover-trigger no-style" 
-                                                data-toggle="kt-popover" 
-                                                data-trigger="focus" 
-                                                data-placement="left" 
-                                                data-html="true"
-                                                data-content='
-                                                        <a class="popover-link" href="#">
-                                                            <i class="fa fa-flask font-neon-green" style="font-size: 14px;"></i>
-                                                            View Substance Details
-                                                        </a>
-                                                        <a class="popover-link" href="#">
-                                                            <i class="la la-file font-yellow-orange font-size-md" style=""></i>
-                                                            View Safety Data Sheet
-                                                        </a>
-                                                '>
+                                        <div class="d-flex align-items-center">
+                                            <div class="dropdown dropleft">
+                                                <button class="btn-unstyled table-icon"
+                                                        data-toggle="dropdown">
                                                     <i class="fa flaticon-eye font-ash mr-3 font-size-md" ></i>
-                                            </button>
+                                                </button>
+                                                <div class="dropdown-menu dropdown-dark-full dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu">
+                                                    <a class="dropdown-item" href="#">
+                                                        <i class="fa fa-flask font-neon-green" style="font-size: 14px;"></i>
+                                                        View Substance Details
+                                                    </a>
+                                                    <a class="dropdown-item" href="#">
+                                                        <i class="la la-file font-yellow-orange font-size-md" style=""></i>
+                                                            View Safety Data Sheet
+                                                    </a>
+                                                </div>
+                                            </div>
                                         </div>
 
                                         <button data-to-step="2" class="btn btn-custom-blue btn-xs">

@@ -15,7 +15,6 @@
                                         <span class="kt-nav__link-icon"><i class="la la-file"></i></span>
                                         <span class="kt-nav__link-text">Assessment</span>
                                     </a>
-
                                     <div class="dropdown-menu sub-dropdown dropdown-menu-fit dropdown-menu-sm">
                                         <ul class="kt-nav kt-nav--bold kt-nav--md-space">
                                             <li class="kt-nav__item">
@@ -49,13 +48,11 @@
                             </ul>
                         </div>
                     </div>
-
                     <div class="dropdown">
                         <button type="button" class="btn btn-default dropdown-toggle dopti" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                             Downloads
                         </button>
                     </div>
-
                     <div class="dropdown">
                         <button type="button" class="btn btn-default dropdown-toggle dopti" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                             Assessments
@@ -68,16 +65,15 @@
                     <a href="#" class="btn btn-custom-blue dopti">
                         About
                     </a>
-                    
                 </div>
             <!-- End Create New Button -->
         </div>
         <div class="kt-subheader__toolbar">
             <div class="kt-subheader__wrapper">
-                    <a href="#" class="grad_bt">                       
-                       User Guide  <i class="fa fa-graduation-cap"></i>    
-                       <!--<img src="./assets/media/dashboard/userguid.svg">-->
-                    </a>
+                <a href="#" class="grad_bt">                       
+                    User Guide  <i class="fa fa-graduation-cap ml-2"></i>    
+                    <!--<img src="./assets/media/dashboard/userguid.svg">-->
+                </a>
             </div>
         </div>
     </div>

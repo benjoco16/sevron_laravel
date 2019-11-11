@@ -2,10 +2,14 @@
 <div class="kt-subheader   kt-grid__item" id="kt_subheader">
     <div class="kt-container  kt-container--fluid pr-0">
         <div class="kt-subheader__main">
-            <!-- Start Create New button -->
+            
+        <!-- Start Create New button -->
             <div class="kt-header__brand-nav dashboard_bt">
                     <div class="dropdown">
-                        <button type="button" class="btn dropdown-toggle btn-lg btn-custom-blue" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        <button type="button" 
+                                class="btn dropdown-toggle btn-lg btn-custom-blue" 
+                                data-toggle="dropdown"
+                                aria-haspopup="true">
                             Create New
                         </button>
                         <div class="dropdown-menu dropdown-menu-fit dropdown-menu-md">
@@ -67,7 +71,7 @@
         <div class="kt-subheader__toolbar">
             <div class="kt-subheader__wrapper">
                     <a href="#" class="grad_bt">                       
-                       User Guide  <i class="fa fa-graduation-cap"></i>    
+                       User Guide  <i class="fa fa-graduation-cap ml-2"></i>    
                        <!--<img src="./assets/media/dashboard/userguid.svg">-->
                     </a>
             </div>

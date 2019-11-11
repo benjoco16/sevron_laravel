@@ -19,12 +19,14 @@
                 <div class="kt-section si_section">
                     <div class="kt-section__content">
                         <table class="table table_si">
-                            <tbody>
+                            <thead>
                                 <tr>
                                     <td><strong> Product Name (Code)</strong></td>
                                     <td><strong>Manufacturer</strong></td>
                                     <td><strong>Hazard Symbols</strong></td>
                                 </tr>
+                            </thead>
+                            <tbody>
                                 <tr>
                                     <td>Sodium (483745)</td>
                                     <td>Sigma-Aldrich Company Ltd</td>

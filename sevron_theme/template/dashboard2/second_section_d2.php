@@ -11,7 +11,7 @@
                 </div>
             </div>
             <div class="kt-portlet__body">
-                <div class="kt-widget15 pbar_hldr">
+                <div class="pbar_hldr">
                     <div class="row">
                         <div class="col-xl-4">
                             <img src="assets/media/dashboard/result.jpg"/>
@@ -81,7 +81,7 @@
                 </div>
             </div>
             <div class="kt-portlet__body">
-                <div class="kt-widget15 pbar_hldr">
+                <div class="pbar_hldr">
                     <div class="row">
                         <div class="col-xl-4">
                             <img src="assets/media/dashboard/result2.jpg"/>
@@ -151,7 +151,7 @@
                 </div>
             </div>
             <div class="kt-portlet__body">
-                <div class="kt-widget15 pbar_hldr">
+                <div class="pbar_hldr">
                     <div class="row">
                         <div class="col-xl-4">
                             <img src="assets/media/dashboard/result3.jpg"/>
