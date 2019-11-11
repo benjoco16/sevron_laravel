@@ -71,7 +71,7 @@ a.grad_bt:hover {
     letter-spacing: 0.5;
 }
 .fc-unthemed .fc-day-grid td:not(.fc-axis).fc-event-container {
-    padding: 0 0.5rem;
+    padding: 5px 0.5rem;
 }
 .dopti {
     border: 1px solid #d3d3d3;
@@ -97,6 +97,7 @@ text {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
+    background-size: 100% 100%;
 }
 .total_score {
     font-weight: bold;

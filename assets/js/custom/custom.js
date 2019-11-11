@@ -123,8 +123,10 @@ var BANNER_CHART = {
 			align: 'center',
 			verticalAlign: 'middle',
 			useHTML: true,
-			y: 68,
-			x: 16
+			//y: 68,
+			//x: 16
+			y: 78,
+			x: 20
 		}
 	},
 
@@ -164,6 +166,7 @@ var BANNER_CHART = {
 				startAngle: -120,
 				endAngle: 120,
 				center: ['52.7%', '64%'],
+				//center: ['60%', '60%'],
 				size: '100%'
 			}
 		}
@@ -200,6 +203,7 @@ var BANNER_CHART = {
 	
 		  var ren = chart.renderer,
 			  shapeArgs = chart.series[0].points[0].shapeArgs,
+			  //cx = chart.plotLeft + (chart.plotWidth / 1.9), // x axis of of labels (poor, fair, good)
 			  cx = chart.plotLeft + (chart.plotWidth / 1.9), // x axis of of labels (poor, fair, good)
 			  cy = chart.plotTop + chart.plotHeight / 1.6,
 			  r = (shapeArgs.r + shapeArgs.innerR) / 1.7; // center text in a slice (distance from center)
