@@ -128,7 +128,7 @@ a.grad_bt:hover {
     letter-spacing: 0.5;
 }
 .fc-unthemed .fc-day-grid td:not(.fc-axis).fc-event-container {
-    padding: 0 0.5rem;
+    padding: 5px 0.5rem;
 }
 .dopti {
     border: 1px solid #d3d3d3;

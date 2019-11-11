@@ -23,7 +23,7 @@
                                 <li class="kt-nav__item">
                                     <a class="kt-nav__link" href="#">
                                         <span class="kt-nav__link-icon"><i class="flaticon-feed"></i></span>
-                                        <span class="kt-nav__link-text">er Relationship</span>
+                                        <span class="kt-nav__link-text">Relationship</span>
                                     </a>                                                 
                                 </li>
                                 <li class="kt-nav__item">
