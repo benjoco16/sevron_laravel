@@ -1,7 +1,7 @@
 <html lang="en" >
     <head>
         <?php include('global/head.php') ?>
-        <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote.css" rel="stylesheet">
+        <?php include('./global/head-global-styles.php') ?>
     </head>
 
     <body  class="kt-page-content-white kt-quick-panel--right kt-demo-panel--right kt-offcanvas-panel--right kt-header--fixed kt-header-mobile--fixed kt-subheader--enabled kt-subheader--transparent kt-aside--enabled kt-aside--fixed kt-page--loading"  >
@@ -16,12 +16,12 @@
                 <!--end::Aside -->
                 <div class="kt-content  kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor" id="kt_content">
                     <!--begin::Sub Header -->
-                    <?php include('./template/assessment-wizard/aw-subheader.php') ?>
+                    <?php include('./template/assessment-wizard/aw.subheader.php') ?>
                     <!--end:: Sub Header -->
                     <!-- begin::Page Content -->
                     <div class="kt-container kt-container--fluid kt-grid__item kt-grid__item--fluid pl-4 pr-4 pt-4 bg-light-blue">
                         <div class="align-items-start">
-                            <?php include('template/incidents/incidents-tab-links.php') ?>
+                            <?php include('template/incidents/incidents.tab-links.php') ?>
                         </div>
                     </div>	
                     <!-- end::Page Content -->

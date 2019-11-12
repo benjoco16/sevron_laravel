@@ -1,11 +1,13 @@
 <html lang="en" >
     <head>
         <?php include('global/head.php') ?>
-        <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote.css" rel="stylesheet">
+        <link href="./assets/css/global/bootstrap-tagsinput.css" rel="stylesheet" type="text/css" />
+        <link href="./assets/vendors/general/summernote/dist/summernote.css" rel="stylesheet" type="text/css" />
         <link href="./assets/css/global/components.min.css" rel="stylesheet" type="text/css" />
+        <?php include('./global/head-global-styles.php') ?>
     </head>
 
-    <body  class="kt-page-content-white kt-quick-panel--right kt-demo-panel--right kt-offcanvas-panel--right kt-header--fixed kt-header-mobile--fixed kt-subheader--enabled kt-subheader--transparent kt-aside--enabled kt-aside--fixed kt-page--loading"  >
+    <body  class="kt-page-content-white kt-quick-panel--right kt-demo-panel--right kt-offcanvas-panel--right kt-header--fixed kt-header-mobile--fixed kt-subheader--enabled kt-subheader--transparent kt-aside--enabled kt-aside--fixed kt-page--loading">
         <!--begin::Header -->
         <?php include('./global/header.php') ?>
         <!--end::Header -->
@@ -16,7 +18,7 @@
                 <!--end::Aside -->
                 <div class="kt-content  kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor" id="kt_content">
                     <!--begin::Sub Header -->
-                    <?php include('./template/assessment-wizard/aw-subheader.php') ?>
+                    <?php include('./template/assessment-wizard/aw.subheader.php') ?>
                     <!--end:: Sub Header -->
                     <!-- begin::Page Content -->
                     <div class="kt-container kt-container--fluid kt-grid__item kt-grid__item--fluid pl-4 pr-4 pt-4 bg-light-blue">
@@ -25,8 +27,8 @@
                                 <div class="kt-portlet kt-portlet--head--noborder kt-portlet--height-fluid">
                                     <div class="kt-portlet__body p-0">
                                         <div class="kt-portlet-spacer"> 
-                                            <?php include('template/assessment-wizard/aw-content-header.php'); ?>
-                                            <?php include('template/assessment-wizard/aw-form.php'); ?>
+                                            <?php include('template/assessment-wizard/aw.content-header.php'); ?>
+                                            <?php include('template/assessment-wizard/aw.form.php'); ?>
                                         </div>
                                         
                                         <div class="kt-portlet-spacer bg-light-gray">
@@ -52,7 +54,7 @@
                             <div class="col-md-2">
                                 <div class="kt-portlet kt-portlet--head--noborder kt-portlet--height-fluid rs-actions">
                                     <div class="kt-portlet__body">
-                                        <?php include('template/risk/r_actions.php') ?>
+                                        <?php include('template/risk-assessment/ra.actions.php') ?>
                                     </div>
                                 </div>
                             </div>
@@ -62,17 +64,20 @@
                 </div>
             </div>
         </div>
+        
         <!--begin::Page Scripts -->
         <?php include('./global/vendors.php') ?>
         <script src="./assets/js/custom/bootstrap-tagsinput.min.js" type="text/javascript"></script>
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote.js"></script>
+        <script src="./assets/vendors/general/custom/bootstrap-tagsinput.min.js" type="text/javascript"></script>
+        <script src="./assets/vendors/general/summernote/dist/summernote.js"></script>
         <script src="./assets/js/custom/risk-assessment.js" type="text/javascript"></script>
+
         <script>
-            $(document).ready (function () {
+            $(document).ready(function () {
                 $('#task1Textarea, #task2Textarea').summernote({
                     height: 300
                 });
-            })
+            });
         </script>
         <!--end::Page Scripts -->
     </body>

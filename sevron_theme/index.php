@@ -1,10 +1,15 @@
 <html lang="en" >
     <!-- begin::Head -->
-    <head><!--begin::Base Path (base relative path for assets of this page) -->
+    <head>
         <?php include('./global/head.php') ?>
+        <!--begin::Page Vendors Styles(used by this page) -->
+            <link href="./assets/vendors/custom/fullcalendar/fullcalendar.bundle.css" rel="stylesheet" type="text/css" />
+            <link rel="stylesheet" href="./assets/vendors/custom/jstree/jstree.bundle.rtl.min.css" />
+        <!--end::Page Vendors Styles -->
+        <?php include('./global/head-global-styles.php') ?>
     </head>
-    
-    <body  class="kt-page-content-white kt-quick-panel--right kt-demo-panel--right kt-offcanvas-panel--right kt-header--fixed kt-header-mobile--fixed kt-subheader--enabled kt-subheader--transparent kt-aside--enabled kt-aside--fixed"  >
+    <!-- end::Head -->
+    <body class="kt-page-content-white kt-quick-panel--right kt-demo-panel--right kt-offcanvas-panel--right kt-header--fixed kt-header-mobile--fixed kt-subheader--enabled kt-subheader--transparent kt-aside--enabled kt-aside--fixed">
         <!--begin::Header -->
         <?php include('./global/header.php') ?>
         <!--end::Header -->
@@ -18,17 +23,34 @@
                     <?php include('./template/dashboard2/d2-subheader.php') ?>
                     <!--end:: Sub Header -->
                     <div class="kt-container--fluid  kt-grid__item kt-grid__item--fluid overflow-hidden">
-                        <?php include('template/dashboard2/d2-banner.php'); ?>
-                        <div class="second_section"> 
+                        <!-- Hero -->
+                        <?php include ('template/dashboard/section.hero.php'); ?>
+                        <div class="p-4"> 
                             <div class="row">
-                                <?php include ('template/home_template/list_box.php'); ?>
-                                <?php include ('template/home_template/third_section.php'); ?>
-                                <?php include ('template/home_template/fourth-section.php'); ?>
-                                <?php include ('template/home_template/fifth-section.php'); ?>
+                                <!-- Second Row -->
+                                <?php include ('template/dashboard/section.progress-bars.php'); ?>
+                                <!-- End of second row -->
+
+                                <!-- Third Row -->
+                                <?php include ('template/dashboard/section.performance-summary.php'); ?>
+                                <?php include ('template/dashboard/section.monthly-rates.php'); ?>
+                                <?php include ('template/dashboard/section.riddor-summary.php'); ?>
+                                <!-- End of third row -->
+
+                                <!-- Fourth Row -->
+                                <?php include ('template/dashboard/section.daily-tasks.php'); ?>
+                                <?php include ('template/dashboard/section.organisational-structure.php'); ?>
+                                <!-- End of fourth row -->
+
+                                <!-- Fifth Row -->
+                                <?php include ('template/dashboard/section.incident-summary.php') ?>
+                                <?php include ('template/dashboard/section.accident-types.php') ?>
+                                <?php include ('template/dashboard/section.recent-assessments.php') ?>
+                                <!-- End of fifth row -->
                             </div>
                         </div>
                         <!-- modal -->
-                        <?php include('template/home_modal.php')?>
+                        <?php include('template/dashboard/modal.actions.php')?>
                         <!-- end modal -->
                     </div>
                 </div>
@@ -36,14 +58,14 @@
         </div>
         <?php include('./global/vendors.php') ?>
         <!--begin::Page Scripts(used by this page) -->
-        <script src="assets/js/custom/canvasjs.min.js"></script>
-        <script type="text/javascript" src="./assets/js/custom/fusioncharts.js"></script>
-        <script type="text/javascript" src="./assets/js/custom/fusioncharts.theme.fint.js?cacheBust=56"></script>
-        <script src="https://code.highcharts.com/highcharts.js"></script>
-        <script src="https://code.highcharts.com/modules/exporting.js"></script>
-        <script src="https://code.highcharts.com/modules/export-data.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/jstree.min.js"></script>
-        <script src="https://cdnjs.com/libraries/Chart.js"></script>
-        <script src="./assets/js/custom/custom.js" type="text/javascript"></script>
+        <script src="./assets/vendors/custom/fullcalendar/fullcalendar.bundle.js"></script>
+        <script src="./assets/js/custom/canvasjs.min.js"></script>
+        <script src="./assets/js/custom/fusioncharts.js"></script>
+        <script src="./assets/js/custom/fusioncharts.theme.fint.js?cacheBust=56"></script>
+        <script src="./assets/js/custom/jscharts.min.js"></script>
+        <script src="./assets/js/custom/jstree.min.js"></script>
+        <script src="./assets/js/custom/charts.bundle.min.js"></script>
+        <script src="./assets/js/custom/custom.js"></script>
+        <!--end::Page Scripts(used by this page) -->
     </body>
 </html>

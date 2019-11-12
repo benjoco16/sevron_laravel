@@ -1,10 +1,13 @@
 <html lang="en" >
+    <!-- begin::Head -->
     <head>
-        <?php include('global/head.php') ?>
-        <link href="https://unpkg.com/video.js/dist/video-js.min.css" rel="stylesheet">
-        <script src="https://unpkg.com/video.js/dist/video.min.js"></script>
+        <?php include('./global/head.php') ?>
+        <!--begin::Page Vendors Styles(used by this page) -->
+            <link href="./assets/css/global/video.min.css" rel="stylesheet">
+            <script src="./assets/js/custom/video.min.js"></script>
+        <!--end::Page Vendors Styles -->
+        <?php include('./global/head-global-styles.php') ?>
     </head>
-
     <body  class="kt-page-content-white kt-quick-panel--right kt-demo-panel--right kt-offcanvas-panel--right kt-header--fixed kt-header-mobile--fixed kt-subheader--enabled kt-subheader--transparent kt-aside--enabled kt-aside--fixed kt-page--loading"  >
         <!--begin::Header -->
         <?php include('./global/header.php') ?>
@@ -48,9 +51,10 @@
                 </div>
             </div>
         </div>
-        
+        <?php include('template/assessment-process/modal/ap.modal.php'); ?>
         <!--begin::Page Scripts -->
         <?php include('./global/vendors.php') ?>
         <!--end::Page Scripts -->
+        <script src="./assets/js/custom/assessment-process.js" type="text/javascript"></script>
     </body>
 </html>

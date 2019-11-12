@@ -71,8 +71,6 @@
                                 <span class="font-weight-500 ml-3">High</span>
                             </div>
                         </div>
-
-                        
                     </div>
                 </div>
             </div>
