@@ -4,7 +4,7 @@
         <?php include('./global/head-global-styles.php') ?>
     </head>
 
-    <body  class="kt-page-content-white kt-quick-panel--right kt-demo-panel--right kt-offcanvas-panel--right kt-header--fixed kt-header-mobile--fixed kt-subheader--enabled kt-subheader--transparent kt-aside--enabled kt-aside--fixed kt-page--loading"  >
+    <body  class="kt-page-content-white kt-quick-panel--right kt-demo-panel--right kt-offcanvas-panel--right kt-header--fixed kt-header-mobile--fixed kt-subheader--enabled kt-aside--enabled kt-aside--fixed kt-page--loading"  >
         
         <!--begin::Header -->
         <?php include('./global/header.php') ?>
@@ -19,7 +19,7 @@
                     <?php include('./template/assessment-wizard/aw.subheader.php') ?>
                     <!--end:: Sub Header -->
                     <!-- begin::Page Content -->
-                    <div class="kt-container kt-container--fluid kt-grid__item kt-grid__item--fluid pl-4 pr-4 pt-4 bg-light-blue">
+                    <div class="kt-container kt-container--fluid kt-grid__item kt-grid__item--fluid pt-4 bg-light-blue">
                         <div class="align-items-start">
                             <?php include('template/incidents/incidents.tab-links.php') ?>
                         </div>

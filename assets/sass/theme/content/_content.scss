@@ -8,7 +8,7 @@
 @include kt-desktop {
 	// Content
 	.kt-content {
-		padding: kt-get($kt-page-padding, desktop);
+		padding: 0 kt-get($kt-page-padding, desktop);
 		padding-right: 0;
 		padding-bottom: 0;
 

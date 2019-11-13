@@ -8,7 +8,7 @@
                     <div>
                         <span class="accordion-status"></span> Substance Information
                     </div>
-                    <button class="ml-auto btn btn-custom-blue btn-xs mr-4">
+                    <button class="ml-auto btn btn-primary btn-xs mr-4">
                         <small>Add Substance</small>
                     </button>
                 </div>
@@ -78,7 +78,7 @@
             </div>
             <div class="d-flex align-items-center mt-4 mb-4">
                 <a class="ml-auto mr-5 font-weight-500 font-ash">Save &amp; Previous</a>
-                <button class="btn btn-custom-blue btn-wide ra-accordion-save">Save and Next</button>
+                <button class="btn btn-primary btn-wide ra-accordion-save">Save and Next</button>
             </div>
             </div>
         </div>

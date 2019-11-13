@@ -5,7 +5,7 @@
                 <div class="sv-portlet mr-3 mt-4">
                     <div class="d-flex align-items-center">
                         <h6 class="bold">CONTROLS IN PLACE</h6>
-                        <button class="btn btn-custom-blue btn-xs ml-auto">
+                        <button class="btn btn-primary btn-xs ml-auto">
                             <small>Add Controls</small>
 
                         </button>
@@ -49,7 +49,7 @@
                 <div class="sv-portlet mr-3 mt-4">
                     <div class="d-flex align-items-center">
                         <h6 class="bold">CONTROLS IN PLACE</h6>
-                        <button class="btn btn-custom-blue btn-xs ml-auto">
+                        <button class="btn btn-primary btn-xs ml-auto">
                             <small>Add emergency controls</small>
 
                         </button>

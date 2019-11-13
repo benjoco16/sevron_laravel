@@ -22,7 +22,7 @@
                 <div class="form-group form-group-sm mb-0 mr-2">
                     <input class="form-control" type="text" placeholder="Solvent Cleaner RS. Comp" value="">
                 </div>
-                <button class="btn btn-custom-blue btn-xs">
+                <button class="btn btn-primary btn-xs">
                     <small>Show Search Filters</small>
                 </button>
 
@@ -82,7 +82,7 @@
                                             </div>
                                         </div>
 
-                                        <button data-to-step="2" class="btn btn-custom-blue btn-xs">
+                                        <button data-to-step="2" class="btn btn-primary btn-xs">
                                             <small>Select</small>
                                         </button>
                                     </div>
@@ -127,7 +127,7 @@
                                             </div>
                                         </div>
 
-                                        <button data-to-step="2" class="btn btn-custom-blue btn-xs">
+                                        <button data-to-step="2" class="btn btn-primary btn-xs">
                                             <small>Select</small>
                                         </button>
                                     </div>
@@ -172,7 +172,7 @@
                                             </div>
                                         </div>
 
-                                        <button data-to-step="2" class="btn btn-custom-blue btn-xs">
+                                        <button data-to-step="2" class="btn btn-primary btn-xs">
                                             <small>Select</small>
                                         </button>
                                     </div>
@@ -217,7 +217,7 @@
                                             </div>
                                         </div>
 
-                                        <button data-to-step="2" class="btn btn-custom-blue btn-xs">
+                                        <button data-to-step="2" class="btn btn-primary btn-xs">
                                             <small>Select</small>
                                         </button>
                                     </div>
@@ -262,7 +262,7 @@
                                             </div>
                                         </div>
 
-                                        <button data-to-step="2" class="btn btn-custom-blue btn-xs">
+                                        <button data-to-step="2" class="btn btn-primary btn-xs">
                                             <small>Select</small>
                                         </button>
                                     </div>

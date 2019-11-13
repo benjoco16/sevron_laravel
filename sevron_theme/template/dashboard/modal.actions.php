@@ -54,7 +54,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <button type="button" class="btn btn-custom-blue btn-font-lg font-size-xs font-weight-500 btn-wider mt-4">
+                <button type="button" class="btn btn-primary btn-font-lg font-size-xs font-weight-500 btn-wider mt-4">
                     View Full Report
                 </button>
             </div> 

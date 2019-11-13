@@ -9,7 +9,7 @@
         <?php include('./global/head-global-styles.php') ?>
     </head>
     
-    <body  class="kt-page-content-white kt-quick-panel--right kt-demo-panel--right kt-offcanvas-panel--right kt-header--fixed kt-header-mobile--fixed kt-subheader--enabled kt-subheader--transparent kt-aside--enabled kt-aside--fixed">
+    <body  class="kt-page-content-white kt-quick-panel--right kt-demo-panel--right kt-offcanvas-panel--right kt-header--fixed kt-header-mobile--fixed kt-subheader--enabled kt-aside--enabled kt-aside--fixed">
         <!--begin::Header -->
         <?php include('./global/header.php') ?>
         <!--end::Header -->
@@ -21,11 +21,12 @@
                 <div class="kt-content  kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor" id="kt_content">
                     <!--begin::Sub Header -->
                     <?php include('./template/dashboard2/d2-subheader.php') ?>
+                    <?php include ('template/dashboard/section.hero.php'); ?>
                     <!--end:: Sub Header -->
-                    <div class="kt-container--fluid  kt-grid__item kt-grid__item--fluid overflow-hidden">
-                        <?php include ('template/dashboard/section.hero.php'); ?>
+                    <div class="kt-container--fluid kt-container  kt-grid__item kt-grid__item--fluid overflow-hidden">
                         
-                        <div class="p-4">
+                        
+                        <div class="mt-4">
                             <div class="row">
                                 <?php include ('template/dashboard2/d2-section2.php') ?>
 

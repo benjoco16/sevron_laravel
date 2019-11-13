@@ -4,7 +4,7 @@
 <link href="./assets/vendors/custom/vendors/flaticon/flaticon.css" rel="stylesheet" type="text/css" />
 <link href="./assets/vendors/custom/vendors/flaticon2/flaticon.css" rel="stylesheet" type="text/css" />
 <link href="./assets/vendors/general/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css" />
-<link href="./assets/css/demo11/style.bundle.css" rel="stylesheet" type="text/css"/>
-<!-- <link href="./assets/sass/app.css" rel="stylesheet" type="text/css" /> -->
+<!-- <link href="./assets/css/demo11/style.bundle.css" rel="stylesheet" type="text/css"/> -->
+<link href="./assets/css/dist/app.css" rel="stylesheet" type="text/css" />
 <link href="./assets/css/custom.css" rel="stylesheet" type="text/css" />
 <!--begin::Layout Skins(used by all pages) -->

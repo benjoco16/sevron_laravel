@@ -9,12 +9,12 @@ $kt-header-fixed-zindex: 97;
 $kt-header-config: (
 	base: (
 		self: (
-			bg-color: #1e1e2d,
-			shadow: 0px 4px 30px -4px rgba(0,51,90, 0.1)
+			bg-color: #fafafa,
+			shadow: -2px 2px 7px 0px rgba(0, 51, 90, 0.2)
 		),
 		desktop: (
 			default: (
-				height: 70px		
+				height: 60px		
 			),			
 			fixed: (		 
 				zindex: $kt-header-fixed-zindex,

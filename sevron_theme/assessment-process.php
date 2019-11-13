@@ -7,7 +7,7 @@
         <?php include('./global/head-global-styles.php') ?>
     </head>
      <!-- begin::Body -->
-    <body  class="kt-page-content-white kt-quick-panel--right kt-demo-panel--right kt-offcanvas-panel--right kt-header--fixed kt-header-mobile--fixed kt-subheader--enabled kt-subheader--transparent kt-aside--enabled kt-aside--fixed"  >
+    <body  class="kt-page-content-white kt-quick-panel--right kt-demo-panel--right kt-offcanvas-panel--right kt-header--fixed kt-header-mobile--fixed kt-subheader--enabled kt-aside--enabled kt-aside--fixed"  >
         <!--begin::Header -->
         <?php include('./global/header.php') ?>
         <!--end::Header -->
@@ -18,8 +18,8 @@
                 <!--end::Aside -->
                 <div class="kt-content  kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor" id="kt_content">
                     <?php include('template/assessment-process/ap.sub-header.php'); ?>
-                    <div class="kt-container--fluid  kt-grid__item kt-grid__item--fluid overflow-hidden">
-                        <div class="pl-4 pb-4 pr-4">
+                    <div class="kt-container--fluid kt-container  kt-grid__item kt-grid__item--fluid overflow-hidden">
+                        <div class="">
                             <?php include('template/assessment-process/ap.table-filters.php'); ?>
                             <?php include('template/assessment-process/ap.table.php'); ?>
                         </div>

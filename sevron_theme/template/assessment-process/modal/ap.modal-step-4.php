@@ -101,10 +101,10 @@
         </div>
     </div>
     <div class="actions as-tabs-actions d-flex mt-3">
-        <button data-to-step="3" type="button" class="btn btn-custom-blue bordered btn-wider">
+        <button data-to-step="3" type="button" class="btn btn-primary bordered btn-wider">
             Previous
         </button>
-        <a href="/sevron/sevron_theme/assessment-wizard.php" data-to-step="4" class="btn btn-custom-blue btn-wider ml-auto">
+        <a href="/sevron/sevron_theme/assessment-wizard.php" data-to-step="4" class="btn btn-primary btn-wider ml-auto">
             Add Substance Only
         </a>
     </div>

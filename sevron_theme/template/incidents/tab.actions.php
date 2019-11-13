@@ -2,7 +2,7 @@
     <div class="row pl-3 pr-3">
         <div class="col-md-9 font-ash">
             <div class="d-flex flex-column pl-3 pr-4">
-                <button class="btn btn-custom-blue btn-xs ml-auto mt-3">
+                <button class="btn btn-primary btn-xs ml-auto mt-3">
                     <small>Add Controls</small> 
                 </button>
                 <div class="kt-portlet kt-portlet--head--noborder mb-0 mt-4">
@@ -117,7 +117,7 @@
             <div class="form-separator mt-5"></div>
             <div class="actions d-flex align-items-center pr-3 pl-3 pt-5 pb-5">
                 <a href="#" class="font-weight-500 font-ash mr-5 ml-auto">Cancel</a>
-                <button class="btn btn-custom-blue btn-wider">Save and Next</button>
+                <button class="btn btn-primary btn-wider">Save and Next</button>
             </div>
         </div>
 

@@ -161,7 +161,7 @@
 
             <div class="actions d-flex align-items-center pr-3 pl-3 pt-5 pb-5">
                 <a href="#" class="font-weight-500 font-ash mr-5 ml-auto">Cancel</a>
-                <button class="btn btn-custom-blue btn-wider">Save and Next</button>
+                <button class="btn btn-primary btn-wider">Save and Next</button>
             </div>
             
         </div>

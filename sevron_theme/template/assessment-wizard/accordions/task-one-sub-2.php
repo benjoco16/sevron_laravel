@@ -70,7 +70,7 @@
                                 <div class="sv-portlet sv-portlet-bordered mr-3 mt-4">
                                     <div class="d-flex align-items-center">
                                         <h6 class="bold">CONTROLS IN PLACE</h6>
-                                        <button class="btn btn-custom-blue btn-xs ml-auto">
+                                        <button class="btn btn-primary btn-xs ml-auto">
                                             <small>Add Controls</small>
 
                                         </button>
@@ -112,7 +112,7 @@
                                 <div class="sv-portlet sv-portlet-bordered sv-portlet-bordered-red mr-3 mt-4">
                                     <div class="d-flex align-items-center">
                                         <h6 class="bold">EMERGENCY CONTROLS IN PLACE</h6>
-                                        <button class="btn btn-custom-blue btn-xs ml-auto">
+                                        <button class="btn btn-primary btn-xs ml-auto">
                                             <small>Add Emergency Controls</small>
                                         </button>
                                     </div>

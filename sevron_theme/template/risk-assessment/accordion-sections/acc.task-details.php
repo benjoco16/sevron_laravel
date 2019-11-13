@@ -19,7 +19,7 @@
                 </div>
                 <div class="d-flex align-items-center mt-4 mb-4">
                     <a class="ml-auto mr-5 font-weight-500 font-ash">Save & Previous</a>
-                    <button class="btn btn-custom-blue btn-wide ra-accordion-save">Save & Next</button>
+                    <button class="btn btn-primary btn-wide ra-accordion-save">Save & Next</button>
                 </div>
             </div>
         </div>

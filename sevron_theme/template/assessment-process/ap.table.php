@@ -80,7 +80,7 @@
                     </td>
                     <td>
                         <div class="dropdown dropright">
-                            <button data-toggle="dropdown" class=" btn btn-custom-blue btn-xs w-100">Actions</button>
+                            <button data-toggle="dropdown" class=" btn btn-primary btn-xs w-100">Actions</button>
                             <div class="dropdown-menu dropdown-dark-full dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-sm">
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <i class="flaticon2-edit font-yellow font-size-md"></i>
@@ -120,7 +120,7 @@
                     </td>
                     <td>
                         <div class="dropdown dropright">
-                            <button data-toggle="dropdown" class=" btn btn-custom-blue btn-xs w-100">Actions</button>
+                            <button data-toggle="dropdown" class=" btn btn-primary btn-xs w-100">Actions</button>
                             <div class="dropdown-menu dropdown-dark-full dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-sm">
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <i class="flaticon2-edit font-yellow font-size-md"></i>
@@ -161,7 +161,7 @@
                     </td>
                     <td>
                         <div class="dropdown dropright">
-                            <button data-toggle="dropdown" class=" btn btn-custom-blue btn-xs w-100">Actions</button>
+                            <button data-toggle="dropdown" class=" btn btn-primary btn-xs w-100">Actions</button>
                             <div class="dropdown-menu dropdown-dark-full dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-sm">
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <i class="flaticon2-edit font-yellow font-size-md"></i>
@@ -201,7 +201,7 @@
                     </td>
                     <td>
                         <div class="dropdown dropright">
-                            <button data-toggle="dropdown" class=" btn btn-custom-blue btn-xs w-100">Actions</button>
+                            <button data-toggle="dropdown" class=" btn btn-primary btn-xs w-100">Actions</button>
                             <div class="dropdown-menu dropdown-dark-full dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-sm">
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <i class="flaticon2-edit font-yellow font-size-md"></i>
@@ -241,7 +241,7 @@
                     </td>
                     <td>
                         <div class="dropdown dropright">
-                            <button data-toggle="dropdown" class=" btn btn-custom-blue btn-xs w-100">Actions</button>
+                            <button data-toggle="dropdown" class=" btn btn-primary btn-xs w-100">Actions</button>
                             <div class="dropdown-menu dropdown-dark-full dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-sm">
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <i class="flaticon2-edit font-yellow font-size-md"></i>
@@ -281,7 +281,7 @@
                     </td>
                     <td>
                         <div class="dropdown dropright">
-                            <button data-toggle="dropdown" class=" btn btn-custom-blue btn-xs w-100">Actions</button>
+                            <button data-toggle="dropdown" class=" btn btn-primary btn-xs w-100">Actions</button>
                             <div class="dropdown-menu dropdown-dark-full dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-sm">
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <i class="flaticon2-edit font-yellow font-size-md"></i>
@@ -321,7 +321,7 @@
                     </td>
                     <td>
                         <div class="dropdown dropright">
-                            <button data-toggle="dropdown" class=" btn btn-custom-blue btn-xs w-100">Actions</button>
+                            <button data-toggle="dropdown" class=" btn btn-primary btn-xs w-100">Actions</button>
                             <div class="dropdown-menu dropdown-dark-full dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-sm">
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <i class="flaticon2-edit font-yellow font-size-md"></i>
@@ -361,7 +361,7 @@
                     </td>
                     <td>
                         <div class="dropdown dropright">
-                            <button data-toggle="dropdown" class=" btn btn-custom-blue btn-xs w-100">Actions</button>
+                            <button data-toggle="dropdown" class=" btn btn-primary btn-xs w-100">Actions</button>
                             <div class="dropdown-menu dropdown-dark-full dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-sm">
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <i class="flaticon2-edit font-yellow font-size-md"></i>

@@ -52,7 +52,7 @@
                             </div>
                         </div>
 
-                        <button class="btn btn-custom-blue btn-xs ml-auto mt-3 font-weight-500">
+                        <button class="btn btn-primary btn-xs ml-auto mt-3 font-weight-500">
                             <small>View All</small>
                         </button>
                     </div>
@@ -149,7 +149,7 @@
                             </div>
                         </div>
 
-                        <button class="btn btn-custom-blue btn-xs ml-auto mt-3 font-weight-500">
+                        <button class="btn btn-primary btn-xs ml-auto mt-3 font-weight-500">
                             <small>View All</small>
                         </button>
                     </div>
@@ -245,7 +245,7 @@
                             </div>
                         </div>
 
-                        <button class="btn btn-custom-blue btn-xs ml-auto mt-3 font-weight-500">
+                        <button class="btn btn-primary btn-xs ml-auto mt-3 font-weight-500">
                             <small>View All</small>
                         </button>
                     </div>

@@ -1,11 +1,10 @@
 <!-- begin:: Subheader -->
-<div class="kt-subheader bg-white kt-grid__item" id="kt_subheader">
-    <div class="kt-container  kt-container--fluid pr-0">
+<div class="kt-subheader kt-grid__item" id="kt_subheader">
+    <div class="kt-container  kt-container--fluid">
         <div class="kt-subheader__main">
             <!-- Start Create New button -->
-            <div class="kt-header__brand-nav d-flex align-items-center">
                 <div class="dropdown">
-                    <button type="button" class="btn dropdown-toggle btn-lg btn-custom-blue pl-5 pr-5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <button type="button" class="btn dropdown-toggle btn-lg btn-primary pl-5 pr-5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                         Create New
                     </button>
                     <div class="dropdown-menu dropdown-dark dropdown-menu-fit dropdown-menu-sm">
@@ -69,7 +68,6 @@
                     About
                 </a>
                 
-            </div>
             <!-- End Create New Button -->
         </div>
         <div class="kt-subheader__toolbar">
