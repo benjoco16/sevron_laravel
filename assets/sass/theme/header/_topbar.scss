@@ -10,6 +10,8 @@ $kt-topbar-mobile-icon-color: kt-base-color(label, 2);
 $kt-topbar-icon-size: 37px;
 $kt-topbar-mobile-icon-size: 30px;
 
+$kt-topbar-thumb-photo-radius: 100px;
+
 // General mode
 .kt-header__topbar {
 	display: flex;
@@ -61,7 +63,7 @@ $kt-topbar-mobile-icon-size: 30px;
 				border-radius: $kt-border-radius;
 
 				img {
-					border-radius: $kt-border-radius;
+					border-radius: $kt-topbar-thumb-photo-radius;
 					width: 22px;
 				}
 			}
@@ -97,14 +99,14 @@ $kt-topbar-mobile-icon-size: 30px;
 				padding: 0 0.55rem 0 0;
 				font-weight: 500;
 				font-size: 1rem;
-				color: #fff;
+				color: $ash;
 			}
 
 			.kt-header__topbar-wrapper {
 				img {
 					align-self: center;
 					height: $kt-topbar-icon-size;
-					border-radius: $kt-border-radius;
+					border-radius: $kt-topbar-thumb-photo-radius;
 				}
 			}	
 		}

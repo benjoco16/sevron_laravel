@@ -1,4 +1,4 @@
-<div class="kt-portlet-spacer"> 
+<div class="kt-portlet--spacer"> 
     <div class="row">
         <div class="col-md-7 r__title">
             <div class="d-flex align-items-center">

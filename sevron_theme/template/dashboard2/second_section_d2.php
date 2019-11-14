@@ -101,7 +101,7 @@
                                     <h2>+100 <span class="small_pt">PTS</span></h2>
                                 </div>
                                 <div class="col-xl-12">
-                                    <button type="button" class="btn btn-primary btn-font-sm d2_bt">View All</button>
+                                    <button type="button" class="btn btn-primary btn-font-sm">View All</button>
                                 </div>
                             </div>
                         </div>
@@ -171,7 +171,7 @@
                                     <h2>+0<span class="small_pt">PTS</span></h2>
                                 </div>
                                 <div class="col-xl-12">
-                                    <button type="button" class="btn btn-primary btn-font-sm d2_bt">View All</button>
+                                    <button type="button" class="btn btn-primary btn-font-sm">View All</button>
                                 </div>
                             </div>
                         </div>

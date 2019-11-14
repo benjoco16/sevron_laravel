@@ -26,12 +26,12 @@
                             <div class="col-md-10">
                                 <div class="kt-portlet kt-portlet--head--noborder kt-portlet--height-fluid">
                                     <div class="kt-portlet__body p-0">
-                                        <div class="kt-portlet-spacer"> 
+                                        <div class="kt-portlet--spacer"> 
                                             <?php include('template/assessment-wizard/aw.content-header.php'); ?>
                                             <?php include('template/assessment-wizard/aw.form.php'); ?>
                                         </div>
                                         
-                                        <div class="kt-portlet-spacer bg-light-gray">
+                                        <div class="kt-portlet--spacer bg-light-gray">
                                             <?php include('template/assessment-wizard/accordions/task-one.php')?>
                                             <?php include('template/assessment-wizard/accordions/task-two.php')?>
                                             

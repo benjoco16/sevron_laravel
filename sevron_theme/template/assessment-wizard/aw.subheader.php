@@ -52,13 +52,6 @@
 
             
         </div>
-        <div class="kt-subheader__toolbar">
-            <div class="kt-subheader__wrapper">
-                    <a href="#" class="grad_bt">                       
-                       User Guide  <i class="fa fa-graduation-cap ml-2"></i>    
-                       <!--<img src="./assets/media/dashboard/userguid.svg">-->
-                    </a>
-            </div>
-        </div>
+        <?php include('template/global/link.user-guide.php') ?>
     </div>
 </div>

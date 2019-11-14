@@ -9,27 +9,33 @@
             </div>
         </div>
 
-        <div class="kt-portlet__head">
-            <div class="kt-portlet__head-label rsum">
-                <div class="kt-widget3__item pt-4">
-                    <div class="kt-widget3__body">
-                        <p class="kt-widget3__text font-weight-500 font-ash"> 
+        <div class="kt-portlet__head h-50">
+            <div class="kt-portlet__head-label align-items-stretch">
+                <div class="kt-widget3__item">
+                    <div class="kt-widget3__body d-flex flex-column h-100">
+                        <p class="kt-widget3__text font-weight-600 font-ash pt-4"> 
                             LONGEST NUMBER OF DAYS WITHOUT A RIDDOR
                         </p>
-                        <h2 class="bold"><img src="assets/media/dashboard/king.png"/> 2019</h2>
+                        <h1 class="mb-4 mt-auto">
+                            <img src="assets/media/dashboard/king.png"/> 
+                            <strong>2019</strong>
+                        </h1>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="kt-portlet__head">
-            <div class="kt-portlet__head-label rsum">
-                <div class="kt-widget3__item pt-4">
+        <div class="kt-portlet__head h-50">
+            <div class="kt-portlet__head-label align-items-stretch">
+                <div class="kt-widget3__item">
                     
-                    <div class="kt-widget3__body">
-                        <p class="kt-widget3__text font-weight-500 font-ash"> 
+                    <div class="kt-widget3__body d-flex flex-column h-100">
+                        <p class="kt-widget3__text font-weight-600 font-ash pt-4"> 
                             CURRENT NUMBER OF DAYS WITHOUT RIDDOR
                         </p>
-                        <h2 class="bold"><img src="assets/media/dashboard/clock.png"/> 823</h2>
+                        <h1 class="mb-4 mt-auto">
+                            <img src="assets/media/dashboard/clock.png"/> 
+                            <strong>823</strong>
+                        </h2>
                     </div>
                 </div>
             </div>

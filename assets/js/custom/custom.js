@@ -1,19 +1,19 @@
-var bannerChart = Highcharts.chart('banner-chart-container', {
+var bannerChart = Highcharts.chart('heroChart', {
 	chart: {
 	  plotBackgroundColor: null,
 	  plotBorderWidth: 0,
 	  backgroundColor: null,
-	  className: "main_gauge",
+	  className: "hero__chart-inner",
 	  plotShadow: false,
 	  type: 'pie',
 	},
 	title: {
-	  text: '<div class="cs_class">Current Score</div>'+
-				'<div class="total_score">855</div>'+
-				'<div class="ofone">out of 1000</div>'+
-				'<div class="result_f">' + 
+	  text: '<div class="hero__chart-description">Current Score</div>'+
+				'<div class="hero__chart-description-score">855</div>'+
+				'<div class="hero__chart-description-total">out of 1000</div>'+
+				'<div class="hero__chart-description-result">' + 
 					'FAIR' + 
-					'<i class="fa fa-question-circle" data-container=".main_banner" data-toggle="kt-popover" data-html="true" data-content="<p class=\'bold font-white mb-2\'>FAIR</p> <p class=\'font-white\'><span class=\'font-light-purple\'>You might get through inspection/audits, </span>but run the risk of higher penalties and fines in the event of an incident</p>"></i>' + 
+					'<i class="fa fa-question-circle" data-container=".hero__chart" data-toggle="kt-popover" data-html="true" data-content="<p class=\'bold font-white mb-2\'>FAIR</p> <p class=\'font-white\'><span class=\'font-light-purple\'>You might get through inspection/audits, </span>but run the risk of higher penalties and fines in the event of an incident</p>"></i>' + 
 				'</div>'+
 			'</div>',
   

@@ -4,7 +4,6 @@
 
 
 
-
 ////////////////////////////////////////////////////////////////
 ///////////// DO NOT MODIFY BELOW INCLUDE ORDER ////////////////
 ////////////////////////////////////////////////////////////////
@@ -14,6 +13,8 @@
 
 // 2: Include demo config (that overrides the above global config)
 @import "config";
+
+@import "../variables";
 
 // 3: Bootstrap Include
 @import "core/bootstrap/variables";

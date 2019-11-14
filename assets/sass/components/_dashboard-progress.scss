@@ -1,0 +1,30 @@
+.dash-progress {
+    .progress {
+        &.progress-lg {
+            height: 40px;
+        }
+
+        .progress-bar {
+            border-radius: 0 !important;
+            height: 40px;
+            border-radius: 0;
+        }
+
+        &-bar--green {
+            background: $green;
+        }
+
+        &-bar--yellow {
+            background: $yellow;
+        }
+
+        &-bar--red {
+            background: $red;
+        }
+    }
+
+    .kt-badge.kt-badge--dot  {
+        min-width: 10px;
+        min-height: 10px;
+    }
+}

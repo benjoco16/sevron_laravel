@@ -1,6 +1,6 @@
 <!-- Accordion -->
 <!--begin::Portlet-->
-<div class="kt-portlet-spacer bg-light-gray "> 
+<div class="kt-portlet--spacer bg-light-gray "> 
 
     <!-- begin::Task Details accordion -->
     <?php include('accordion-sections/acc.task-details.php') ?>

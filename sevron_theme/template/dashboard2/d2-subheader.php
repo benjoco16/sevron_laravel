@@ -55,20 +55,13 @@
             <!-- End Create New Button -->
 
             <div class="dropdown">
-                <button type="button" class="btn btn-secondary btn-wide dopti" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <button type="button" class="btn btn-secondary btn-wide" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                     Dashboard Options
                 </button>
             </div>
             <!-- End Dashboard Options Button -->
         </div>
-        <div class="kt-subheader__toolbar">
-            <div class="kt-subheader__wrapper">
-                    <a href="#" class="grad_bt">                       
-                       User Guide  <i class="fa fa-graduation-cap ml-2"></i>    
-                       <!--<img src="./assets/media/dashboard/userguid.svg">-->
-                    </a>
-            </div>
-        </div>
+        <?php include('template/global/link.user-guide.php') ?>
     </div>
 </div>
 <!-- end:: Subheader -->

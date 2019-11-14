@@ -2,10 +2,11 @@
     margin: 0;
     border-bottom: 2px solid $alto;
     z-index: 499;
+
     .kt-subheader__main .btn:not(.dropdown-toggle-split) {
         margin-right: $spacer;
-        font-size: $font-size-sm;
-        padding: $spacer $spacer*2;
+        font-size: $font-size-base;
+        padding: $spacer $spacer*2.5;
     }
 
     @media screen and (max-width: 1023px) {

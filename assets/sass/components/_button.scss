@@ -1,0 +1,55 @@
+
+
+.btn {
+    box-shadow: 0 7px 9px -10px rgba(0,0,0,0.29);
+
+    &.btn-default {
+        background: #FFF;
+
+        &.dropdown-toggle {
+            border: 1px solid $alto;
+            box-shadow: 2px 3px 10px -8px rgba(0,0,0,1)
+        }
+    }
+
+    &-xs {
+        padding: $spacer/5 $spacer/3;
+        font-weight: 500;
+        font-size: $font-size-sm;
+    }
+
+    &-secondary {
+        background: $white;
+    }
+
+    &-wider {
+        min-width: 150px;
+    }
+
+    &-no-style {
+        background: transparent;
+        border: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    &-unstyled {
+        border: none;
+        background: transparent;
+    }
+}
+
+.dropdown-menu .btn-logout {
+    width: calc(100% + 20px);
+    background: $chambray;
+    color: $white;
+    margin-top: $spacer;
+    margin-left: -10px;
+    margin-bottom: -3px;
+}
+
+// .btn-group-toggle .btn {
+//     background: $primary !important;
+//     border-color: $primary !important;
+//     color: #FFF !important;
+// }

@@ -7,15 +7,13 @@
                     Actions To Improve Compliance Score
                 </h5>
 
-                <div class="d-flex align-items-center">
-                    <span>All &nbsp;</span> 
-                    <span class="kt-switch kt-switch--sm">
-                        <label class="mb-0">
-                            <input type="checkbox" checked="checked" name="">
-                            <span></span>
-                        </label>
-                    </span>
-                </div>
+                <span class="kt-switch kt-switch--sm d-flex align-items-center ml-auto">
+                    <span class="ml-auto mr-3">All</span> 
+                    <label class="d-flex align-items-center m-0">
+                        <input type="checkbox" checked name="">
+                        <span></span>
+                    </label>
+                </span>
             </div>
             <div class="modal-body">
                 <table class="table table-striped md_pop">
@@ -28,27 +26,27 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td><i class="fa fa-circle red_icon"></i> Review Critical SDS Update</td>
+                            <td><i class="fa fa-circle font-red mr-2"></i> Review Critical SDS Update</td>
                             <td>Luke Halliwell</td>
                             <td>+100</td>
                         </tr>
                         <tr>
-                            <td><i class="fa fa-circle yellow_icon"></i> Clear Overdue Actions</td>
+                            <td><i class="fa fa-circle font-yellow mr-2"></i> Clear Overdue Actions</td>
                             <td>Luke Halliwell</td>
                             <td>+100</td>
                         </tr>
                         <tr>
-                            <td><i class="fa fa-circle yellow_icon"></i> Clear Overdue Actions</td>
+                            <td><i class="fa fa-circle font-yellow mr-2"></i> Clear Overdue Actions</td>
                             <td>RA8396636</td>
                             <td>Sat, Aug 27</td>
                         </tr>
                         <tr>
-                            <td><i class="fa fa-circle yellow_icon"></i> Aerosol</td>
+                            <td><i class="fa fa-circle font-yellow mr-2"></i> Aerosol</td>
                             <td>RA8396636</td>
                             <td>Sat, Aug 27</td>
                         </tr>
                         <tr>
-                            <td><i class="fa fa-circle yellow_icon"></i> Aerosol</td>
+                            <td><i class="fa fa-circle font-yellow mr-2"></i> Aerosol</td>
                             <td>RA8396636</td>
                             <td>Sat, Aug 27</td>
                         </tr>

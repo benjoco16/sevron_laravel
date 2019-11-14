@@ -17,40 +17,45 @@
                             <tr>
                                 <th>Name</th>
                                 <th>Ref No.</th>
-                                    <th>Date Edited</th>
-                                    <th>  </th>
+                                <th>Date Edited</th>
+                                <th></th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <th scope="row">Aerosol</th>
+                                <td><strong>Aerosol</strong></td>
                                 <td>RA8396636</td>
                                 <td>Sat, Aug 27</td>
-                                <td><a href="#"><i class="fa fa-pencil-alt"></i></a></td>
+                                <td><a class="font-ash" href="#"><i class="fa fa-pencil-alt"></i></a></td>
                             </tr>
                             <tr>
-                                <th scope="row">Aerosol</th>
+                                <td><strong>Aerosol</strong></td>
                                 <td>RA8396636</td>
                                 <td>Sat, Aug 27</td>
-                                <td><a href="#"><i class="fa fa-pencil-alt"></i></a></td>
+                                <td><a class="font-ash" href="#"><i class="fa fa-pencil-alt"></i></a></td>
                             </tr>
                             <tr>
-                                <th scope="row">Aerosol</th>
+                                <td><strong>Aerosol</strong></td>
                                 <td>RA8396636</td>
                                 <td>Sat, Aug 27</td>
-                                <td><a href="#"><i class="fa fa-pencil-alt"></i></a></td>
+                                <td><a class="font-ash" href="#"><i class="fa fa-pencil-alt"></i></a></td>
                             </tr>
                             <tr>
-                                <th scope="row">Aerosol</th>
+                                <td>
+                                    <strong>Aerosol</strong>
+
+                                </td>
                                 <td>RA8396636</td>
                                 <td>Sat, Aug 27</td>
-                                <td><a href="#"><i class="fa fa-pencil-alt"></i></a></td>
+                                <td><a class="font-ash" href="#"><i class="fa fa-pencil-alt"></i></a></td>
                             </tr>
                             <tr>
-                                <th scope="row">Aerosol</th>
+                                <td>
+                                    <strong>Aerosol</strong>
+                                </td>
                                 <td>RA8396636</td>
                                 <td>Sat, Aug 27</td>
-                                <td><a href="#"><i class="fa fa-pencil-alt"></i></a></td>
+                                <td><a class="font-ash" href="#"><i class="fa fa-pencil-alt"></i></a></td>
                             </tr>
                         </tbody>
                     </table>

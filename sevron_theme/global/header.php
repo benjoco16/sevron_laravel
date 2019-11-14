@@ -11,7 +11,7 @@
     </div>
     <!-- end:: Header Mobile -->
     <div class="kt-grid kt-grid--hor kt-grid--root">
-            <div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--ver kt-page">
+        <div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--ver kt-page">
                 <div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor kt-wrapper" id="kt_wrapper">
                     <!-- begin:: Header -->
                     <div id="kt_header" class="kt-header kt-grid__item  kt-header--fixed"  data-ktheader-minimize="on" >
@@ -42,9 +42,11 @@
                             </div>
                         </div>
                     </div>
-	<!--end: Search -->
+    
+                    <!--end: Search -->
 
-	<!--begin: Notifications -->
+    
+                    <!--begin: Notifications -->
 	<div class="kt-header__topbar-item dropdown">
 		<div class="kt-header__topbar-wrapper" data-toggle="dropdown" data-offset="10px,0px">
 			<span class="kt-header__topbar-icon">
@@ -97,15 +99,22 @@
         <!--begin: User bar -->
         <div class="kt-header__topbar-item kt-header__topbar-item--user">
             <div class="kt-header__topbar-wrapper" data-toggle="dropdown" data-offset="0px,10px">
-                <span class="kt-header__topbar-welcome kt-visible-desktop">Hi,</span>
-                <span class="kt-header__topbar-username kt-visible-desktop">Nick</span>
+                <!-- <span class="kt-header__topbar-welcome ">Hi,</span> -->
+                <span class="kt-header__topbar-username">
+                    Nick <i class="fa fa-caret-down"></i>
+                </span>
                 <img alt="Pic" src="./assets/media/users/300_21.jpg"/>
                 <span class="kt-header__topbar-icon kt-bg-brand kt-font-lg kt-font-bold kt-font-light kt-hidden">S</span>
                 <span class="kt-header__topbar-icon kt-hidden"><i class="flaticon2-user-outline-symbol"></i></span>
             </div>
-            <div class="dropdown-menu dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-xl">
-                <!--begin: Head -->
-        <div class="kt-user-card kt-user-card--skin-light kt-notification-item-padding-x">
+            <div class="dropdown-menu dropdown-dark-full dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-sm">
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                    No information to display
+                </a>
+            </div>
+            <!--<div class="dropdown-menu dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-xl">
+
+         <div class="kt-user-card kt-user-card--skin-light kt-notification-item-padding-x">
             <div class="kt-user-card__avatar">
                 <img class="kt-hidden-" alt="Pic" src="./assets/media/users/300_25.jpg" />
                 <span class="kt-badge kt-badge--username kt-badge--unified-success kt-badge--lg kt-badge--rounded kt-badge--bold kt-hidden">S</span>
@@ -117,9 +126,7 @@
                 <span class="btn btn-label-primary btn-sm btn-bold btn-font-md">23 messages</span>
             </div>
         </div>
-        <!--end: Head -->
 
-        <!--begin: Navigation -->
         <div class="kt-notification">
             <a href="demo8/custom/apps/user/profile-1/personal-information.html" class="kt-notification__item">
                 <div class="kt-notification__item-icon">
@@ -192,11 +199,9 @@
 
                 <a href="demo8/custom/user/login-v2.html" target="_blank" class="btn btn-clean btn-sm btn-bold">Upgrade Plan</a>
             </div>
+        </div> 
+            </div>-->
         </div>
-        <!--end: Navigation -->
-            </div>
-        </div>
-        <!--end: User bar -->
         
         <!--begin: Language bar -->
         <div class="kt-header__topbar-item kt-header__topbar-item--langs">

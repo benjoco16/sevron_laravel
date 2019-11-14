@@ -7,28 +7,9 @@
 <script src="./assets/vendors/general/popper.js/dist/umd/popper.js" type="text/javascript"></script>
 <script src="./assets/vendors/general/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
 <script src="./assets/vendors/general/js-cookie/src/js.cookie.js" type="text/javascript"></script>
-<!-- <script src="./assets/vendors/general/moment/min/moment.min.js" type="text/javascript"></script> -->
-<!-- <script src="./assets/vendors/general/tooltip.js/dist/umd/tooltip.min.js" type="text/javascript"></script> -->
-<!-- <script src="./assets/vendors/general/perfect-scrollbar/dist/perfect-scrollbar.js" type="text/javascript"></script> -->
-<!-- <script src="./assets/vendors/general/sticky-js/dist/sticky.min.js" type="text/javascript"></script> -->
-<!-- <script src="./assets/vendors/general/wnumb/wNumb.js" type="text/javascript"></script> -->
 <!--end:: Global Mandatory Vendors -->
 
 
 <!--begin::Global Theme Bundle(used by all pages) -->
-<script src="./assets/js/demo11/scripts.bundle.js" type="text/javascript"></script>
+<script src="./assets/vendors/general/scripts.bundle.min.js" type="text/javascript"></script>
 <!--end::Global Theme Bundle -->
-
-<!--begin::Page Vendors(used by this page) -->
-
-<!-- <script src="//maps.google.com/maps/api/js?key=AIzaSyBTGnKT7dt597vo9QgeQ7BFhvSRP4eiMSM" type="text/javascript"></script> -->
-<!-- <script src="./assets/vendors/custom/gmaps/gmaps.js" type="text/javascript"></script> -->
-<!--end::Page Vendors -->
-
-<!--begin::Page Scripts(used by this page) -->
-<!-- <script src="./assets/js/demo11/pages/dashboard.js" type="text/javascript"></script> -->
-<!--end::Page Scripts -->
-
-<!--begin::Page Scripts(used by this page) -->
-<!-- <script src="./assets/js/demo12/pages/components/calendar/basic.js" type="text/javascript"></script> -->
-<!--end::Page Scripts -->

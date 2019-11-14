@@ -17,14 +17,14 @@
                 <!--begin::Aside -->
                 <?php include('./global/sidebar.php') ?>
                 <!--end::Aside -->
-                <div class="kt-content  kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor" id="kt_content">
+                <div class="kt-content about kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor" id="kt_content">
                     <!--begin::Sub Header -->
                     <?php include('./template/about/about-subheader.php') ?>
                     <!--end:: Sub Header -->
                     <!-- begin::Page Content -->
                     <div class="kt-container kt-container--fluid kt-grid__item kt-grid__item--fluid p-0 m-0">
-                        <div class="about-video-wrapper">
-                            <div class="about-video-handler">
+                        <div class="about__video">
+                            <div class="about__video-handler">
                                 <video class='video-js' controls preload='auto' width='852' height='480'
                                 poster='MY_VIDEO_POSTER.jpg' data-setup='{"fluid": true}'>
                                     <source src='https://www.w3schools.com/tags/movie.mp4' type='video/mp4'>
@@ -38,10 +38,10 @@
                         </div>
                         <div class="row pl-3 pr-3 pt-5 pb-5 bg-white">
                             <div class="col-md-3">
-                                <img class="about-video-logo" src="assets/media/about/msds-icon.png">
+                                <img class="about__video-logo" src="assets/media/about/msds-icon.png">
                             </div>
                             <div class="col-md-7">
-                                <h3 class="pl-4 font-weight-normal font-ash">
+                                <h3 class="pl-4 font-weight-normal">
                                     Manage the substances used in your company, get notified of updates automatically and request ones you can't find.
                                 </h3>
                             </div>

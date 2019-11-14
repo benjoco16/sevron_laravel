@@ -1,0 +1,22 @@
+.kt-portlet {
+    &__body {
+        overflow: auto;
+    }
+
+    &__head-title {
+        i {
+            // color: #c3c3c3;
+            font-size: $font-size-sm;
+        }
+    }
+
+    &--spacer {
+        padding: $spacer*1.8;
+    }
+
+    &__head {
+        &__label {
+            width: 100%;
+        }
+    }
+}

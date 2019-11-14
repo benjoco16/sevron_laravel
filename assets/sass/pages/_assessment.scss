@@ -1,0 +1,337 @@
+.as-tbl {
+    max-height: 500px;
+    overflow: auto;
+}
+
+.tbl-filters__export-btn {
+    margin-left: auto;
+}
+
+@media screen and (max-width: 1023px) {
+    .tbl-filters__export-btn {
+        margin-left: 0; 
+    }
+}
+
+.as-tbl-filters,
+.as-tbl-filters .switches {
+    flex-wrap: wrap;
+}
+
+.as-tbl-filters .switches {
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+}
+
+@media screen and (max-width: 990px) {
+
+    .as-tbl-filters {
+        justify-content: center;
+    }
+
+    .as-tbl-filters .switches {
+        margin-top: 20px;
+        padding-left: 0;
+    }
+}
+
+.as-tbl-filters select.form-control {
+    max-width: 150px;
+}
+
+/* .kt-switch input[type="checkbox"] + span + p:after {
+    content: 'Off';
+}
+
+.kt-switch input[type="checkbox"]:checked + span + p:after {
+    content: 'On';
+}
+
+.kt-switch.kt-switch--sm input:empty ~ span:after {
+    width: 13px;
+    height: 13px;
+}
+
+.kt-switch.kt-switch--sm input:empty ~ span {
+    height: 17px;
+}
+
+.kt-switch.kt-switch--sm input:empty ~ span:before, 
+.kt-switch.kt-switch--sm input:empty ~ span:before {
+    width: 36px;
+}
+
+.kt-switch.kt-switch--sm input:checked ~ span:after {
+    margin-left: 21px;
+}
+
+.kt-switch.kt-switch--sm input:empty ~ span {
+    width: 37px;
+}
+
+.kt-switch input:empty ~ span:before {
+    background-color: #c9c9c9;
+}
+.kt-switch input:empty ~ span:after {
+    color: #f5f5f5;
+    background-color: #f5f5f5;
+}
+.kt-switch input:checked ~ span:before {
+    background-color: #30a4f0;
+}
+.kt-switch input:checked ~ span:after {
+    background-color: #ffffff;
+    color: #ffffff;
+}  */
+
+.as-modal-tabs i.dropdown-toggle:after {
+    content: none;
+}
+
+td.ellipsed {
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.as-account-usage {
+    padding: 5px 15px;
+    border-radius: 100px;
+}
+
+.as-account-usage .actual {
+    color: #38a5ed;
+}
+
+@media screen and (max-width: 1400px) {
+
+}
+
+.as-wizard {
+    list-style: none;
+    margin: 15px 0 30px;
+    padding: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.as-wizard li {
+    text-align: center;
+    position: relative;
+    width: 25%;
+}
+
+.as-wizard li:after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    right: calc(-50% - -30px);
+    width: 60%;
+    height: 2px;
+    background: #e8e8e8;
+    display: block;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.as-wizard li:last-child:after {
+    content: none;
+}
+
+.as-wizard li p {
+    font-weight: 500;
+    margin-bottom: 0;
+    color: #d6d6d6;
+    margin-top: 10px;
+}
+
+.as-wizard li span {
+    margin: 0 auto;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 500;
+    background: #e8e8e8;
+    color: #b7b7b7;
+    border-radius: 100px;
+    position: relative;
+    z-index: 2;
+}
+
+.as-wizard li span:after,
+.as-wizard li span:before {
+    content: '';
+    height: 100%;
+    width: 10px;
+    display: block;
+    position: absolute;
+    background: #FFF;
+}
+
+.as-wizard li span:before {
+    left: -10px;
+}
+
+.as-wizard li span:after {
+    right: -10px;
+}
+
+.as-wizard li.active:after {
+    background: #38a5ed;
+}
+
+.as-wizard li.active p {
+    color: #38a5ed;
+}
+
+.as-wizard li.active span {
+    background: #38a5ed;
+    color: #FFF;
+}
+
+.as-modal-tabs .nav-link.active {
+    color: #2f4368 !important; 
+    font-weight: 500;
+    border-bottom-color: #38a5ed;
+}
+
+.as-modal-tabs.nav-tabs.nav-tabs-line.nav.nav-tabs .nav-link:hover, .as-modal-tabs.nav-tabs.nav-tabs-line.nav.nav-tabs .nav-link.active, 
+.as-modal-tabs.nav-tabs.nav-tabs-line a.nav-link:hover, 
+.as-modal-tabs.nav-tabs.nav-tabs-line a.nav-link.active {
+    border-bottom-color: #38a5ed;
+    color: #707070
+}
+
+.as-modal-tabs {
+    position: relative;
+}
+
+.as-modal-tabs.tab-content > div {
+    position: relative;
+    z-index: 2;
+}
+
+.as-modal-tabs-bg {
+    position: relative;
+}
+
+.as-modal-tabs-bg:after {
+    content: '';
+    width: calc(100% + 30px);
+    height: calc(100% + 15px);
+    position: absolute;
+    left: -15px;
+    background: #f4f4f4;
+    top: 0;
+    z-index: 0;
+}
+
+.as-modal-tabs-bg > div {
+    position: relative;
+    z-index: 2;
+}
+
+.as-internal-code > div {
+    min-height: 400px;
+}
+
+.as-regulation-hazard {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.as-regulation-hazard input[type="radio"] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+.as-regulation-hazard .kt-portlet .btn {
+    color: #38a5ed;
+    font-weight: 500;
+}
+
+.as-regulation-hazard input[type="radio"]:checked + .kt-portlet .btn {
+    background: #38a5ed;
+    color: #FFF;
+}
+
+.as-regulation-hazard > .kt-portlet {
+    display: flex;
+    flex-direction: column;
+}
+
+.as-regulation-hazard .kt-portlet__head {
+    min-height: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #707070;
+}
+
+.as-regulation-hazard .danger .kt-portlet__head {
+    color: #f8445b;
+}
+
+.as-regulation-hazard .danger {
+    border-top: 7px solid #f8445b;
+}
+
+.as-regulation-hazard .warning .kt-portlet__head {
+    color: #fd932f;
+}
+
+.as-regulation-hazard .warning {
+    border-top: 7px solid #fd932f;
+}
+
+.as-regulation-title-img img {
+    max-height: 30px;
+    width: auto;
+}
+
+.as-regulation-hazard .btn {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border: none;
+}
+
+.as-regulation-hazard .kt-portlet__foot {
+    font-weight: 500;
+    text-align: center;
+}
+
+.as-tabs-actions {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 470px) {
+    .as-tabs-actions {
+        flex-direction: column;
+    }
+    .as-tabs-actions .btn {
+        width: 100%;
+        margin-left: auto !important;
+        margin-bottom: 15px;
+    }
+}
+
+[data-step] {
+    display: none;
+}
+
+[data-step].active {
+    display: block;
+}

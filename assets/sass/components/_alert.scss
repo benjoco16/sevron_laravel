@@ -1,0 +1,11 @@
+
+.alert-semi-filled-primary {
+    background: rgba(56, 165, 237, 0.1);
+}
+.alert.alert-sm {
+    padding: $spacer/4 $spacer/1.5;
+    font-size: $font-size-base;
+}
+.alert.alert-round {
+    border-radius: 200px;
+}
