@@ -1,6 +1,6 @@
 .kt-subheader {
     margin: 0;
-    border-bottom: 2px solid $alto;
+    border-bottom: 1px solid lighten(map-get($custom-colors, 'alto'), 10%);
     z-index: 499;
 
     .kt-subheader__main .btn:not(.dropdown-toggle-split) {

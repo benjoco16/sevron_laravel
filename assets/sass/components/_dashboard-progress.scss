@@ -11,15 +11,15 @@
         }
 
         &-bar--green {
-            background: $green;
+            background: map-get($custom-colors, 'green');
         }
 
         &-bar--yellow {
-            background: $yellow;
+            background: map-get($custom-colors, 'yellow');
         }
 
         &-bar--red {
-            background: $red;
+            background: map-get($custom-colors, 'red');
         }
     }
 

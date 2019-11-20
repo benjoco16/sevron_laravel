@@ -1,0 +1,190 @@
+.substance-accordion__table {
+    border: 1px solid lighten(map-get($custom-colors, 'gray'), 23%); 
+    padding: $spacer !important;
+    border-radius: 10px;
+    margin-top: $spacer*1.5 !important;
+}
+
+.haz {
+    background-color: #e2e2e2;
+    padding: 15px !important;
+    text-align: center;
+}
+
+.risk-assessment {
+    &__image {
+        width: auto;
+    }
+
+    &__hazards img {
+        max-width: 75px;
+        margin: 10px 10px 15px 0;
+    }
+
+    &__task-details {
+        textarea {
+            width: 100%;
+            border: 1px solid #cfcfcf;
+            margin-top: -1px;
+            padding: 15px;
+            resize: none;
+
+            &:active,
+            &:focus {
+                outline: 0;
+            }
+        }
+    }
+
+    &__progress {
+        &--high-risk {
+            background: #FF0000;
+        }
+
+        &--medium-risk {
+            background: #FEAA3C;
+        }
+
+        &--low-risk {
+            background: #5bbc30;
+        }
+    }
+
+    &__portlet--bordered {
+        border: 1px solid #CBCBCB !important;
+    }
+
+    &__actions {
+        position: fixed;
+        height: auto !important;
+
+        .tag {
+            font-size: 9px;
+            margin-top: 15px;
+
+            .badge {
+                padding: 1px 0 0 0;
+                width: 18px;
+                line-height: 17px;
+                max-width: 100px;
+                margin-left: 0 !important;
+            }
+
+            &-label {
+                font-size: 12px;
+                color: #2f4368;
+            }
+        }
+
+        &--danger {
+            color: #FF0000;
+        }
+
+        &--overdue {
+            color: #faa853;
+        }
+
+        &--advisory {
+            color: #ecc82d;
+        }
+
+        .badge.danger {
+            background: #FF0000;
+        }
+
+        .badge.overdue {
+            background: #faa853;
+        }
+
+        .badge.advisory {
+            background: #ecc82d;
+        }
+        
+        
+    } 
+
+    .accordion-draggable {
+        margin-right: 10px;
+        i {
+            color: #989898;
+            margin-right: -3px;
+        }
+    }
+
+    .collapse.show {
+        border-top: 1px solid #cfcfcf;
+    }
+}
+
+
+/////////
+
+.aw-low {
+    background: #90C83A;
+}
+
+.aw-medium {
+    background: #FDBB00;
+}
+
+.aw-high {
+    background: #F02618;
+}
+
+
+@media screen and (max-width: 1023px) {
+    .risk-assessment__title,
+    .risk-assessment__controls {
+        margin-bottom: 30px;
+    }
+
+    .risk-assessment__title > .d-flex {
+        flex-direction: column;
+    }
+}
+
+.th-icon {
+    max-width: 60px;
+}
+
+.task-hazards .th-symbol  {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.th-add-hazard {
+    border: 1px dashed #fff;
+    border-radius: 10px;
+}
+
+.risk-ratings-badge {
+    width: 60px !important;
+}
+
+.border_red {
+    border: 1px solid red;
+}
+.bgwhite {
+    background-color: #fff;
+    padding: 10px 20px;
+    margin: 10px 20px;
+}
+.nopadding {
+    padding: 0;
+}
+
+.margin_right {
+    margin-right: 10px;
+}
+.accordion.accordion-light .risk-assessment {
+    margin-bottom: 10px;
+    border-radius: 12px;
+    -webkit-box-shadow: 1px 0px 14px -11px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 0px 14px -11px rgba(0,0,0,0.75);
+    box-shadow: 1px 0px 14px -11px rgba(0,0,0,0.75);
+    border-left: 8px solid #30a4f0;
+}
+
+.accordion.accordion-light .risk-assessment .card-header {
+    padding: 0 15px;
+}

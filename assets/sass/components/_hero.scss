@@ -32,7 +32,7 @@ $description-max-width: 430px;
         }
 
         h2 {
-            color: $san-juan;
+            color: map-get($custom-colors, 'san-juan');
 
             font-weight: 600;
             font-size: 24px;
@@ -74,7 +74,7 @@ $description-max-width: 430px;
 
         &-score {
             color: #2e4269;
-            background-color: $yellow;
+            background-color: map-get($custom-colors, 'yellow');
             width: 73px;
             text-align: center;
             border-radius: 17px;
@@ -93,7 +93,7 @@ $description-max-width: 430px;
             margin-top: 20px;
             font-size: $font-size-sm;
             line-height: 20px;
-            color: $san-juan;
+            color: map-get($custom-colors, 'san-juan');
             padding: 0;
             
         }
@@ -125,7 +125,7 @@ $description-max-width: 430px;
             font-family: Helvetica;
             font-weight: 700;
             text-align: center;
-            color: $san-juan;
+            color: map-get($custom-colors, 'san-juan');
 
             &-score {
                 font-weight: bold;

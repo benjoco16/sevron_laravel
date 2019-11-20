@@ -7,7 +7,7 @@
         background: #FFF;
 
         &.dropdown-toggle {
-            border: 1px solid $alto;
+            border: 1px solid map-get($custom-colors, 'alto');
             box-shadow: 2px 3px 10px -8px rgba(0,0,0,1)
         }
     }
@@ -41,12 +41,17 @@
 
 .dropdown-menu .btn-logout {
     width: calc(100% + 20px);
-    background: $chambray;
+    background: map-get($custom-colors, 'chambray');
     color: $white;
     margin-top: $spacer;
     margin-left: -10px;
     margin-bottom: -3px;
 }
+
+.btn-fix-height {
+    height: 46px;
+}
+
 
 // .btn-group-toggle .btn {
 //     background: $primary !important;

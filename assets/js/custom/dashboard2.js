@@ -10,7 +10,7 @@ var GEAR_CHART = {
                 type: 'pie',
               },
               title: {
-                text: '<div class="sub-chart-caption">'+
+                text: '<div class=suppluer-chart__caption">'+
                         '<h3 class="bold">527</h3>' +
                         '<p>POOR</p>' +
                       '</div>',

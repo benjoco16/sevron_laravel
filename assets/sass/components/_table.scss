@@ -1,0 +1,27 @@
+.table {
+
+    &.table-striped tbody tr:nth-of-type(odd) {
+        background: #f4fbff;    
+    }
+
+    td {
+        border: none;
+        font-size: 12px;
+        // font-size: $font-size-xs;
+        color: map-get($custom-colors, 'ash');
+    }
+
+    thead {
+        border-bottom: 1px solid #dedede;
+        color: map-get($custom-colors, 'gray');
+        text-transform: uppercase;
+
+        tr th {
+            font-size: $font-size-xs;
+        }
+    }
+
+    .table-icon[aria-expanded="true"] > i {
+        color: map-get($custom-colors, 'blue');
+    }
+}

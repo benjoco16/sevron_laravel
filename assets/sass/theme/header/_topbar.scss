@@ -99,7 +99,7 @@ $kt-topbar-thumb-photo-radius: 100px;
 				padding: 0 0.55rem 0 0;
 				font-weight: 500;
 				font-size: 1rem;
-				color: $ash;
+				color: map-get($custom-colors, 'ash');
 			}
 
 			.kt-header__topbar-wrapper {

@@ -1,0 +1,15 @@
+.kt-badge {
+    &--red {
+        background: map-get($custom-colors, 'red'); 
+        color: #FFF;
+    }
+
+    &--warning {
+        color: map-get($custom-colors, 'white');
+    }
+
+    &--yellow {
+        background: map-get($custom-colors, 'yellow');
+        color: map-get($custom-colors, 'white');
+    }
+}

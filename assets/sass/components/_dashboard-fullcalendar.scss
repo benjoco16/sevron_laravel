@@ -83,7 +83,7 @@ tr:first-child > td > .fc-day-grid-event {
     font-weight: 700;
     margin-top: 0.75rem;
     text-transform: none;
-    color: $ash;
+    color: map-get($custom-colors, 'ash');
 }
 
 .fc-day-header span {
