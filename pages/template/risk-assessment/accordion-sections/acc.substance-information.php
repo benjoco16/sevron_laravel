@@ -9,7 +9,7 @@
                         <span class="accordion-status"></span> Substance Information
                     </div>
                     <button class="ml-auto btn btn-primary btn-xs mr-4">
-                        <small>Add Substance</small>
+                        Add Substance
                     </button>
                 </div>
             </div>

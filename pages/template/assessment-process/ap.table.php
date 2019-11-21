@@ -396,7 +396,7 @@
     </div>
 </div>
 
-<div class="pagination">
+<div class="pagination mb-4">
     <div class="pagination__items">
         <div class="btn-group btn-group" role="group" aria-label="...">
             <button type="button" class="btn btn-secondary dopti">

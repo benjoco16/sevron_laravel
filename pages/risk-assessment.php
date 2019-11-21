@@ -2,7 +2,7 @@
     <head>
         <?php include('global/head.php'); ?>
         <link href="./assets/css/global/bootstrap-tagsinput.css" rel="stylesheet" type="text/css" />
-        <link href="./assets/css/global/components.min.css" rel="stylesheet" type="text/css" />
+        <!-- <link href="./assets/css/global/components.min.css" rel="stylesheet" type="text/css" /> -->
         <?php include('./global/head-global-styles.php') ?>
     </head>
     <body class="kt-page-content-white kt-quick-panel--right kt-demo-panel--right kt-offcanvas-panel--right kt-header--fixed kt-header-mobile--fixed kt-subheader--enabled kt-aside--enabled kt-aside--fixed kt-page--loading">

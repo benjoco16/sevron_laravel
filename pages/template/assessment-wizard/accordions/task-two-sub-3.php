@@ -6,7 +6,7 @@
         </div>
     </div>
     <div id="task1-2" class="collapse" aria-labelledby="headingThree2" data-parent="">
-        <div class="card-body pl-4 pr-4 pt-1 pb-1 hazard__section">
+        <div class="card-body hazard__section">
             <div class="kt-portlet mb-4 font-ash kt-portlet--head--noborder kt-portlet--height-fluid">
                 <div class="kt-portlet__body p-0">
                     <div class="row">

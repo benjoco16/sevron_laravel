@@ -14,61 +14,15 @@
     <?php include('accordion-sections/acc.task-hazards.php') ?>
     <!--end::Task Hazards & Controls-->
 
-    <div class="accordion hazard ra-accordion accordion-light accordion-toggle-arrow mb-4" 
-    data-status="not-started" 
-    data-origin-status="not-started">
-        <div class="card risk-assessment">
-            <div class="card-header" id="generalControls">
-                <div class="card-title collapsed" data-toggle="collapse" data-target="" aria-expanded="false" aria-controls="collapseOne2">
-                    <span class="accordion-status"></span> General Controls
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="accordion hazard ra-accordion accordion-light accordion-toggle-arrow mb-4" 
-    data-status="not-started" 
-    data-origin-status="not-started">
-        <div class="card risk-assessment">
-            <div class="card-header" id="healthSurveillance">
-                <div class="card-title collapsed" data-toggle="collapse" data-target="" aria-expanded="false" aria-controls="collapseOne2">
-                    <span class="accordion-status"></span> Health Surveillance
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="accordion hazard ra-accordion accordion-light accordion-toggle-arrow mb-4" 
-    data-status="not-started" 
-    data-origin-status="not-started">
-        <div class="card risk-assessment">
-            <div class="card-header" id="healthSurveillance">
-                <div class="card-title collapsed" data-toggle="collapse" data-target="" aria-expanded="false" aria-controls="collapseOne2">
-                    <span class="accordion-status"></span> Action Management
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="accordion hazard ra-accordion accordion-light accordion-toggle-arrow mb-4" 
-    data-status="not-started" 
-    data-origin-status="not-started">
-        <div class="card risk-assessment">
-            <div class="card-header" id="linkedDocuments">
-                <div class="card-title collapsed" data-toggle="collapse" data-target="" aria-expanded="false" aria-controls="collapseOne2">
-                    <span class="accordion-status"></span> Linked Documents
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="accordion hazard ra-accordion accordion-light accordion-toggle-arrow mb-4" 
-    data-status="not-started" 
-    data-origin-status="not-started">
-        <div class="card risk-assessment">
-            <div class="card-header" id="reviewAndPublish">
-                <div class="card-title collapsed" data-toggle="collapse" data-target="" aria-expanded="false" aria-controls="collapseOne2">
-                    <span class="accordion-status"></span> Review & Publish
-                </div>
-            </div>
-        </div>
-    </div>
+    <?php include('accordion-sections/acc.general-controls.php') ?>
+
+    <?php include('accordion-sections/acc.health-surveillance.php') ?>
+
+    <?php include('accordion-sections/acc.action-management.php') ?>
+
+    <?php include('accordion-sections/acc.linked-documents.php') ?>
+
+    <?php include('accordion-sections/acc.publish.php') ?>
 </div>
 
 		<!--end::Portlet-->

@@ -78,7 +78,7 @@
     }
 
     &__portlet--bordered {
-        border: 1px solid #CBCBCB !important;
+        border: 1px solid map-get($custom-colors, 'silver') !important;
     }
 
     &__actions {
@@ -170,6 +170,13 @@
     &__add-section {
         border: 1px dashed #fff;
         border-radius: 10px;
+    }
+
+    .card-body__inner-bordered {
+        border: 1px solid map-get($custom-colors, 'silver');
+        border-radius: 5px;
+        width: 100%;
+        min-height: 15px;
     }
 }
 

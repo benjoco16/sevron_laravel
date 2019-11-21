@@ -860,7 +860,7 @@ span.small_pt {
 }
 
 .risk-assessment__portlet--bordered {
-    border: 1px solid #CBCBCB !important;
+    border: 1px solid map-get($custom-colors, 'silver') !important;
 }
 
 .risk-assessment .accordion-draggable {
@@ -2275,7 +2275,7 @@ button.no-style {
 }
 
 .border-gray {
-    border-color: #CBCBCB;
+    border-color: map-get($custom-colors, 'silver');
 }
 
 .border-purple {

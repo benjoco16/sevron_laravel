@@ -3,6 +3,10 @@
 .btn {
     box-shadow: 0 7px 9px -10px rgba(0,0,0,0.29);
 
+    &.disabled, &:disabled {
+        opacity: 0.4;
+    }
+
     &.btn-default {
         background: #FFF;
 
@@ -36,6 +40,17 @@
     &-unstyled {
         border: none;
         background: transparent;
+    }
+
+    &--dashed {
+        border-width: 1px;
+        border-style: dashed;
+        font-weight: 500;
+
+        &-primary {
+            color: map-get($custom-colors, 'blue');
+            border-color: map-get($custom-colors, 'blue');
+        }
     }
 }
 

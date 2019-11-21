@@ -1,4 +1,4 @@
-<div class="card-body pl-4 pr-4 pt-1 pb-1 hazard__section">
+<div class="card-body hazard__section">
 
     <div clas="row">
         <div class="kt-portlet mb-3 mt-3 font-ash kt-portlet--height-fluid">

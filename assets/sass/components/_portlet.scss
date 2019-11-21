@@ -54,5 +54,9 @@
         &-red {
             box-shadow: inset 0px 0px 0px 4px #ffeaed;
         }
+
+        &-thin {
+            box-shadow: inset 0px 0px 0px 1px map-get($custom-colors, 'silver');
+        }
     }
 }

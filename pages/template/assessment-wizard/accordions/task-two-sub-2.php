@@ -11,7 +11,7 @@
             </div>
         </div>
         <div id="task2-2" class="collapse" aria-labelledby="headingOne3">
-            <div class="card-body pl-4 pr-4 pt-1 pb-1 hazard__section text-left">
+            <div class="card-body hazard__section text-left">
                 <div class="kt-portlet mb-3 mt-3 font-ash kt-portlet--height-fluid">
                     <div class="kt-portlet__body">
                         <div class="kt-section">

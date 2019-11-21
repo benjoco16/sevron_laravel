@@ -26309,6 +26309,15 @@ body {
 .border-ash {
   border-color: #707070 !important; }
 
+.font-silver {
+  color: #CBCBCB !important; }
+
+.bg-silver {
+  background-color: #CBCBCB !important; }
+
+.border-silver {
+  border-color: #CBCBCB !important; }
+
 .font-rhino {
   color: #333F6B !important; }
 
@@ -26593,9 +26602,13 @@ body {
     box-sizing: border-box; }
     .sv-portlet--bordered-red {
       box-shadow: inset 0px 0px 0px 4px #ffeaed; }
+    .sv-portlet--bordered-thin {
+      box-shadow: inset 0px 0px 0px 1px #CBCBCB; }
 
 .btn {
   box-shadow: 0 7px 9px -10px rgba(0, 0, 0, 0.29); }
+  .btn.disabled, .btn:disabled {
+    opacity: 0.4; }
   .btn.btn-default {
     background: #FFF; }
     .btn.btn-default.dropdown-toggle {
@@ -26617,6 +26630,13 @@ body {
   .btn-unstyled {
     border: none;
     background: transparent; }
+  .btn--dashed {
+    border-width: 1px;
+    border-style: dashed;
+    font-weight: 500; }
+    .btn--dashed-primary {
+      color: #30a4f0;
+      border-color: #30a4f0; }
 
 .dropdown-menu .btn-logout {
   width: calc(100% + 20px);
@@ -26686,8 +26706,11 @@ body {
   @media screen and (max-width: 1379px) {
     .pagination {
       flex-direction: column; } }
+  .pagination .btn-secondary {
+    border: 1px solid #D3D3D3; }
   .pagination .btn-group button {
-    padding: 11px 9px; }
+    padding: 11px 9px;
+    min-height: 45px; }
   .pagination__items, .pagination__stats {
     display: flex;
     flex-wrap: wrap;
@@ -26707,21 +26730,27 @@ body {
       border-radius: 100px; }
       .pagination__stats-usage .actual {
         color: #30a4f0; }
-  .pagination__items > * {
-    margin-bottom: 1rem; }
 
 .table.table-striped tbody tr:nth-of-type(odd) {
   background: #f4fbff; }
 .table td {
   border: none;
-  font-size: 12px;
-  color: #707070; }
+  font-size: 13px;
+  color: #707070;
+  padding: 1rem; }
+  .table td.ellipsed {
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
 .table thead {
-  border-bottom: 1px solid #dedede;
-  color: #989898;
-  text-transform: uppercase; }
+  color: #989898; }
   .table thead tr th {
-    font-size: 0.75rem; }
+    font-size: 13px;
+    font-weight: 500;
+    border-bottom: 1px solid #CBCBCB; }
+.table tbody tr:first-child {
+  border-top: 1px solid #CBCBCB; }
 .table .table-icon[aria-expanded="true"] > i {
   color: #30a4f0; }
 
@@ -27638,6 +27667,11 @@ select.input-group-form-control:after {
 .risk-assessment__add-section {
   border: 1px dashed #fff;
   border-radius: 10px; }
+.risk-assessment .card-body__inner-bordered {
+  border: 1px solid #CBCBCB;
+  border-radius: 5px;
+  width: 100%;
+  min-height: 15px; }
 
 @media screen and (max-width: 1023px) {
   .risk-assessment__title,
