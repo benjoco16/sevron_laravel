@@ -14,7 +14,7 @@
     <?php include('accordion-sections/acc.task-hazards.php') ?>
     <!--end::Task Hazards & Controls-->
 
-    <div class="accordion task-hazards ra-accordion accordion-light accordion-toggle-arrow mb-4" 
+    <div class="accordion hazard ra-accordion accordion-light accordion-toggle-arrow mb-4" 
     data-status="not-started" 
     data-origin-status="not-started">
         <div class="card risk-assessment">
@@ -25,7 +25,7 @@
             </div>
         </div>
     </div>
-    <div class="accordion task-hazards ra-accordion accordion-light accordion-toggle-arrow mb-4" 
+    <div class="accordion hazard ra-accordion accordion-light accordion-toggle-arrow mb-4" 
     data-status="not-started" 
     data-origin-status="not-started">
         <div class="card risk-assessment">
@@ -36,7 +36,7 @@
             </div>
         </div>
     </div>
-    <div class="accordion task-hazards ra-accordion accordion-light accordion-toggle-arrow mb-4" 
+    <div class="accordion hazard ra-accordion accordion-light accordion-toggle-arrow mb-4" 
     data-status="not-started" 
     data-origin-status="not-started">
         <div class="card risk-assessment">
@@ -47,7 +47,7 @@
             </div>
         </div>
     </div>
-    <div class="accordion task-hazards ra-accordion accordion-light accordion-toggle-arrow mb-4" 
+    <div class="accordion hazard ra-accordion accordion-light accordion-toggle-arrow mb-4" 
     data-status="not-started" 
     data-origin-status="not-started">
         <div class="card risk-assessment">
@@ -58,7 +58,7 @@
             </div>
         </div>
     </div>
-    <div class="accordion task-hazards ra-accordion accordion-light accordion-toggle-arrow mb-4" 
+    <div class="accordion hazard ra-accordion accordion-light accordion-toggle-arrow mb-4" 
     data-status="not-started" 
     data-origin-status="not-started">
         <div class="card risk-assessment">

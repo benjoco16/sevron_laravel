@@ -1,4 +1,4 @@
-<div class="card-body pl-4 pr-4 pt-1 pb-1 haz">
+<div class="card-body pl-4 pr-4 pt-1 pb-1 hazard__section">
 
     <div clas="row">
         <div class="kt-portlet mb-3 mt-3 font-ash kt-portlet--height-fluid">
@@ -11,13 +11,15 @@
                         <p>
                             I also confirm taht if the work environment changes or other hazards occur I will bring it to the attention of my immediate supervisor.
                         </p>
-                        <table class="table table_si font-ash">
-                            <tbody>
+                        <table class="table table-striped">
+                            <thead>
                                 <tr>
-                                    <td class="font-weight-500">Print Name</td>
-                                    <td class="font-weight-500">Signature</td>
-                                    <td class="font-weight-500">Date</td>
+                                    <th>Print Name</th>
+                                    <th>Signature</th>
+                                    <th>Date</th>
                                 </tr>
+                            </thead>
+                            <tbody>
                                 <tr>
                                     <td>Mr. E. Xample</td>
                                     <td>Operator</td>

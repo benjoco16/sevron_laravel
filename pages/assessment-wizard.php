@@ -37,7 +37,7 @@
                                             
                                             <div class="kt-portlet mb-3 mt-3 font-ash kt-portlet--height-fluid">
                                                 <div class="kt-portlet__body p-0">
-                                                    <div class="th-add-hazard border-purple  text-center p-4">
+                                                    <div class="risk-assessment__add-section border-purple  text-center p-4">
                                                         <span class="font-purple font-weight-500">Add another hazard</span>
                                                     </div>
                                                 </div>

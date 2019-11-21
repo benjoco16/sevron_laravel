@@ -6,12 +6,12 @@
         </div>
     </div>
     <div id="task1-2" class="collapse" aria-labelledby="headingThree2" data-parent="">
-        <div class="card-body pl-4 pr-4 pt-1 pb-1 haz">
+        <div class="card-body pl-4 pr-4 pt-1 pb-1 hazard__section">
             <div class="kt-portlet mb-4 font-ash kt-portlet--head--noborder kt-portlet--height-fluid">
                 <div class="kt-portlet__body p-0">
                     <div class="row">
                         <div class="col-md-2">
-                            <div class="h-100 th-symbol bg-light-gray pt-3 pb-3 text-center">
+                            <div class="hazard__symbol">
                                 <img src="./assets/media/risk/eye_icon.png">
                             </div>
                         </div>
@@ -77,7 +77,7 @@
 
                                 <div class="row">
                                     <div class="col-md-6 mt-4 d-flex align-items-center">
-                                        <img class="th-icon" src="./assets/media/risk/hazard_icon.png">
+                                        <img class="hazard__icon" src="./assets/media/risk/hazard_icon.png">
 
                                         <div class="sv-portlet ml-3 bg-light-gray mt-1">
                                             <p class="mb-0">
@@ -98,7 +98,7 @@
 
                                 <div class="row">
                                     <div class="col-md-6 mt-4 d-flex align-items-center">
-                                        <img class="th-icon" src="./assets/media/risk/emergency_icon.png">
+                                        <img class="hazard__icon" src="./assets/media/risk/emergency_icon.png">
 
                                         <div class="sv-portlet ml-3 bg-light-gray mt-1">
                                             <p class="mb-0">
@@ -108,7 +108,7 @@
                                     </div>
 
                                     <div class="col-md-6 mt-4 d-flex align-items-center">
-                                        <img class="th-icon" src="./assets/media/assessment-wizard/first-aid-green.png">
+                                        <img class="hazard__icon" src="./assets/media/assessment-wizard/first-aid-green.png">
 
                                         <div class="sv-portlet ml-3 bg-light-gray mt-1">
                                             <p class="mb-0">
@@ -126,7 +126,7 @@
                 <div class="kt-portlet__body p-0">
                     <div class="row">
                         <div class="col-md-2">
-                            <div class="h-100 th-symbol bg-light-gray pt-3 pb-3 text-center">
+                            <div class="hazard__symbol">
                                 <img src="./assets/media/assessment-wizard/hazard-description.png">
                             </div>
                         </div>
@@ -192,7 +192,7 @@
 
                                 <div class="row">
                                     <div class="col-md-6 mt-4 d-flex align-items-center">
-                                        <img class="th-icon" src="./assets/media/assessment-wizard/wash-hands.png">
+                                        <img class="hazard__icon" src="./assets/media/assessment-wizard/wash-hands.png">
 
                                         <div class="sv-portlet ml-3 bg-light-gray mt-1">
                                             <p class="mb-0">
@@ -201,7 +201,7 @@
                                         </div>
                                     </div>
                                     <div class="col-md-6 mt-4 d-flex align-items-center">
-                                        <img class="th-icon" src="./assets/media/assessment-wizard/protective-clothing.png">
+                                        <img class="hazard__icon" src="./assets/media/assessment-wizard/protective-clothing.png">
 
                                         <div class="sv-portlet ml-3 bg-light-gray mt-1">
                                             <p class="mb-0">
@@ -211,7 +211,7 @@
                                     </div>
 
                                     <div class="col-md-6 mt-4 d-flex align-items-center">
-                                        <img class="th-icon" src="./assets/media/assessment-wizard/protective-gloves.png">
+                                        <img class="hazard__icon" src="./assets/media/assessment-wizard/protective-gloves.png">
 
                                         <div class="sv-portlet ml-3 bg-light-gray mt-1">
                                             <p class="mb-0">
@@ -232,7 +232,7 @@
 
                                 <div class="row">
                                     <div class="col-md-6 mt-4 d-flex align-items-center">
-                                        <img class="th-icon" src="./assets/media/risk/emergency_icon.png">
+                                        <img class="hazard__icon" src="./assets/media/risk/emergency_icon.png">
 
                                         <div class="sv-portlet ml-3 bg-light-gray mt-1">
                                             <p class="mb-0">
@@ -242,7 +242,7 @@
                                     </div>
 
                                     <div class="col-md-6 mt-4 d-flex align-items-center">
-                                        <img class="th-icon" src="./assets/media/assessment-wizard/first-aid-green.png">
+                                        <img class="hazard__icon" src="./assets/media/assessment-wizard/first-aid-green.png">
 
                                         <div class="sv-portlet ml-3 bg-light-gray mt-1">
                                             <p class="mb-0">
@@ -261,7 +261,7 @@
             <!-- <img src="assets/media/risk/hazard_sect.png" alt=""> -->
             <div class="kt-portlet mb-3 mt-3 font-ash kt-portlet--height-fluid">
                 <div class="kt-portlet__body p-0">
-                    <div class="th-add-hazard border-blue text-center p-4">
+                    <div class="risk-assessment__add-section border-blue text-center p-4">
                         <span class="font-blue font-weight-500">Add another hazard</span>
                     </div>
                 </div>

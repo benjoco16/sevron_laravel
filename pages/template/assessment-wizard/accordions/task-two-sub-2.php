@@ -11,17 +11,17 @@
             </div>
         </div>
         <div id="task2-2" class="collapse" aria-labelledby="headingOne3">
-            <div class="card-body pl-4 pr-4 pt-1 pb-1 haz text-left">
+            <div class="card-body pl-4 pr-4 pt-1 pb-1 hazard__section text-left">
                 <div class="kt-portlet mb-3 mt-3 font-ash kt-portlet--height-fluid">
                     <div class="kt-portlet__body">
                         <div class="kt-section">
                             <div class="kt-section__content">
-                                <table class="table table_si font-ash">
+                                <table class="table table-striped">
                                     <thead>
                                         <tr>
-                                            <td><strong> Product Name (Code)</strong></td>
-                                            <td><strong>Manufacturer</strong></td>
-                                            <td><strong>Hazard Symbols</strong></td>
+                                            <th>Product Name (Code)</th>
+                                            <th>Manufacturer</th>
+                                            <th>Hazard Symbols</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -39,15 +39,17 @@
                                     <p class="mb-0">P351: Rinse continuously in water for several minutes</p>
                                 </div>
 
-                                <table class="table table_si font-ash">
-                                    <tbody>
+                                <table class="table table-striped">
+                                    <thead>
                                         <tr>
-                                            <td class="font-weight-500">Application Method</td>
-                                            <td class="font-weight-500">Application Area</td>
-                                            <td class="font-weight-500">Frequency of Use</td>
-                                            <td class="font-weight-500">Quantity Used</td>
-                                            <td class="font-weight-500">Direction of Use</td>
+                                            <th>Application Method</th>
+                                            <th>Application Area</th>
+                                            <th>Frequency of Use</th>
+                                            <th>Quantity Used</th>
+                                            <th>Direction of Use</th>
                                         </tr>
+                                    </thead>
+                                    <tbody>
                                         <tr>
                                             <td>Mop and bucket</td>
                                             <td>Hard Floor Areas</td>
@@ -84,7 +86,7 @@
 
                 <div class="kt-portlet mb-3 mt-3 font-ash kt-portlet--height-fluid">
                     <div class="kt-portlet__body p-0">
-                        <div class="th-add-hazard border-blue text-center p-4">
+                        <div class="risk-assessment__add-section border-blue text-center p-4">
                             <span class="font-blue font-weight-500">Add another substance</span>
                         </div>
                     </div>

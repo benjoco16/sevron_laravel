@@ -1,4 +1,4 @@
-<div class="accordion task-hazards ra-accordion accordion-light accordion-toggle-arrow mb-4" 
+<div class="accordion hazard ra-accordion accordion-light accordion-toggle-arrow mb-4" 
     data-status="not-started" 
     data-origin-status="not-started"
     id="accordionExample2"
@@ -10,13 +10,13 @@
             </div>
         </div>
         <div id="collapseThree2" class="collapse" aria-labelledby="headingThree2" data-parent="#accordionExample2">
-            <div class="card-body pl-4 pr-4 pt-1 pb-1 haz">
+            <div class="card-body pl-4 pr-4 pt-1 pb-1 hazard__section">
 
-                <div class="kt-portlet mb-0 font-ash kt-portlet--head--noborder kt-portlet--height-fluid">
+                <div class="kt-portlet mb-0 kt-portlet--head--noborder kt-portlet--height-fluid">
                     <div class="kt-portlet__body p-0">
                         <div class="row">
                             <div class="col-md-2">
-                                <div class="h-100 th-symbol bg-light-gray pt-3 pb-3 text-center">
+                                <div class="hazard__symbol">
                                     <img src="./assets/media/risk/eye_icon.png">
                                 </div>
                             </div>
@@ -77,7 +77,7 @@
 
                                     <div class="row">
                                         <div class="col-md-6 mt-4 d-flex align-items-center">
-                                            <img class="th-icon" src="./assets/media/risk/hazard_icon.png">
+                                            <img class="hazard__icon" src="./assets/media/risk/hazard_icon.png">
                                             <div class="sv-portlet ml-3 bg-light-gray mt-1">
                                                 <p class="mb-0">
                                                     <small>Wear eye protection when pouring or keep eyes well away from splashing</small>
@@ -97,7 +97,7 @@
 
                                     <div class="row">
                                         <div class="col-md-6 mt-4 d-flex align-items-center">
-                                            <img class="th-icon" src="./assets/media/risk/emergency_icon.png">
+                                            <img class="hazard__icon" src="./assets/media/risk/emergency_icon.png">
                                             <div class="sv-portlet ml-3 bg-light-gray mt-1">
                                                 <p class="mb-0">
                                                     <small>Wear eye protection when pouring or keep eyes well away from splashing</small>
@@ -105,7 +105,7 @@
                                             </div>
                                         </div>
                                         <div class="col-md-6 mt-4 d-flex align-items-center">
-                                            <img class="th-icon" src="./assets/media/assessment-wizard/first-aid-green.png">
+                                            <img class="hazard__icon" src="./assets/media/assessment-wizard/first-aid-green.png">
                                             <div class="sv-portlet ml-3 bg-light-gray mt-1">
                                                 <p class="mb-0">
                                                     <small>Wear eye protection when pouring or keep eyes well away from splashing</small>
@@ -121,7 +121,7 @@
                 <!-- <img src="assets/media/risk/hazard_sect.png" alt=""> -->
             </div>
 
-            <div class="th-add-hazard border-blue p-4 m-4 text-center">
+            <div class="risk-assessment__add-section border-blue p-4 m-4 text-center">
                 <span class="font-blue font-weight-500">Add another hazard</span>
             </div>
             <div class="d-flex align-items-center pl-4 pr-4 pb-4">

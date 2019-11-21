@@ -1,4 +1,4 @@
-<div class="accordion accordion-light ra-accordion accordion-toggle-arrow mb-4 mt-4 pl-4 pr-4" data-origin-status="not-started" data-status="not-started">
+<div class="accordion accordion-light ra-accordion hazard accordion-toggle-arrow mb-4 mt-4 pl-4 pr-4" data-origin-status="not-started" data-status="not-started">
     <div class="card risk-assessment">
         <div class="card-header">
             <div class="card-title collapsed" data-toggle="collapse" data-target="#task1-2" aria-expanded="false" aria-controls="collapseOne2">
@@ -6,13 +6,13 @@
             </div>
         </div>
         <div id="task1-2" class="collapse" aria-labelledby="headingThree2" data-parent="">
-            <div class="card-body pl-4 pr-4 pt-1 pb-1 haz">
+            <div class="card-body pl-4 pr-4 pt-1 pb-1 hazard__section">
 
                 <div class="kt-portlet mb-0 font-ash kt-portlet--head--noborder kt-portlet--height-fluid">
                     <div class="kt-portlet__body p-0">
                         <div class="row">
                             <div class="col-md-2">
-                                <div class="h-100 th-symbol bg-light-gray pt-3 pb-3 text-center">
+                                <div class="hazard__symbol">
                                     <img src="./assets/media/risk/eye_icon.png">
                                 </div>
                             </div>
@@ -78,7 +78,7 @@
 
                                     <div class="row">
                                         <div class="col-md-6 mt-4 d-flex align-items-center">
-                                            <img class="th-icon" src="./assets/media/assessment-wizard/do-not-run.png">
+                                            <img class="hazard__icon" src="./assets/media/assessment-wizard/do-not-run.png">
 
                                             <div class="sv-portlet ml-3 bg-light-gray mt-1 w-100">
                                                 <p class="mb-0">
@@ -88,7 +88,7 @@
                                         </div>
 
                                         <div class="col-md-6 mt-4 d-flex align-items-center">
-                                            <img class="th-icon" src="./assets/media/assessment-wizard/wet-floor.png">
+                                            <img class="hazard__icon" src="./assets/media/assessment-wizard/wet-floor.png">
 
                                             <div class="sv-portlet ml-3 bg-light-gray mt-1">
                                                 <p class="mb-0">
@@ -98,7 +98,7 @@
                                         </div>
 
                                         <div class="col-md-6 mt-4 d-flex align-items-center">
-                                            <img class="th-icon" src="./assets/media/assessment-wizard/ventilation.png">
+                                            <img class="hazard__icon" src="./assets/media/assessment-wizard/ventilation.png">
 
                                             <div class="sv-portlet ml-3 bg-light-gray mt-1">
                                                 <p class="mb-0">
@@ -119,7 +119,7 @@
 
                                     <div class="row">
                                         <div class="col-md-6 mt-4 d-flex align-items-center">
-                                            <img class="th-icon" src="./assets/media/assessment-wizard/first-aid-green.png">
+                                            <img class="hazard__icon" src="./assets/media/assessment-wizard/first-aid-green.png">
 
                                             <div class="sv-portlet ml-3 bg-light-gray mt-1">
                                                 <p class="mb-0">

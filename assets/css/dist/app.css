@@ -27544,10 +27544,28 @@ select.input-group-form-control:after {
   border-radius: 10px;
   margin-top: 1.5rem !important; }
 
-.haz {
+.task-details__control-icons {
+  font-weight: 500;
+  color: #707070;
+  padding: 0.5rem !important;
+  text-align: center;
+  font-weight: 500;
+  border: 1px solid #C7C7C7 !important; }
+
+.hazard__section {
   background-color: #e2e2e2;
   padding: 15px !important;
   text-align: center; }
+.hazard__symbol {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background: #FAFAFA;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  height: 100%; }
+.hazard__icon {
+  max-width: 60px; }
 
 .risk-assessment__image {
   width: auto; }
@@ -27604,15 +27622,22 @@ select.input-group-form-control:after {
     margin-right: -3px; }
 .risk-assessment .collapse.show {
   border-top: 1px solid #cfcfcf; }
-
-.aw-low {
-  background: #90C83A; }
-
-.aw-medium {
-  background: #FDBB00; }
-
-.aw-high {
-  background: #F02618; }
+.risk-assessment .card-header {
+  padding-left: 15px !important;
+  padding-right: 15px !important; }
+  .risk-assessment .card-header .card-title {
+    color: #333F6B !important; }
+.risk-assessment .risk-ratings__badge {
+  width: 60px !important; }
+  .risk-assessment .risk-ratings__badge--low {
+    background: #90C83A; }
+  .risk-assessment .risk-ratings__badge--medium {
+    background: #FDBB00; }
+  .risk-assessment .risk-ratings__badge--high {
+    background: #F02618; }
+.risk-assessment__add-section {
+  border: 1px dashed #fff;
+  border-radius: 10px; }
 
 @media screen and (max-width: 1023px) {
   .risk-assessment__title,
@@ -27621,44 +27646,11 @@ select.input-group-form-control:after {
 
   .risk-assessment__title > .d-flex {
     flex-direction: column; } }
-.th-icon {
-  max-width: 60px; }
-
-.task-hazards .th-symbol {
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px; }
-
-.th-add-hazard {
-  border: 1px dashed #fff;
-  border-radius: 10px; }
-
-.risk-ratings-badge {
-  width: 60px !important; }
-
-.border_red {
-  border: 1px solid red; }
-
-.bgwhite {
-  background-color: #fff;
-  padding: 10px 20px;
-  margin: 10px 20px; }
-
-.nopadding {
-  padding: 0; }
-
-.margin_right {
-  margin-right: 10px; }
-
 .accordion.accordion-light .risk-assessment {
   margin-bottom: 10px;
   border-radius: 12px;
-  -webkit-box-shadow: 1px 0px 14px -11px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 1px 0px 14px -11px rgba(0, 0, 0, 0.75);
   box-shadow: 1px 0px 14px -11px rgba(0, 0, 0, 0.75);
   border-left: 8px solid #30a4f0; }
-
-.accordion.accordion-light .risk-assessment .card-header {
-  padding: 0 15px; }
 
 .form-separator {
   border-bottom: 1px solid #cdcdcd;

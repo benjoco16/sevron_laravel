@@ -1,18 +1,20 @@
-<div class="card-body pl-4 pr-4 pt-1 pb-1 haz">
+<div class="card-body pl-4 pr-4 pt-1 pb-1 hazard__section">
     <div clas="row">
-        <div class="kt-portlet mb-3 mt-3 font-ash kt-portlet--height-fluid">
+        <div class="kt-portlet mb-3 mt-3 kt-portlet--height-fluid">
             <div class="kt-portlet__body">
                 <div class="kt-section m-0">
                     <div class="kt-section__content">
-                        <table class="table table_si font-ash">
-                            <tbody>
+                        <table class="table table-striped">
+                            <thead>
                                 <tr>
-                                    <td class="font-weight-500">Task Specific Hazard</td>
-                                    <td class="font-weight-500">Persons Affected</td>
-                                    <td class="font-weight-500">Risk (Before)</td>
-                                    <td class="font-weight-500">Control Measures</td>
-                                    <td class="font-weight-500">Risk (After)</td>
+                                    <th class="font-weight-500">Task Specific Hazard</th>
+                                    <th class="font-weight-500">Persons Affected</th>
+                                    <th class="font-weight-500">Risk (Before)</th>
+                                    <th class="font-weight-500">Control Measures</th>
+                                    <th class="font-weight-500">Risk (After)</th>
                                 </tr>
+                            </thead>
+                            <tbody>
                                 <tr>
                                     <td><em>Hazard: Blood on floor</em></td>
                                     <td><em>Operator</em></td>
@@ -49,23 +51,23 @@
                             Risk Ratings
                         </p>
 
-                        <div class="row">
+                        <div class="row risk-ratings">
                             <div class="col-md-6 col-lg-4 d-flex align-items-center mb-3">
-                                <span class="risk-ratings-badge kt-badge kt-badge--lg kt-badge--rounded aw-low font-white pl-2 pr-2">
+                                <span class="risk-ratings__badge kt-badge kt-badge--lg kt-badge--rounded risk-ratings__badge--low font-white pl-2 pr-2">
                                     1-5
                                 </span>
                                 <span class="font-weight-500 ml-3">Low</span>
                             </div>
 
                             <div class="col-md-6 col-lg-4 d-flex align-items-center mb-3">
-                                <span class="risk-ratings-badge kt-badge kt-badge--lg kt-badge--rounded aw-medium font-white pl-2 pr-2">
+                                <span class="risk-ratings__badge kt-badge kt-badge--lg kt-badge--rounded risk-ratings__badge--medium font-white pl-2 pr-2">
                                     6-12
                                 </span>
                                 <span class="font-weight-500 ml-3">Medium</span>
                             </div>
 
                             <div class="col-md-6 col-lg-4 d-flex align-items-center mb-3">
-                                <span class="risk-ratings-badge kt-badge kt-badge--lg kt-badge--rounded aw-high font-white pl-2 pr-2">
+                                <span class="risk-ratings__badge kt-badge kt-badge--lg kt-badge--rounded risk-ratings__badge--high font-white pl-2 pr-2">
                                     15-25
                                 </span>
                                 <span class="font-weight-500 ml-3">High</span>
@@ -78,7 +80,7 @@
 
         <div class="kt-portlet mb-3 mt-3 font-ash kt-portlet--height-fluid">
             <div class="kt-portlet__body p-0">
-                <div class="th-add-hazard border-green  text-center p-4">
+                <div class="risk-assessment__add-section border-green  text-center p-4">
                     <span class="font-green font-weight-500">Add another linked document</span>
                 </div>
             </div>

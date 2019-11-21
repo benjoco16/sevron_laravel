@@ -709,7 +709,7 @@ span.small_pt {
 } */
 
 /** Risk Assesment **/
-/* .risk-ratings-badge {
+/* .risk-ratings__badge {
     width: 60px !important;
 }
 
@@ -1349,15 +1349,15 @@ td.ellipsed {
 
 /** Assessment Wizard **/
 
-/* .aw-low {
+/* .risk-ratings__badge--low {
     background: #90C83A;
 }
 
-.aw-medium {
+.risk-ratings__badge--medium {
     background: #FDBB00;
 }
 
-.aw-high {
+.risk-ratings__badge--high {
     background: #F02618;
 } */
 
@@ -1381,7 +1381,7 @@ td.ellipsed {
 .table_si tr td a {
     color: #30a4f0;
 }
-.haz {
+.hazard__section {
     background-color: #e2e2e2;
     padding: 15px !important;
     text-align: center;
@@ -1452,16 +1452,16 @@ body .video-js .vjs-play-progress:before {
 } */
 
 /** Task Hazards **/
-/* .th-icon {
+/* .hazard__icon {
     max-width: 60px;
 }
 
-.task-hazards .th-symbol  {
+.hazard .hazard__symbol  {
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
 
-.th-add-hazard {
+.risk-assessment__add-section {
     border: 1px dashed #fff;
     border-radius: 10px;
 } */

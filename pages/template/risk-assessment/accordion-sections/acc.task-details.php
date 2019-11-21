@@ -1,5 +1,5 @@
 <!--begin::Accordion-->
-<div class="accordion accordion-light ra-accordion accordion-toggle-arrow mb-4" data-origin-status="not-started" data-status="not-started" id="accordionExample2">
+<div class="accordion accordion-light ra-accordion task-details accordion-toggle-arrow mb-4" data-origin-status="not-started" data-status="not-started" id="accordionExample2">
     <div class="card risk-assessment">
         <div class="card-header" id="headingOne2">
             <div class="card-title collapsed" data-toggle="collapse" data-target="#collapseOne2" aria-expanded="false" aria-controls="collapseOne2">
@@ -10,7 +10,7 @@
             <div class="card-body pl-4 pr-4 pt-1 pb-1">
 
                 <div class="card inner-accordion-card mt-4">
-                    <div class="card-header font-weight-500 font-ash pt-4 pb-4">
+                    <div class="card-header task-details__control-icons">
                     Control icons to go here...
                     </div>
                 </div>
