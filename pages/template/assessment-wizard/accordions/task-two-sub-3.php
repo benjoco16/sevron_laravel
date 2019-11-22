@@ -70,7 +70,7 @@
                                 <div class="d-flex align-items-center">
                                     <h6 class="bold">CONTROLS IN PLACE</h6>
                                     <button class="btn btn-primary btn-xs ml-auto">
-                                        <small>Add Controls</small>
+                                        Add Controls
 
                                     </button>
                                 </div>
@@ -81,7 +81,7 @@
 
                                         <div class="sv-portlet ml-3 bg-light-gray mt-1">
                                             <p class="mb-0">
-                                                <small>Wear eye protection when pouring or keep eyes well away from splashing</small>
+                                                Wear eye protection when pouring or keep eyes well away from splashing
                                             </p>
                                         </div>
                                     </div>
@@ -92,7 +92,7 @@
                                 <div class="d-flex align-items-center">
                                     <h6 class="bold">EMERGENCY CONTROLS IN PLACE</h6>
                                     <button class="btn btn-primary btn-xs ml-auto">
-                                        <small>Add Emergency Controls</small>
+                                        Add Emergency Controls
                                     </button>
                                 </div>
 

@@ -1,4 +1,4 @@
-<div data-step="3" class="assessment-modal__tabs-bg as-usage">
+<div data-step="3" class="modal-body--has-bg as-usage">
     <div class="row pt-5">
         <div class="col-md-6 form-group">
             <label class="form-control-label">Application Method</label>
@@ -27,7 +27,7 @@
     </div>
 
     <div class="actions assessment-tabs__actions d-flex mt-4">
-        <button data-to-step="2" type="button" class="btn btn-secondary bordered btn-wider">
+        <button data-to-step="2" type="button" class="btn btn-outline-primary bordered btn-wider">
             Previous
         </button>
         <button data-to-step="4" type="button" class="btn btn-primary btn-wider ml-auto">

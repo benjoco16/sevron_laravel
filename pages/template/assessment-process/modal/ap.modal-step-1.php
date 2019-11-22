@@ -16,15 +16,13 @@
             </a>
         </li>
     </ul>
-    <div class="assessment-modal__tabs tab-content assessment-modal__tabs-bg">
+    <div class="assessment-modal__tabs tab-content modal-body--has-bg">
         <div class="tab-pane active" id="severonLibrary" role="tabpanel">
             <div class="d-flex w-100 align-items-center pt-3 pb-3">
                 <div class="form-group form-group-sm mb-0 mr-2">
                     <input class="form-control" type="text" placeholder="Solvent Cleaner RS. Comp" value="">
                 </div>
-                <button class="btn btn-primary btn-xs">
-                    <small>Show Search Filters</small>
-                </button>
+                <button class="btn btn-primary btn-xs">Show Search Filters</button>
 
                 <div class="form-group form-group-sm ml-auto">
                     <select class="form-control">
@@ -83,7 +81,7 @@
                                         </div>
 
                                         <button data-to-step="2" class="btn btn-primary btn-xs">
-                                            <small>Select</small>
+                                            Select
                                         </button>
                                     </div>
                                 </td>
@@ -128,7 +126,7 @@
                                         </div>
 
                                         <button data-to-step="2" class="btn btn-primary btn-xs">
-                                            <small>Select</small>
+                                            Select
                                         </button>
                                     </div>
                                 </td>
@@ -173,7 +171,7 @@
                                         </div>
 
                                         <button data-to-step="2" class="btn btn-primary btn-xs">
-                                            <small>Select</small>
+                                            Select
                                         </button>
                                     </div>
                                 </td>
@@ -218,7 +216,7 @@
                                         </div>
 
                                         <button data-to-step="2" class="btn btn-primary btn-xs">
-                                            <small>Select</small>
+                                            Select
                                         </button>
                                     </div>
                                 </td>
@@ -263,7 +261,7 @@
                                         </div>
 
                                         <button data-to-step="2" class="btn btn-primary btn-xs">
-                                            <small>Select</small>
+                                            Select
                                         </button>
                                     </div>
                                 </td>

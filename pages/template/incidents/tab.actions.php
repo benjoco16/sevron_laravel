@@ -3,7 +3,7 @@
         <div class="col-md-9 font-ash">
             <div class="d-flex flex-column pl-3 pr-4">
                 <button class="btn btn-primary btn-xs ml-auto mt-3">
-                    <small>Add Controls</small> 
+                    Add Controls
                 </button>
                 <div class="kt-portlet kt-portlet--head--noborder mb-0 mt-4">
                     <div class="kt-portlet__body p-0 overflow-auto">

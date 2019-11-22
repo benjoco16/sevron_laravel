@@ -1,4 +1,4 @@
-<div data-step="2" class="assessment-modal__tabs-bg assessment-code">
+<div data-step="2" class="modal-body--has-bg assessment-code">
     <div class="pt-5 d-flex flex-column">
         <p class="font-weight-500 font-ash">Set Internal Reference Code</p>
         <div class="input-group">
@@ -18,7 +18,7 @@
             </a>
         </div>
         <div class="actions assessment-tabs__actions mt-auto">
-            <button data-to-step="1" type="button" class="btn btn-secondary bordered btn-wider">
+            <button data-to-step="1" type="button" class="btn btn-outline-primary bordered btn-wider">
                 Previous
             </button>
             <button data-to-step="3" type="button" class="btn btn-primary btn-wider ml-auto">

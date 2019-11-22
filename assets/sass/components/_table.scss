@@ -18,13 +18,19 @@
     }
 
     thead {
-        color: map-get($custom-colors, 'gray');
+        color: map-get($custom-colors, 'ash');
 
         tr th {
             font-size: 13px;
             font-weight: 500;
+
+            // border-bottom: 1px solid map-get($custom-colors, 'silver');
+        }
+
+        &.bordered th {
             border-bottom: 1px solid map-get($custom-colors, 'silver');
         }
+        
     }
 
     tbody tr:first-child {

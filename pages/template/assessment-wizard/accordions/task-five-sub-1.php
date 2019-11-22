@@ -5,7 +5,7 @@
                 <div class="kt-section m-0">
                     <div class="kt-section__content">
                         <table class="table table-striped">
-                            <thead>
+                            <thead class="bordered">
                                 <tr>
                                     <th class="font-weight-500">Task Specific Hazard</th>
                                     <th class="font-weight-500">Persons Affected</th>

@@ -72,7 +72,7 @@
 
             &:after {
                 content: '';
-                width: calc(100% + #{$spacer*2});
+                width: calc(100% + #{$spacer*2.5});
                 height: calc(100% + #{$spacer});
                 position: absolute;
                 left: -15px;

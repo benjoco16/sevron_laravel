@@ -1228,11 +1228,11 @@ td.ellipsed {
     z-index: 2;
 }
 
-.assessment-modal__tabs-bg {
+.modal-body--has-bg {
     position: relative;
 }
 
-.assessment-modal__tabs-bg:after {
+.modal-body--has-bg:after {
     content: '';
     width: calc(100% + 30px);
     height: calc(100% + 15px);
@@ -1243,7 +1243,7 @@ td.ellipsed {
     z-index: 0;
 }
 
-.assessment-modal__tabs-bg > div {
+.modal-body--has-bg > div {
     position: relative;
     z-index: 2;
 }

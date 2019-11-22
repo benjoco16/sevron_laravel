@@ -23814,8 +23814,6 @@ b, strong {
     padding-bottom: 0;
     margin-top: 0.25rem;
     margin-bottom: 0.25rem; }
-    .kt-subheader .btn i {
-      font-size: 1rem !important; }
     .kt-subheader .btn.btn-icon {
       width: 32px !important; }
     .kt-subheader .btn:not(.dropdown-toggle-split) {
@@ -26390,6 +26388,15 @@ body {
 .border-purple {
   border-color: #8C26E6 !important; }
 
+.font-striking-red {
+  color: #FF0000 !important; }
+
+.bg-striking-red {
+  background-color: #FF0000 !important; }
+
+.border-striking-red {
+  border-color: #FF0000 !important; }
+
 .border-reset {
   border: none !important; }
 
@@ -26744,10 +26751,11 @@ body {
     text-overflow: ellipsis;
     white-space: nowrap; }
 .table thead {
-  color: #989898; }
+  color: #707070; }
   .table thead tr th {
     font-size: 13px;
-    font-weight: 500;
+    font-weight: 500; }
+  .table thead.bordered th {
     border-bottom: 1px solid #CBCBCB; }
 .table tbody tr:first-child {
   border-top: 1px solid #CBCBCB; }
@@ -26809,6 +26817,21 @@ body {
   margin-right: -1rem; }
 .dropdown.dropleft-reset-arrow [data-toggle="dropdown"]:before {
   content: none !important; }
+
+.modal-body--has-bg {
+  position: relative; }
+  .modal-body--has-bg:after {
+    content: '';
+    width: calc(100% + 2.5rem);
+    height: calc(100% + 1rem);
+    position: absolute;
+    left: -15px;
+    background: #f4f4f4;
+    top: 0;
+    z-index: 0; }
+  .modal-body--has-bg > div {
+    position: relative;
+    z-index: 2; }
 
 .wysiwyg .note-editor.note-frame {
   border: none; }
@@ -27276,7 +27299,7 @@ tr:first-child > td > .fc-day-grid-event {
 .form-group .form-control {
   border-radius: 4px !important; }
 
-.input-group-text {
+span.input-group-text {
   border-radius: 5px !important; }
 
 .bootstrap-tagsinput .tag [data-role="remove"]:after {
@@ -27389,18 +27412,18 @@ select.input-group-form-control:after {
   .assessment-modal__tabs.tab-content > div {
     position: relative;
     z-index: 2; }
-  .assessment-modal__tabs-bg {
+  .modal-body--has-bg {
     position: relative; }
-    .assessment-modal__tabs-bg:after {
+    .modal-body--has-bg:after {
       content: '';
-      width: calc(100% + 2rem);
+      width: calc(100% + 2.5rem);
       height: calc(100% + 1rem);
       position: absolute;
       left: -15px;
       background: #f4f4f4;
       top: 0;
       z-index: 0; }
-    .assessment-modal__tabs-bg > div {
+    .modal-body--has-bg > div {
       position: relative;
       z-index: 2; }
 .assessment-wizard {

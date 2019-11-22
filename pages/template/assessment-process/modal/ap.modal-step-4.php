@@ -1,4 +1,4 @@
-<div data-step="4" class="assessment-modal__tabs-bg pt-4 assessment-regulation">
+<div data-step="4" class="modal-body--has-bg pt-4 assessment-regulation">
     <div class="row align-items-center">
         <div class="col-md-6 col-sm-6 mb-3">
             <span class="font-weight-500 font-ash">
@@ -7,7 +7,7 @@
         </div>
 
         <div class="col-md-6 col-sm-6 mb-3">
-            <div class="d-flex m-0 align-items-center alert alert-outline-primary alert-semi-filled-primary alert-sm">
+            <div class="d-flex m-0 align-items-center alert alert-outline-primary alert-semi-filled-primary">
                 <span class="font-weight-500 pr-3 ">Autopopulate Task Hazards and Controls</span>
 
                 <div class="form-group mb-0">
@@ -31,7 +31,7 @@
             <div class="kt-portlet active kt-portlet--mobile kt-portlet--danger mb-0">
                 <div class="kt-portlet__head">
                     <div class="kt-portlet__head-label d-flex w-100">
-                        GHS SDS DATA
+                        <h4>GHS SDS Data</h4>
                         <div class="d-flex assessment-regulation__title-img ml-auto">
                             <img class="ml-auto mr-2" src="assets/media/risk/p1.png">
                             <img class="ml-auto mr-2" src="assets/media/risk/hazard4.png">
@@ -84,7 +84,7 @@
             <div class="kt-portlet kt-portlet--mobile kt-portlet--warning h-100 mb-0">
                 <div class="kt-portlet__head">
                     <div class="kt-portlet__head-label d-flex w-100">
-                        GHS SDS DATA
+                        <h4>CHIP SDS Data</h4>
                     </div>
                 </div>
                 <div class="kt-portlet__body font-ash">
@@ -101,7 +101,7 @@
         </div>
     </div>
     <div class="actions assessment-tabs__actions d-flex mt-3">
-        <button data-to-step="3" type="button" class="btn btn-secondary bordered btn-wider">
+        <button data-to-step="3" type="button" class="btn btn-outline-primary bordered btn-wider">
             Previous
         </button>
         <a href="/sevron/pages/assessment-wizard.php" data-to-step="4" class="btn btn-primary btn-wider ml-auto">

@@ -6,7 +6,7 @@
                     <div class="d-flex align-items-center">
                         <h6 class="bold">CONTROLS IN PLACE</h6>
                         <button class="btn btn-primary btn-xs ml-auto">
-                            <small>Add Controls</small>
+                            Add Controls
 
                         </button>
                     </div>
@@ -50,7 +50,7 @@
                     <div class="d-flex align-items-center">
                         <h6 class="bold">CONTROLS IN PLACE</h6>
                         <button class="btn btn-primary btn-xs ml-auto">
-                            <small>Add emergency controls</small>
+                            Add emergency controls
 
                         </button>
                     </div>
