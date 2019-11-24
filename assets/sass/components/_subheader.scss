@@ -14,4 +14,9 @@
             padding: $spacer/2 $spacer*2;
         }
     }
+
+    .btn-default {
+        box-shadow: 2px 3px 10px -8px black;
+        border: 1px solid map-get($custom-colors, 'alto');
+    }
 }

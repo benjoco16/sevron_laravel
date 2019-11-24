@@ -124,10 +124,6 @@ var bannerChart = Highcharts.chart('heroChart', {
 	});
   });
 
-  $(window).on('resize', function () {
-	  console.log(bannerChart);
-  })
-
 var INCIDENT_SUMMARY = {
 	init: function () {
 		new CanvasJS.Chart("pyramid-container-2", {

@@ -19,7 +19,7 @@
                 <!--end::Aside -->
                 <div class="kt-content about kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor" id="kt_content">
                     <!--begin::Sub Header -->
-                    <?php include('./template/about/about-subheader.php') ?>
+                    <?php include('./include/about/about-subheader.php') ?>
                     <!--end:: Sub Header -->
                     <!-- begin::Page Content -->
                     <div class="kt-container kt-container--fluid kt-grid__item kt-grid__item--fluid p-0 m-0">
@@ -51,7 +51,7 @@
                 </div>
             </div>
         </div>
-        <?php include('template/assessment-process/modal/ap.modal.php'); ?>
+        <?php include('include/assessment-process/modal/ap.modal.php'); ?>
         <!--begin::Page Scripts -->
         <?php include('./global/vendors.php') ?>
         <!--end::Page Scripts -->

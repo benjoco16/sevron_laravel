@@ -1,4 +1,4 @@
-.kt-badge {
+.kt-badge.kt-badge {
     &--red {
         background: map-get($custom-colors, 'red'); 
         color: #FFF;
@@ -10,6 +10,16 @@
 
     &--yellow {
         background: map-get($custom-colors, 'yellow');
+        color: map-get($custom-colors, 'white');
+    }
+
+    &--pumpkin {
+        background: map-get($custom-colors, 'pumpkin');
+        color: map-get($custom-colors, 'white');
+    }
+
+    &--purple {
+        background: map-get($custom-colors, 'purple');
         color: map-get($custom-colors, 'white');
     }
 }

@@ -20,40 +20,40 @@
                 <!--end::Aside -->
                 <div class="kt-content  kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor" id="kt_content">
                     <!--begin::Sub Header -->
-                    <?php include('./template/dashboard2/d2-subheader.php') ?>
-                    <?php include ('template/dashboard/section.hero.php'); ?>
+                    <?php include('./include/dashboard2/d2-subheader.php') ?>
+                    <?php include ('include/dashboard/section.hero.php'); ?>
                     <!--end:: Sub Header -->
                     <div class="kt-container--fluid kt-container  kt-grid__item kt-grid__item--fluid overflow-hidden">
                         
                         
                         <div class="mt-4">
                             <div class="row">
-                                <?php include ('template/dashboard2/d2-section2.php') ?>
+                                <?php include ('include/dashboard2/d2-section2.php') ?>
 
                                 <!-- Second Row -->
-                                <?php include ('template/dashboard/section.progress-bars.php'); ?>
+                                <?php include ('include/dashboard/section.progress-bars.php'); ?>
                                 <!-- End of second row -->
 
                                 <!-- Third Row -->
-                                <?php include ('template/dashboard/section.performance-summary.php'); ?>
-                                <?php include ('template/dashboard/section.monthly-rates.php'); ?>
-                                <?php include ('template/dashboard/section.riddor-summary.php'); ?>
+                                <?php include ('include/dashboard/section.performance-summary.php'); ?>
+                                <?php include ('include/dashboard/section.monthly-rates.php'); ?>
+                                <?php include ('include/dashboard/section.riddor-summary.php'); ?>
                                 <!-- End of third row -->
 
                                 <!-- Fourth Row -->
-                                <?php include ('template/dashboard/section.daily-tasks.php'); ?>
-                                <?php include ('template/dashboard/section.organisational-structure.php'); ?>
+                                <?php include ('include/dashboard/section.daily-tasks.php'); ?>
+                                <?php include ('include/dashboard/section.organisational-structure.php'); ?>
                                 <!-- End of fourth row -->
 
                                 <!-- Fifth Row -->
-                                <?php include ('template/dashboard/section.incident-summary.php') ?>
-                                <?php include ('template/dashboard/section.accident-types.php') ?>
-                                <?php include ('template/dashboard/section.recent-assessments.php') ?>
+                                <?php include ('include/dashboard/section.incident-summary.php') ?>
+                                <?php include ('include/dashboard/section.accident-types.php') ?>
+                                <?php include ('include/dashboard/section.recent-assessments.php') ?>
                                 <!-- End of fifth row -->
                             </div>
                         </div>
                         <!-- modal -->
-                        <?php include ('template/dashboard/modal.actions.php')?>
+                        <?php include ('include/dashboard/modal.actions.php')?>
                         <!-- end modal -->
                     </div>
                 </div>

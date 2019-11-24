@@ -27,10 +27,10 @@
     <link href="./assets/vendors/custom/vendors/flaticon/flaticon.css" rel="stylesheet" type="text/css" />
     <link href="./assets/vendors/custom/vendors/flaticon2/flaticon.css" rel="stylesheet" type="text/css" />
     <link href="./assets/vendors/general/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css" /> -->
-    <!-- <link href="./assets/css/global/components.min.css" rel="stylesheet" type="text/css" /> -->
-    <!--link href="./assets/css/global/bootstrap.min.css" rel="stylesheet" type="text/css" /-->
-    <!-- <link href="./assets/css/global/plugins.min.css" rel="stylesheet" type="text/css" /> -->
-    <!-- <link href="./assets/css/global/bootstrap-tagsinput.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="./assets/csinclude/global/components.min.css" rel="stylesheet" type="text/css" /> -->
+    <!--link href="./assets/csinclude/global/bootstrap.min.css" rel="stylesheet" type="text/css" /-->
+    <!-- <link href="./assets/csinclude/global/plugins.min.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="./assets/csinclude/global/bootstrap-tagsinput.css" rel="stylesheet" type="text/css" /> -->
     <!-- <link rel="stylesheet" href="./assets/vendors/custom/jstree/jstree.bundle.rtl.min.css" /> -->
     <!--end:: Global Optional Vendors -->
     <!--end::Layout Skins -->

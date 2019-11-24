@@ -17,17 +17,17 @@
                 <?php include('./global/sidebar.php') ?>
                 <!--end::Aside -->
                 <div class="kt-content  kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor" id="kt_content">
-                    <?php include('template/assessment-process/ap.sub-header.php'); ?>
+                    <?php include('include/assessment-process/ap.sub-header.php'); ?>
                     <div class="kt-container--fluid kt-container  kt-grid__item kt-grid__item--fluid overflow-hidden">
                         <div class="">
-                            <?php include('template/assessment-process/ap.table-filters.php'); ?>
-                            <?php include('template/assessment-process/ap.table.php'); ?>
+                            <?php include('include/assessment-process/ap.table-filters.php'); ?>
+                            <?php include('include/assessment-process/ap.table.php'); ?>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <?php include('template/assessment-process/modal/ap.modal.php'); ?>
+        <?php include('include/assessment-process/modal/ap.modal.php'); ?>
         <?php include('./global/vendors.php') ?>
         <script src="./assets/js/custom/assessment-process.js" type="text/javascript"></script>
     </body>

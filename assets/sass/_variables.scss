@@ -22,7 +22,8 @@ $custom-colors: (
   'nepal':          #8DA9BB,
   'light-purple':   #A9B9DA,
   'purple':         #8C26E6,
-  'striking-red':   #FF0000
+  'striking-red':   #FF0000,
+  'pumpkin':        #FF873F
 );
 
 $primary:                   map-get($custom-colors, 'blue');

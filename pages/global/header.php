@@ -55,7 +55,7 @@
 			
 		</div>
 		<div class="dropdown-menu dropdown--dark-full dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-sm">
-            <a class="dropdown-item d-flex align-items-center" href="#">
+            <a class="dropdown-item d-flex align-items-center" href="/sevron/pages/maintenance.php">
                 No notification at this time
             </a>
 		</div>
@@ -70,7 +70,7 @@
             </span>
         </div>
         <div class="dropdown-menu dropdown--dark-full dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-sm">
-            <a class="dropdown-item d-flex align-items-center" href="#">
+            <a class="dropdown-item d-flex align-items-center" href="/sevron/pages/maintenance.php">
                 No information to display
             </a>
 		</div>
@@ -84,16 +84,16 @@
             </span>
         </div>
         <div class="dropdown-menu dropdown--dark-full dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-sm">
-            <a class="dropdown-item d-flex align-items-center" href="#">
+            <a class="dropdown-item d-flex align-items-center" href="/sevron/pages/maintenance.php">
                 <i class="fa fa-user-circle font-neon-green font-size-md"></i>
                 My Details
             </a>
-            <a class="dropdown-item d-flex align-items-center" href="#">
+            <a class="dropdown-item d-flex align-items-center" href="/sevron/pages/maintenance.php">
                 <i class="fa fa-align-justify font-blue font-size-md" style=""></i>
                 My Actions
             </a>
 
-            <a href="#" class="btn btn-logout">Log out</a>
+            <a href="/sevron/pages/maintenance.php" class="btn btn-logout">Log out</a>
         </div>
     </div>
         <!--begin: User bar -->
@@ -108,7 +108,7 @@
                 <span class="kt-header__topbar-icon kt-hidden"><i class="flaticon2-user-outline-symbol"></i></span>
             </div>
             <div class="dropdown-menu dropdown--dark-full dropdown-menu-fit dropdown-menu-right dropdown-menu-anim dropdown-menu-sm">
-                <a class="dropdown-item d-flex align-items-center" href="#">
+                <a class="dropdown-item d-flex align-items-center" href="/sevron/pages/maintenance.php">
                     No information to display
                 </a>
             </div>
@@ -212,15 +212,15 @@
             </div>
             <div class="dropdown-menu dropdown--dark-full dropdown-menu-fit dropdown-menu-right dropdown-menu-anim">
                 
-                <a href="#" class="dropdown-menu-item d-flex align-items-center pb-2">
+                <a href="/sevron/pages/maintenance.php" class="dropdown-menu-item d-flex align-items-center pb-2">
                     <span class="kt-nav__link-icon"><img src="./assets/media/flags/020-flag.svg" alt="" /></span>
                     <span class="kt-nav__link-text font-white">English</span>
                 </a>
-                <a href="#" class="dropdown-menu-item d-flex align-items-center pb-2">
+                <a href="/sevron/pages/maintenance.php" class="dropdown-menu-item d-flex align-items-center pb-2">
                     <span class="kt-nav__link-icon"><img src="./assets/media/flags/016-spain.svg" alt="" /></span>
                     <span class="kt-nav__link-text font-white">Spanish</span>
                 </a>
-                <a href="#" class="dropdown-menu-item d-flex align-items-center">
+                <a href="/sevron/pages/maintenance.php" class="dropdown-menu-item d-flex align-items-center">
                     <span class="kt-nav__link-icon"><img src="./assets/media/flags/017-germany.svg" alt="" /></span>
                     <span class="kt-nav__link-text font-white">German</span>
                 </a>

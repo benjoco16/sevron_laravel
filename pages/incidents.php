@@ -16,12 +16,12 @@
                 <!--end::Aside -->
                 <div class="kt-content  kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor" id="kt_content">
                     <!--begin::Sub Header -->
-                    <?php include('./template/assessment-wizard/aw.subheader.php') ?>
+                    <?php include('./include/assessment-wizard/aw.subheader.php') ?>
                     <!--end:: Sub Header -->
                     <!-- begin::Page Content -->
                     <div class="kt-container kt-container--fluid kt-grid__item kt-grid__item--fluid pt-4 bg-light-blue">
                         <div class="align-items-start">
-                            <?php include('template/incidents/incidents.tab-links.php') ?>
+                            <?php include('include/incidents/incidents.tab-links.php') ?>
                         </div>
                     </div>	
                     <!-- end::Page Content -->

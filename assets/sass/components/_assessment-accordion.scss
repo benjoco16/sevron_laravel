@@ -75,6 +75,10 @@
         &[data-status="category"] .card-title:after {
             color: #8C26E6 !important;  
         } 
+
+        &[data-status="incomplete"] .card-title:after {
+            color: #FE3E53 !important;  
+        } 
         
     }
 
