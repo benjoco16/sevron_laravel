@@ -11,6 +11,7 @@ class PagesController extends Controller
     public function actions(){ return view ('pages.actions'); }
     public function assessmentprocess(){ return view ('pages.assessment-process'); }
     public function assessmentwizard(){ return view ('pages.assessment-wizard'); }
+    public function riskassessment(){ return view ('pages.risk-assessment'); }
     public function dashboard2(){ return view ('pages.dashboard2'); }
     public function equipment(){ return view ('pages.equipment'); }
     public function incidents(){ return view ('pages.incidents'); }

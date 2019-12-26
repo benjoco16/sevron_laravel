@@ -66,13 +66,13 @@
                     Template Assessments
                 </a>
                 
-                <a href="/sevron/pages/about.php" class="btn btn-default dopti">
+                <a href="{{ URL::to('about') }}" class="btn btn-default dopti">
                     About
                 </a>
                 
             <!-- End Create New Button -->
         </div>
-        @include('global.link-user-guide')
+        @include('include.global.user-guide')
     </div>
 </div>
 <!-- end:: Subheader -->
